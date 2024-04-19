@@ -14,7 +14,7 @@ namespace solver {
 
     class Solver {
     public:
-        static Solver &getInstance(int width = 10, int height = 10) {
+        static Solver &getInstance(int width = 50, int height = 50) {
             static Solver instance(width, height);
             return instance;
         }
@@ -23,7 +23,7 @@ namespace solver {
 
         void operator=(Solver const &) = delete;
 
-        void solveTimeStep1(float timeStep);
+        std::vector<Eigen::VectorXf> performSimulation(int numTimesteps, float timeStep);
 
         const std::vector<models::Element> *getElements() const { return grid.getElements(); }
 
@@ -33,41 +33,41 @@ namespace solver {
 
         void updateGridSize(int newWidth, int newHeight);
 
-        void setInitialTemperatureKelvin(int x, int y, float temperature) { grid.setInitialTemperature(x, y, temperature); resetMatrices(); initialized = false; }
+        void setInitialTemperatureKelvin(int x, int y, float temperature) { grid.setInitialTemperature(x, y, temperature); resetMatrices(); }
 
-        void setElementSource(int x, int y, float source) { grid.setElementSource(x, y, source); resetMatrices(); initialized = false; }
+        void setElementSource(int x, int y, float source) { grid.setElementSource(x, y, source); resetMatrices(); }
 
-        void setMaterial(int x, int y, models::Material material) { grid.setMaterial(x, y, material); resetMatrices(); initialized = false; }
+        void setMaterial(int x, int y, models::Material material) { grid.setMaterial(x, y, material); resetMatrices(); }
 
-        void resetTemperature();
-
-        double getCurrentElementTemperatureKelvin(const models::Element &element) const;
+        int getTimeStepsCompleted() const { return timeStepsCompleted.load(); }
 
     private:
         Solver::Solver(int width, int height) : globalStiffnessMatrix((height + 1) * (width + 1), (height + 1) * (width + 1)),
                                                 globalLoadVector((height + 1) * (width + 1)),
                                                 globalMassMatrix((height + 1) * (width + 1), (height + 1) * (width + 1)),
                                                 globalTemperatureVector((height + 1) * (width + 1)),
-                                                globalPreviousTemperatures((height + 1) * (width + 1)),
                                                 grid(width, height) {}
 
         Eigen::SparseMatrix<float> globalStiffnessMatrix;
         Eigen::SparseVector<float> globalLoadVector;
         Eigen::SparseMatrix<float> globalMassMatrix;
         Eigen::VectorXf globalTemperatureVector;
-        Eigen::VectorXf globalPreviousTemperatures;
 
         bool initialized = false;
 
+        std::atomic_int timeStepsCompleted = 0;
+
         models::Grid grid;
+
+        Eigen::VectorXf solveTimeStep(float timeStep);
 
         void assembleGlobalSystem();
 
-        Eigen::Matrix4d createStiffnessMatrix(models::Element element);
+        static Eigen::Matrix4d createStiffnessMatrix(const models::Element &element);
 
-        Eigen::Vector4d createLoadVector(models::Element element);
+        static Eigen::Vector4d createLoadVector(const models::Element &element);
 
-        Eigen::Matrix4d createMassMatrix(models::Element element);
+        static Eigen::Matrix4d createMassMatrix(const models::Element &element);
 
         void Solver::initializeSystem();
 

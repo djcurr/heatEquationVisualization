@@ -24,7 +24,7 @@ namespace ui {
 
     public:
         static UI &
-        getInstance(int windowWidth = 1000, int windowHeight = 800, int gridWidth = 10, int gridHeight = 10) {
+        getInstance(int windowWidth = 1920, int windowHeight = 900, int gridWidth = 50, int gridHeight = 50) {
             static UI instance(windowWidth, windowHeight, "Heat Transfer Simulation Test", gridWidth, gridHeight);
             return instance;
         }
@@ -41,7 +41,7 @@ namespace ui {
 
         void processInput();
 
-        void updateSolverGrid();
+        void updateSolverGrid() const;
 
         void render(const std::vector<models::Element> &elements, const int gridWidth, const int gridHeight);
 
@@ -50,12 +50,9 @@ namespace ui {
 
         ~UI();
 
-        static void APIENTRY glDebugOutput(GLenum source, GLenum type, unsigned int id, GLenum severity,
-                                           GLsizei length, const char *message, const void *userParam);
-
         static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 
-        void initializeImGui();
+        static void initializeImGui();
 
         void renderControls();
 
@@ -63,23 +60,23 @@ namespace ui {
 
         void finalizeRender();
 
-        void setControlsStyle();
+        void setControlsStyle() const;
 
-        void removeControlsStyle();
+        static void removeControlsStyle();
 
-        void setGridStyles();
+        static void setGridStyles();
 
-        void removeGridStyles();
+        static void removeGridStyles();
 
-        ImVec4 calculateCellColor(const models::Element &element) const;
+        ImVec4 calculateCellColor(const models::Element &element);
 
-        void renderGridCell(const ImVec2 &cellPos, const ImVec2 &cellSize, const ImVec4 &color);
+        static void renderGridCell(const ImVec2 &cellPos, const ImVec2 &cellSize, const ImVec4 &color);
 
         void detectDrawing(int x, int y);
 
         void BresenhamLineAlgorithm(int currentX, int currentY);
 
-        void applyElementParameters();
+        void applyElementParameters(int x, int y);
 
         void renderMaterialSelector();
 
@@ -89,25 +86,27 @@ namespace ui {
 
         void renderControlsButtons();
 
-        void updateElementMaterial(int i, int j);
+        void updateElementMaterial(int x, int y) const;
 
-        void updateElementInitialTemperatureCelsius(int x, int y);
+        void updateElementInitialTemperatureCelsius(int x, int y) const;
 
-        void updateElementSource(int x, int y);
+        void updateElementSource(int x, int y) const;
 
         void renderSourceSelector();
 
         void renderViewSelector();
 
+        void renderTimeStepInput();
+
+        void renderTimeStepSlider();
+
         void startSimulation();
 
         void stopSimulation();
 
-        void renderTimeStepInput();
+        void UI::renderBrushSizeSlider();
 
-        void simulationLoop();
-
-        void resetSimulationTimer();
+        double getCurrentElementTemperatureKelvin(const models::Element &element);
 
         enum ViewMode {
             VIEW_INITIAL_TEMPERATURE, VIEW_SOURCES, VIEW_MATERIAL, VIEW_VISUALIZATION
@@ -127,19 +126,21 @@ namespace ui {
 
         GLFWwindow *window;
         std::thread simulationThread;
-        std::mutex mtx;
+        std::atomic_bool simulationRunning = false;
+        std::atomic_bool simulationComplete = false;
+        std::mutex simulationMutex;
         int gridWidth;
         int gridHeight;
+        int currentViewTimeStep = 0;
+        int brushSize = 1;
+        std::vector<Eigen::VectorXf> simulationTemperatures;
         ViewMode currentViewMode = VIEW_INITIAL_TEMPERATURE;
         int selectedMaterialIndex = 0;
         float selectedTemperatureCelsius = 0;
         float selectedSource = 0;
-        std::atomic<float> timeStepSizeSeconds = 100000.0f;
-        bool simulationRunning = false;
-        float accumulatedTime = 0.0f;
-        std::atomic<float> targetDurationSeconds = 0.0f;
+        float timeStepSizeSeconds = 100000.0f;
+        float targetDurationSeconds = 10000000.0f;
         bool mouseDown = false;
-        bool needsReset = true;
         std::pair<int, int> lastHoveredCell = {-1, -1};
         manager::MaterialManager &materialManager = manager::MaterialManager::getInstance();
         solver::Solver &solver1 = solver::Solver::getInstance();

@@ -14,7 +14,9 @@ int main() {
         std::cerr << "UI initialization failed." << std::endl;
         return -1;
     }
-
+    Eigen::setNbThreads(14);
+    int n = Eigen::nbThreads( );
+    std::cout << n << std::endl;
     while (!ui1.shouldClose()) {
         ui1.updateSolverGrid();
         ui1.processInput();
