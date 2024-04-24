@@ -6,57 +6,54 @@
 #define SIMULATIONCONTROLLER_H
 #include <mutex>
 #include <vector>
-#include <Eigen>
-#include <imgui.h>
 
-#include 
-#include 
-#include 
-#include 
-#include 
+#include "../events/ISubscriber.h"
+#include "../solver/Solver.h"
+#include "../events/Broker.h"
+#include "../threads/ThreadWrapper.h"
 
 
-class SimulationController {
+class SimulationController final : public events::ISubscriber {
 public:
-    SimulationController();
-    ~SimulationController();
-
-    void startSimulation(double timeStepSizeSeconds, double targetDurationSeconds);
-    void stopSimulation();
-    bool isSimulationRunning() const;
-    bool isSimulationComplete() const;
+    SimulationController()
+    : simulationRunning(false) {
+        // broker.publish<events::ElementsUpdate>(events::ElementsUpdate(solver1.getElements()));
+    }
 
 private:
     std::atomic<bool> simulationRunning;
     std::atomic<bool> simulationComplete;
-    std::thread simulationThread;
+    ThreadWrapper simulationThread;
     std::mutex simulationMutex;
+    int timeStepSizeSeconds = config::Config::config.timeStepSizeSeconds;
+    int targetDurationSeconds = config::Config::config.targetDurationSeconds;
 
     // Storage for simulation data
-    std::vector<Eigen::VectorXf> simulationTemperatures;
+    solver::Solver& solver1 = solver::Solver::getInstance();
+    int width = config::Config::config.gridWidth;
+    int height = config::Config::config.gridHeight;
+    std::string selectedMaterialName = config::Config::config.materialName;
+    float selectedTemperatureCelsius = 0;
+    float selectedSource = 0;
+    std::vector<Eigen::VectorXd> simulationTemperatures;
+    int activeTimeStep = 0;
+    events::Broker &broker = events::Broker::getInstance();
 
     // Internal methods
-    void runSimulation(double timeStepSizeSeconds, double targetDurationSeconds);
+    void startSimulation();
 
-    void updateElementMaterial(int x, int y) const;
+    void runSimulation();
 
-    void updateElementInitialTemperatureCelsius(int x, int y) const;
+    void onEvent(const std::shared_ptr<events::Event>& event) override;
 
-    void updateElementSource(int x, int y) const;
+    void applyMaterials(const std::vector<models::Point>& points) const;
 
-    void updateSolverGrid() const;
+    void applyInitialTemperatures(const std::vector<models::Point>& points) const;
 
-    double getCurrentElementTemperatureKelvin(const __resharper_unknown_type &element);
+    void applySources(const std::vector<models::Point>& points) const;
 
-    ImVec4 calculateCellColor(const __resharper_unknown_type &element);
-
-    double getCurrentElementTemperatureKelvin(const __resharper_unknown_type &element);
-
-    ImVec4 calculateCellColor(const __resharper_unknown_type &element);
-
-    double getCurrentElementTemperatureKelvin(const __resharper_unknown_type &element);
+    void updateGridSize(int width, int height) const;
 };
-
 
 
 #endif //SIMULATIONCONTROLLER_H

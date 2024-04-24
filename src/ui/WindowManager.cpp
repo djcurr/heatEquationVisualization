@@ -4,7 +4,6 @@
 
 #include "WindowManager.h"
 
-#include <glad.h>
 #include <iostream>
 
 namespace ui {
@@ -62,7 +61,7 @@ namespace ui {
         return glfwWindowShouldClose(window);
     }
 
-    void WindowManager::processInput() {
+    void WindowManager::processInput() const {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
             glfwSetWindowShouldClose(window, true);
         }

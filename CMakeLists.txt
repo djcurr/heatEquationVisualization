@@ -1,14 +1,23 @@
 cmake_minimum_required(VERSION 3.27)
 project(heatEquationVisualization)
 
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=thread")
+# Debug specific flags
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /O2")
+#set(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} /DEBUG")
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+#    set(CMAKE_CXX_FLAGS_DEBUG  "-fsanitize=thread")
+endif()
+
 find_package(OpenGL REQUIRED)
 find_package(OpenMP REQUIRED)
 
 add_executable(heatEquationVisualization
         src/models/Node.h
-        src/models/Node.cpp
         src/models/Grid.h
         src/models/Grid.cpp
         src/solver/Solver.h
@@ -16,29 +25,36 @@ add_executable(heatEquationVisualization
         src/models/Element.h
         src/models/Element.cpp
         src/models/Material.h
-        src/models/Material.cpp
-        src/ui/UI.h
-        src/ui/UI.cpp
         src/main.cpp
         src/manager/MaterialManager.cpp
         src/manager/MaterialManager.h
         src/threads/ThreadPool.cpp
         src/threads/ThreadPool.h
-        src/ui/Config.h
-        #        src/ui/WindowManager.cpp
-#        src/ui/WindowManager.h
-#        src/ui/Renderer.cpp
-#        src/ui/Renderer.h
-#        src/ui/SimulationController.cpp
-#        src/ui/SimulationController.h
-#        src/ui/UIManager.cpp
-#        src/ui/UIManager.h
-#        src/config/config.h
-#        src/ui/IRenderComponent.h
-#        src/ui/GridRenderer.cpp
-#        src/ui/GridRenderer.h
-#        src/ui/ControlsRenderer.cpp
-#        src/ui/ControlsRenderer.h
+        src/ui/WindowManager.cpp
+        src/ui/WindowManager.h
+        src/ui/Renderer.cpp
+        src/ui/Renderer.h
+        src/ui/SimulationController.cpp
+        src/ui/SimulationController.h
+        src/ui/UIManager.cpp
+        src/ui/UIManager.h
+        src/config/config.h
+        src/ui/IRenderComponent.h
+        src/ui/GridRenderer.cpp
+        src/ui/GridRenderer.h
+        src/ui/ControlsRenderer.cpp
+        src/ui/ControlsRenderer.h
+        src/events/Event.h
+        src/events/ISubscriber.h
+        src/events/Broker.cpp
+        src/events/Broker.h
+        src/ui/StyleManager.cpp
+        src/ui/StyleManager.h
+        src/events/EventTypes.h
+        src/config/Config.cpp
+        src/models/Point.h
+        src/threads/ThreadWrapper.h
+        src/ui/ColorMap.h
 )
 
 # Include Eigen library

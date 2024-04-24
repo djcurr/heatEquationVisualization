@@ -6,31 +6,29 @@
 #define RENDERER_H
 #include <vector>
 
+#include "IRenderComponent.h"
+#include "SimulationController.h"
 #include "WindowManager.h"
 
-namespace models {
-    class Element;
-}
-
 namespace ui {
-
     class Renderer {
     public:
-        explicit Renderer(GLFWwindow* window);
+        explicit Renderer(GLFWwindow *window);
+
         ~Renderer();
 
-        static void initializeImGui();
-        void finalizeRender();
-
-        void render(const std::vector<models::Element> &elements);
+        void render();
 
     private:
+        static void initializeImGui();
 
-        GLFWwindow* window;
+        void finalizeRender();
 
-
+        GLFWwindow *window;
+        events::Broker &broker = events::Broker::getInstance();
+        std::vector<std::shared_ptr<IRenderComponent> > renderComponents;
+        std::shared_ptr<SimulationController> simulationController;
     };
-
 } // ui
 
 #endif //RENDERER_H

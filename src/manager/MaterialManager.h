@@ -29,7 +29,7 @@ namespace manager {
 
         const models::Material &getDefaultMaterial() const;
 
-        std::vector<std::string> getAllMaterialNames() const;
+        [[nodiscard]] std::vector<std::string> getAllMaterialNames() const;
 
     private:
         MaterialManager() {

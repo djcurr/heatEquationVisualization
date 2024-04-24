@@ -4,6 +4,8 @@
 
 #ifndef WINDOWMANAGER_H
 #define WINDOWMANAGER_H
+
+#include <glad.h>
 #include <glfw3.h>
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
@@ -12,23 +14,28 @@
 namespace ui {
     class WindowManager {
     public:
-        WindowManager(int width, int height, const std::string& title);
+        WindowManager(int width, int height, const std::string &title);
+
         ~WindowManager();
 
-        bool isInitialized() const;
+        [[nodiscard]] bool isInitialized() const;
 
-        bool shouldClose() const;
+        [[nodiscard]] bool shouldClose() const;
 
-        void processInput();
+        void processInput() const;
+
+        [[nodiscard]] GLFWwindow* getWindow() const { return window; }
+
+    private:
+        GLFWwindow *window;
+
+        void initializeWindow(int width, int height, const std::string &title);
+
+        void terminateWindow();
 
         static void updateViewport(int width, int height);
 
         static void framebufferResizeCallback(GLFWwindow *window, int width, int height);
-
-    private:
-        GLFWwindow *window;
-        void initializeWindow(int width, int height, const std::string& title);
-        void terminateWindow();
     };
 } // ui
 

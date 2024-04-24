@@ -5,17 +5,16 @@
 #ifndef HEATEQUATIONVISUALIZATION_SOLVER_H
 #define HEATEQUATIONVISUALIZATION_SOLVER_H
 
-#include "Eigen"
-#include "../models/Node.h"
+#include "../config/Config.h"
+#include "../events/Broker.h"
 #include "../models/Element.h"
 #include "../models/Grid.h"
 
 namespace solver {
-
     class Solver {
     public:
-        static Solver &getInstance(int width = 50, int height = 50) {
-            static Solver instance(width, height);
+        static Solver &getInstance() {
+            static Solver instance(config::Config::config.gridWidth, config::Config::config.gridHeight);
             return instance;
         }
 
@@ -23,43 +22,54 @@ namespace solver {
 
         void operator=(Solver const &) = delete;
 
-        std::vector<Eigen::VectorXf> performSimulation(int numTimesteps, float timeStep);
+        std::vector<Eigen::VectorXd> performSimulation(int numTimesteps, int timeStep);
 
-        const std::vector<models::Element> *getElements() const { return grid.getElements(); }
-
-        const int getGridWidth() const { return grid.getWidth(); }
-
-        const int getGridHeight() const { return grid.getHeight(); }
+        std::vector<models::Element> getElements() const { return *grid.getElements(); }
 
         void updateGridSize(int newWidth, int newHeight);
 
-        void setInitialTemperatureKelvin(int x, int y, float temperature) { grid.setInitialTemperature(x, y, temperature); resetMatrices(); }
+        void setInitialTemperatureKelvin(int x, int y, float temperature) {
+            grid.setInitialTemperature(x, y, temperature);
+            resetMatrices();
+        }
 
-        void setElementSource(int x, int y, float source) { grid.setElementSource(x, y, source); resetMatrices(); }
+        void setElementSource(int x, int y, float source) {
+            grid.setElementSource(x, y, source);
+            resetMatrices();
+        }
 
-        void setMaterial(int x, int y, models::Material material) { grid.setMaterial(x, y, material); resetMatrices(); }
+        void setMaterial(int x, int y, const std::string &materialName) {
+            grid.setMaterial(x, y, material_manager.getMaterial(materialName));
+            resetMatrices();
+        }
 
         int getTimeStepsCompleted() const { return timeStepsCompleted.load(); }
 
     private:
-        Solver::Solver(int width, int height) : globalStiffnessMatrix((height + 1) * (width + 1), (height + 1) * (width + 1)),
-                                                globalLoadVector((height + 1) * (width + 1)),
-                                                globalMassMatrix((height + 1) * (width + 1), (height + 1) * (width + 1)),
-                                                globalTemperatureVector((height + 1) * (width + 1)),
-                                                grid(width, height) {}
+        Solver::Solver(const int width, const int height) : globalStiffnessMatrix((height + 1) * (width + 1),
+                                                                                  (height + 1) * (width + 1)),
+                                                            globalLoadVector((height + 1) * (width + 1)),
+                                                            globalMassMatrix((height + 1) * (width + 1),
+                                                                             (height + 1) * (width + 1)),
+                                                            globalTemperatureVector((height + 1) * (width + 1)),
+                                                            grid(width, height) {
+        }
 
-        Eigen::SparseMatrix<float> globalStiffnessMatrix;
-        Eigen::SparseVector<float> globalLoadVector;
-        Eigen::SparseMatrix<float> globalMassMatrix;
-        Eigen::VectorXf globalTemperatureVector;
+        Eigen::SparseMatrix<double> globalStiffnessMatrix;
+        Eigen::SparseVector<double> globalLoadVector;
+        Eigen::SparseMatrix<double> globalMassMatrix;
+        Eigen::VectorXd globalTemperatureVector;
+        events::Broker &broker = events::Broker::getInstance();
 
         bool initialized = false;
 
-        std::atomic_int timeStepsCompleted = 0;
+        manager::MaterialManager& material_manager = manager::MaterialManager::getInstance();
+
+        std::atomic<int> timeStepsCompleted = 0;
 
         models::Grid grid;
 
-        Eigen::VectorXf solveTimeStep(float timeStep);
+        Eigen::VectorXd solveTimeStep(float timeStep);
 
         void assembleGlobalSystem();
 
@@ -69,13 +79,12 @@ namespace solver {
 
         static Eigen::Matrix4d createMassMatrix(const models::Element &element);
 
-        void Solver::initializeSystem();
+        void initializeSystem();
 
         void computeInitialTemperatures();
 
         void resetMatrices();
     };
-
 } // solver
 
 #endif //HEATEQUATIONVISUALIZATION_SOLVER_H

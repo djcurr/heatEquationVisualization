@@ -3,56 +3,48 @@
 //
 
 #include "Solver.h"
-#include <iostream>
-#include <chrono>
 #include <future>
 #include <numeric>
 #include <thread>
 
+#include "../events/ISubscriber.h"
 #include "../threads/ThreadPool.h"
 
 namespace solver {
     // https://github.com/MatthewGeleta/Finite-element-method-for-the-heat-equation/blob/master/FEM_for_heat_equation.m
-    Eigen::VectorXf Solver::solveTimeStep(float timeStep) {
-        using namespace std::chrono;
+    Eigen::VectorXd Solver::solveTimeStep(const float timeStep) {
+        Eigen::BiCGSTAB<Eigen::SparseMatrix<double> > solver;
 
-        // const auto start = high_resolution_clock::now();
-        if (!initialized) {
-            initializeSystem();
-        }
-        // auto initializedTime = high_resolution_clock::now();
-        const Eigen::SparseMatrix<float> A = globalMassMatrix + timeStep * globalStiffnessMatrix;
-        // Eigen::SparseQR<Eigen::SparseMatrix<float>, Eigen::COLAMDOrdering<int>> solver;
-        Eigen::BiCGSTAB<Eigen::SparseMatrix<float>> solver;
+        const Eigen::SparseVector<double> b = globalMassMatrix * globalTemperatureVector + timeStep * globalLoadVector;
+        const Eigen::SparseMatrix<double> A = globalMassMatrix + timeStep * globalStiffnessMatrix;
+
         solver.compute(A);
-        const Eigen::SparseVector<float> b = globalMassMatrix * globalTemperatureVector + timeStep * globalLoadVector;
-        Eigen::VectorXf newTemperature = solver.solve(b);
-        timeStepsCompleted.store(timeStepsCompleted.load() + 1);
-        // const auto end = high_resolution_clock::now();
-        //
-        // auto duration = duration_cast<microseconds>(initializedTime - start);
-        // std::cout << "Initializing matrix took " << duration.count() << " microseconds.\n";
-        // duration = duration_cast<microseconds>(end - initializedTime);
-        // std::cout << "Solving matrix took " << duration.count() << " microseconds.\n";
+        Eigen::VectorXd newTemperature = solver.solve(b);
+        broker.publish<events::TimeStepCompleted>(events::TimeStepCompleted());
+
         return newTemperature;
     }
 
-    std::vector<Eigen::VectorXf> Solver::performSimulation(int numTimesteps, float timeStep) {
-        // threads::ThreadPool pool(std::thread::hardware_concurrency());
-        threads::ThreadPool pool(14);
-        std::vector<std::future<Eigen::VectorXf>> futures;
-        std::vector<Eigen::VectorXf> results;
-
+    std::vector<Eigen::VectorXd> Solver::performSimulation(const int numTimesteps, const int timeStep) {
+        threads::ThreadPool pool(std::thread::hardware_concurrency() - 2);
+        std::vector<std::future<Eigen::VectorXd> > futures;
+        std::vector<Eigen::VectorXd> results;
+        if (!initialized) {
+            initializeSystem();
+        }
+        futures.reserve(numTimesteps);
         for (int i = 0; i < numTimesteps; ++i) {
+            const auto selectedTs = static_cast<float>(timeStep * i);
             futures.emplace_back(
-                pool.enqueue([&, i] {
-                    return solveTimeStep(timeStep * (static_cast<float>(i) + 1.0f));
+                pool.enqueue([this, selectedTs] {
+                    return solveTimeStep(selectedTs);
                 })
             );
         }
 
         // Wait for all results to be available
-        for (auto &future : futures) {
+        results.reserve(futures.size());
+        for (auto &future: futures) {
             results.emplace_back(future.get());
         }
         return results;
@@ -76,7 +68,7 @@ namespace solver {
     }
 
     void Solver::assembleGlobalSystem() {
-        std::vector<Eigen::Triplet<double>> stiffnessTriplets, massTriplets;
+        std::vector<Eigen::Triplet<double> > stiffnessTriplets, massTriplets;
         for (models::Element element: *grid.getElements()) {
             auto K_local = createStiffnessMatrix(element);
             auto M_local = createMassMatrix(element);
@@ -142,7 +134,7 @@ namespace solver {
 
     void Solver::computeInitialTemperatures() {
         // Temporary structure to hold temperature contributions for averaging
-        std::map<int, std::vector<double>> tempContributions;
+        std::map<int, std::vector<double> > tempContributions;
 
         for (const auto &element: *grid.getElements()) {
             double elementInitialTemp = element.getInitialHeatKelvin();
@@ -156,14 +148,13 @@ namespace solver {
 
         // Average contributions at each node
         for (auto &[nodeId, temps]: tempContributions) {
-            float avgTemp = std::accumulate(temps.begin(), temps.end(), 0.0) / temps.size();
+            const double avgTemp = std::accumulate(temps.begin(), temps.end(), 0.0) / static_cast<double>(temps.size());
             globalTemperatureVector.coeffRef(nodeId) = avgTemp; // Assuming indexing starts at 0 or matches node IDs
         }
     }
 
-    void Solver::updateGridSize(int newWidth, int newHeight) {
+    void Solver::updateGridSize(const int newWidth, const int newHeight) {
         grid = models::Grid(newWidth, newHeight);
         resetMatrices();
     }
-
 } // solver

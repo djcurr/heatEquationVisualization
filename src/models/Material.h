@@ -21,20 +21,20 @@ namespace models {
 
     class Material {
     public:
-        Material::Material(double density, double thermalConductivity, double specificHeat, Color color)
+        Material(double density, double thermalConductivity, double specificHeat, Color color)
                 : density(density), thermalConductivity(thermalConductivity), specificHeat(specificHeat), color(color) {
             assert(density > 0 && thermalConductivity > 0 && specificHeat > 0);
         }
 
-        Material::Material() : density(0), thermalConductivity(0), specificHeat(0), color() {}
+        Material() : density(0), thermalConductivity(0), specificHeat(0), color() {}
 
-        double getDensity() const { return density; }
+        [[nodiscard]] double getDensity() const { return density; }
 
-        double getThermalConductivity() const { return thermalConductivity; }
+        [[nodiscard]] double getThermalConductivity() const { return thermalConductivity; }
 
-        double getSpecificHeat() const { return specificHeat; }
+        [[nodiscard]] double getSpecificHeat() const { return specificHeat; }
 
-        Color getColor() const { return color; }
+        [[nodiscard]] Color getColor() const { return color; }
 
     private:
         double density;

@@ -15,7 +15,7 @@ namespace models {
     class Element {
     public:
 
-        Element::Element(const std::array<Node, 4> nodes, bool isBoundary) : nodes(nodes),
+        Element(const std::array<Node, 4> nodes, bool isBoundary) : nodes(nodes),
                                                                              externalHeat(0),
                                                                              initialHeat(0),
                                                                              is_boundary(isBoundary) {
@@ -39,7 +39,7 @@ namespace models {
         void setMaterial(const Material &material);
 
     private:
-        const std::array<Node, 4> nodes;
+        std::array<Node, 4> nodes;
         double externalHeat;
         double initialHeat;
         bool is_boundary;

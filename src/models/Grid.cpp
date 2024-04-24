@@ -9,15 +9,14 @@ namespace models {
     Grid::Grid(int width, int height) {
         if (width <= 0) {
             throw std::runtime_error("Width must be greater than 0.");
-        } else {
-            this->width = width;
         }
+        this->width = width;
+
         
         if (height <= 0) {
             throw std::runtime_error("Height must be greater than 0.");
-        } else {
-            this->height = height;
         }
+        this->height = height;
         initializeGrid();
     }
     

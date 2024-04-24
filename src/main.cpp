@@ -2,27 +2,22 @@
 // Created by djcur on 4/10/2024.
 //
 #include <iostream>
-#include "ui/UI.h"
-#include "solver/Solver.h"
+#include "ui/UIManager.h"
 
 int main() {
-    ui::UI &ui1 = ui::UI::getInstance();
-    solver::Solver &solver1 = solver::Solver::getInstance();
+    Eigen::setNbThreads(std::thread::hardware_concurrency() - 2);
+    try {
+        // Initialize UI Manager with window dimensions and title
+        const ui::UIManager uiManager(1500, 1000, "Heat Equation Visualization");
 
-    // Check if the UI was initialized properly
-    if (!ui1.isInitialized()) {
-        std::cerr << "UI initialization failed." << std::endl;
-        return -1;
-    }
-    Eigen::setNbThreads(14);
-    int n = Eigen::nbThreads( );
-    std::cout << n << std::endl;
-    while (!ui1.shouldClose()) {
-        ui1.updateSolverGrid();
-        ui1.processInput();
-        ui1.render(*solver1.getElements(), solver1.getGridWidth(), solver1.getGridHeight());
+        while (!uiManager.shouldClose()) {
+            uiManager.update();
+            uiManager.render();
+        }
+    } catch (const std::exception &e) {
+        std::cerr << "An error occurred: " << e.what() << std::endl;
+        return EXIT_FAILURE;
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
-

@@ -6,7 +6,7 @@
 #define IRENDERCOMPONENT_H
 class IRenderComponent {
 public:
-    virtual ~IRenderComponent() {}
+    virtual ~IRenderComponent() = default;
     virtual void render() = 0;
 };
 
