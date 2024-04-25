@@ -4,7 +4,6 @@
 
 #include "Broker.h"
 
-#include <iostream>
 
 namespace events {
     void Broker::subscribe(ISubscriber *subscriber) {
@@ -43,7 +42,7 @@ namespace events {
             while (!localQueue.empty()) {
                 auto event = localQueue.front();
                 localQueue.pop();
-                // std::cout << getEventTypeName(event->getType());
+                // std::cout << getEventTypeName(event->getType()) << std::endl;
                 // Copy the subscribers to a local list to avoid holding the lock while calling onEvent
                 std::list<ISubscriber*> localSpecificSubs;
                 std::unordered_set<ISubscriber*> localGeneralSubs;

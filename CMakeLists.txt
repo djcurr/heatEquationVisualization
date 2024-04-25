@@ -20,8 +20,8 @@ add_executable(heatEquationVisualization
         src/models/Node.h
         src/models/Grid.h
         src/models/Grid.cpp
-        src/solver/Solver.h
-        src/solver/Solver.cpp
+        src/solver/HeatSolver.h
+        src/solver/HeatSolver.cpp
         src/models/Element.h
         src/models/Element.cpp
         src/models/Material.h
@@ -55,6 +55,13 @@ add_executable(heatEquationVisualization
         src/models/Point.h
         src/threads/ThreadWrapper.h
         src/ui/ColorMap.h
+        src/solver/ISolver.h
+        src/solver/WaterSolver.cpp
+        src/solver/WaterSolver.h
+        src/models/Particle.cpp
+        src/models/Particle.h
+        src/solver/SmoothingKernel.cpp
+        src/solver/SmoothingKernel.h
 )
 
 # Include Eigen library

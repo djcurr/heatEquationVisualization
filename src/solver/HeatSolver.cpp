@@ -2,7 +2,7 @@
 // Created by djcur on 4/10/2024.
 //
 
-#include "Solver.h"
+#include "HeatSolver.h"
 #include <future>
 #include <numeric>
 #include <thread>
@@ -12,7 +12,7 @@
 
 namespace solver {
     // https://github.com/MatthewGeleta/Finite-element-method-for-the-heat-equation/blob/master/FEM_for_heat_equation.m
-    Eigen::VectorXd Solver::solveTimeStep(const float timeStep) {
+    Eigen::VectorXd HeatSolver::solveTimeStep(const float timeStep) {
         Eigen::BiCGSTAB<Eigen::SparseMatrix<double> > solver;
 
         const Eigen::SparseVector<double> b = globalMassMatrix * globalTemperatureVector + timeStep * globalLoadVector;
@@ -25,7 +25,7 @@ namespace solver {
         return newTemperature;
     }
 
-    std::vector<Eigen::VectorXd> Solver::performSimulation(const int numTimesteps, const int timeStep) {
+    std::vector<Eigen::VectorXd> HeatSolver::performSimulation(const int numTimesteps, const int timeStep) {
         threads::ThreadPool pool(std::thread::hardware_concurrency() - 2);
         std::vector<std::future<Eigen::VectorXd> > futures;
         std::vector<Eigen::VectorXd> results;
@@ -50,14 +50,14 @@ namespace solver {
         return results;
     }
 
-    void Solver::initializeSystem() {
+    void HeatSolver::initializeSystem() {
         assembleGlobalSystem();
         computeInitialTemperatures();
         initialized = true;
     }
 
 
-    void Solver::resetMatrices() {
+    void HeatSolver::resetMatrices() {
         int height = grid.getHeight();
         int width = grid.getWidth();
         globalStiffnessMatrix.resize((height + 1) * (width + 1), (height + 1) * (width + 1));
@@ -67,7 +67,7 @@ namespace solver {
         initialized = false;
     }
 
-    void Solver::assembleGlobalSystem() {
+    void HeatSolver::assembleGlobalSystem() {
         std::vector<Eigen::Triplet<double> > stiffnessTriplets, massTriplets;
         for (models::Element element: *grid.getElements()) {
             auto K_local = createStiffnessMatrix(element);
@@ -93,7 +93,7 @@ namespace solver {
         globalMassMatrix.setFromTriplets(massTriplets.begin(), massTriplets.end());
     }
 
-    Eigen::Matrix4d Solver::createStiffnessMatrix(const models::Element &element) {
+    Eigen::Matrix4d HeatSolver::createStiffnessMatrix(const models::Element &element) {
         Eigen::Matrix4d K = Eigen::Matrix4d::Zero(4, 4);
         double c = element.getMaterial().getThermalConductivity();
         c /= 4.0f;
@@ -107,7 +107,7 @@ namespace solver {
         return K;
     }
 
-    Eigen::Vector4d Solver::createLoadVector(const models::Element &element) {
+    Eigen::Vector4d HeatSolver::createLoadVector(const models::Element &element) {
         Eigen::Vector4d F = Eigen::Vector4d::Zero(4);
         double externalHeat = element.getHeatSource();
 
@@ -115,7 +115,7 @@ namespace solver {
         return F;
     }
 
-    Eigen::Matrix4d Solver::createMassMatrix(const models::Element &element) {
+    Eigen::Matrix4d HeatSolver::createMassMatrix(const models::Element &element) {
         double rho = element.getMaterial().getDensity(); // Density
         double cp = element.getMaterial().getSpecificHeat(); // Specific heat capacity
 
@@ -132,7 +132,7 @@ namespace solver {
         return M;
     }
 
-    void Solver::computeInitialTemperatures() {
+    void HeatSolver::computeInitialTemperatures() {
         // Temporary structure to hold temperature contributions for averaging
         std::map<int, std::vector<double> > tempContributions;
 
@@ -153,7 +153,7 @@ namespace solver {
         }
     }
 
-    void Solver::updateGridSize(const int newWidth, const int newHeight) {
+    void HeatSolver::updateGridSize(const int newWidth, const int newHeight) {
         grid = models::Grid(newWidth, newHeight);
         resetMatrices();
     }

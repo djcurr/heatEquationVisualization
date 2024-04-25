@@ -8,7 +8,7 @@
 #include <vector>
 
 #include "../events/ISubscriber.h"
-#include "../solver/Solver.h"
+#include "../solver/HeatSolver.h"
 #include "../events/Broker.h"
 #include "../threads/ThreadWrapper.h"
 
@@ -29,7 +29,7 @@ private:
     int targetDurationSeconds = config::Config::config.targetDurationSeconds;
 
     // Storage for simulation data
-    solver::Solver& solver1 = solver::Solver::getInstance();
+    solver::HeatSolver& solver1 = solver::HeatSolver::getInstance();
     int width = config::Config::config.gridWidth;
     int height = config::Config::config.gridHeight;
     std::string selectedMaterialName = config::Config::config.materialName;

@@ -4,7 +4,7 @@
 
 #include "SimulationController.h"
 
-#include "../solver/Solver.h"
+#include "../solver/HeatSolver.h"
 
 void SimulationController::startSimulation() {
     if (simulationRunning.load()) {
@@ -17,7 +17,7 @@ void SimulationController::startSimulation() {
 
 void SimulationController::runSimulation() {
     std::lock_guard<std::mutex> lock(simulationMutex);
-    simulationTemperatures = solver::Solver::getInstance().performSimulation(
+    simulationTemperatures = solver::HeatSolver::getInstance().performSimulation(
         targetDurationSeconds / timeStepSizeSeconds, timeStepSizeSeconds);
     broker.publish<events::ActiveTimeStepChangeEvent>(events::ActiveTimeStepChangeEvent(0));
     simulationRunning.store(false);

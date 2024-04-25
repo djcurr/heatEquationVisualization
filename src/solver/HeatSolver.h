@@ -5,28 +5,29 @@
 #ifndef HEATEQUATIONVISUALIZATION_SOLVER_H
 #define HEATEQUATIONVISUALIZATION_SOLVER_H
 
+#include "ISolver.h"
 #include "../config/Config.h"
 #include "../events/Broker.h"
 #include "../models/Element.h"
 #include "../models/Grid.h"
 
 namespace solver {
-    class Solver {
+    class HeatSolver : public ISolver {
     public:
-        static Solver &getInstance() {
-            static Solver instance(config::Config::config.gridWidth, config::Config::config.gridHeight);
+        static HeatSolver &getInstance() {
+            static HeatSolver instance(config::Config::config.gridWidth, config::Config::config.gridHeight);
             return instance;
         }
 
-        Solver(Solver const &) = delete;
+        HeatSolver(HeatSolver const &) = delete;
 
-        void operator=(Solver const &) = delete;
+        void operator=(HeatSolver const &) = delete;
 
-        std::vector<Eigen::VectorXd> performSimulation(int numTimesteps, int timeStep);
+        std::vector<Eigen::VectorXd> performSimulation(int numTimesteps, int timeStep) override;
 
-        std::vector<models::Element> getElements() const { return *grid.getElements(); }
+        std::vector<models::Element> getElements() const override { return *grid.getElements(); }
 
-        void updateGridSize(int newWidth, int newHeight);
+        void updateGridSize(int newWidth, int newHeight) override;
 
         void setInitialTemperatureKelvin(int x, int y, float temperature) {
             grid.setInitialTemperature(x, y, temperature);
@@ -46,7 +47,7 @@ namespace solver {
         int getTimeStepsCompleted() const { return timeStepsCompleted.load(); }
 
     private:
-        Solver::Solver(const int width, const int height) : globalStiffnessMatrix((height + 1) * (width + 1),
+        HeatSolver(const int width, const int height) : globalStiffnessMatrix((height + 1) * (width + 1),
                                                                                   (height + 1) * (width + 1)),
                                                             globalLoadVector((height + 1) * (width + 1)),
                                                             globalMassMatrix((height + 1) * (width + 1),
