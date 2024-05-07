@@ -1,0 +1,53 @@
+<map id="ui::ControlsRenderer::handleButton" name="ui::ControlsRenderer::handleButton">
+<area shape="rect" id="Node000001" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="845,403,984,445"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="948,389,936,384,914,381,895,383,883,388,878,394,879,402,874,403,873,393,879,384,893,378,914,376,937,378,951,385"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="634,160,774,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="895,390,856,313,828,272,795,235,770,218,743,206,746,201,773,214,798,231,833,269,861,310,900,388"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a8c604ac7aee9fb4afb2fe787476b3f9a" title="Handles the rendering of radio buttons and updates the view mode if changed." alt="" coords="414,152,553,195"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="907,388,898,332,879,265,864,232,845,201,823,173,795,150,765,135,731,126,697,122,662,123,594,136,536,154,535,149,593,130,661,118,697,117,732,120,766,130,798,146,826,169,850,198,869,230,884,264,903,331,913,387"/>
+<area shape="rect" id="Node000007" href="$classui_1_1_controls_renderer.html#af94109004702cb1ab3e49cda71dd938b" title="Responds to events published by other components of the application." alt="" coords="414,219,553,261"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="896,390,879,359,857,325,829,293,795,268,766,254,736,244,672,232,609,230,554,233,553,227,609,224,672,227,737,239,768,249,798,263,833,289,861,322,884,356,900,387"/>
+<area shape="rect" id="Node000008" href="$classui_1_1_controls_renderer.html#aada38792efbc5bd1ed04dfb2844315df" title="Publishes an event if a value has changed." alt="" coords="634,727,774,769"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="910,461,897,515,876,581,844,649,823,681,798,710,774,728,771,724,795,706,819,678,839,647,871,579,892,514,904,460"/>
+<area shape="rect" id="Node000009" href="$classui_1_1_controls_renderer.html#aa1435fd81ebca32399d10b6ba87ff634" title="Renders a slider for selecting the brush size used in interactive elements." alt="" coords="195,437,354,480"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="829,433,563,451,354,459,354,454,563,445,829,428"/>
+<area shape="rect" id="Node000010" href="$classui_1_1_controls_renderer.html#a61fc6248cb483f489cb5d1587e95d459" title="Renders settings for selecting color maps used in visualization." alt="" coords="203,504,346,547"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="830,447,797,453,550,493,347,520,346,514,549,488,796,448,829,441"/>
+<area shape="rect" id="Node000011" href="$classui_1_1_controls_renderer.html#a8ecbdc5f437adf990efbe7f3cb473ce4" title="Renders buttons used for control actions like starting or stopping simulations." alt="" coords="405,563,563,605"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="892,460,852,506,826,528,798,546,739,569,678,582,617,589,564,591,563,585,617,584,677,577,738,564,795,542,823,524,848,502,888,456"/>
+<area shape="rect" id="Node000012" href="$classui_1_1_controls_renderer.html#a6bfc9c150f37f29e7284f3370cedb12f" title="Renders selectors for adjusting the grid dimensions." alt="" coords="193,621,356,664"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="902,461,885,494,863,531,834,566,798,594,744,621,686,641,626,654,566,661,451,664,356,658,356,652,451,659,565,656,625,648,684,635,742,616,795,590,830,562,858,528,881,491,897,458"/>
+<area shape="rect" id="Node000013" href="$classui_1_1_controls_renderer.html#aff4d30a5ba44e41ad323cd5ee594864d" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="404,5,563,48"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="910,388,903,320,886,236,871,193,852,151,826,112,795,79,770,61,742,47,682,29,620,21,564,21,564,16,620,16,683,24,744,42,772,57,798,75,831,109,856,148,876,191,891,235,909,319,915,387"/>
+<area shape="rect" id="Node000014" href="$classui_1_1_controls_renderer.html#a574a4ff66998622579b0fbe96349d05d" title="Renders a progress bar showing the completion status of the simulation." alt="" coords="414,76,553,119"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="909,388,901,326,883,252,868,214,849,178,825,145,795,118,768,102,738,90,674,78,611,78,554,84,553,79,610,72,675,73,739,85,770,97,798,114,829,142,853,175,873,212,888,250,906,325,914,387"/>
+<area shape="rect" id="Node000015" href="$classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="634,793,774,836"/>
+<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="914,461,906,529,888,614,873,660,853,704,829,746,798,783,775,800,772,795,795,779,824,743,849,702,868,658,882,613,901,528,909,461"/>
+<area shape="rect" id="Node000016" href="$classui_1_1_controls_renderer.html#a307d37a6999d04dde57aa57a7bc2fc56" title="Renders a source selector for setting heat sources in the simulation." alt="" coords="627,277,781,320"/>
+<area shape="poly" id="edge24_Node000001_Node000016" title=" " alt="" coords="877,394,839,363,795,334,772,323,774,318,798,330,842,359,880,390"/>
+<area shape="rect" id="Node000017" href="$classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="631,860,777,903"/>
+<area shape="poly" id="edge26_Node000001_Node000017" title=" " alt="" coords="916,461,912,540,896,643,881,698,861,753,833,804,799,850,779,865,775,861,795,846,829,801,856,751,876,697,891,642,907,539,911,461"/>
+<area shape="rect" id="Node000018" href="$classui_1_1_controls_renderer.html#a83b89acf3bcb8c0954727b712eb19349" title="Renders a temperature selector for setting initial conditions." alt="" coords="611,344,797,387"/>
+<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="829,403,782,390,784,385,831,398"/>
+<area shape="rect" id="Node000019" href="$classui_1_1_controls_renderer.html#ae9858343a4515474c96b50bb719e4e79" title="Renders an input field for setting the time step size." alt="" coords="410,680,558,723"/>
+<area shape="poly" id="edge29_Node000001_Node000019" title=" " alt="" coords="908,461,895,508,874,562,842,615,822,639,798,659,771,676,741,690,677,706,615,712,558,712,558,707,614,707,676,701,739,684,768,672,795,655,818,635,838,612,869,560,890,506,903,460"/>
+<area shape="rect" id="Node000020" href="$classui_1_1_controls_renderer.html#a5d1d8009380e802a80a741f78c995bf7" title="Renders a slider for selecting and displaying the current time step." alt="" coords="407,393,560,436"/>
+<area shape="poly" id="edge31_Node000001_Node000020" title=" " alt="" coords="829,425,561,419,561,414,829,420"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="789,200,799,207,840,255,873,309,896,361,911,402,905,403,891,363,868,312,836,258,795,211,785,204"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="618,181,554,179,554,173,619,176"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="620,206,554,224,553,219,618,201"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#a5d6cdd36b677a922de135c4c7360535b" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="204,277,345,320"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="414,204,405,209,350,244,304,279,301,275,347,240,403,204,412,199"/>
+<area shape="rect" id="Node000005" href="$classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="5,533,145,576"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="249,334,95,535,91,531,245,331"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="206,489,194,494,116,535,113,530,191,490,203,484"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="188,541,145,547,145,542,187,535"/>
+<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="389,580,145,562,145,557,389,575"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="209,617,124,579,126,574,211,612"/>
+<area shape="poly" id="edge20_Node000013_Node000004" title=" " alt="" coords="414,59,406,66,361,119,326,178,301,234,285,278,280,276,296,232,322,176,357,116,402,62,411,55"/>
+<area shape="poly" id="edge22_Node000014_Node000004" title=" " alt="" coords="423,129,406,142,370,176,338,213,291,278,287,275,334,210,366,172,402,138,420,125"/>
+<area shape="poly" id="edge25_Node000016_Node000004" title=" " alt="" coords="611,301,345,301,345,296,611,296"/>
+<area shape="poly" id="edge28_Node000018_Node000004" title=" " alt="" coords="596,351,345,312,346,307,597,346"/>
+<area shape="poly" id="edge30_Node000019_Node000005" title=" " alt="" coords="394,712,346,712,294,707,241,697,191,678,158,657,129,630,88,578,92,575,133,627,161,653,194,674,243,692,295,702,346,706,394,707"/>
+<area shape="poly" id="edge32_Node000020_Node000004" title=" " alt="" coords="427,388,403,374,312,323,314,318,405,370,429,383"/>
+</map>

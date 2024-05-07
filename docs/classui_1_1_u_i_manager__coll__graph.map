@@ -1,0 +1,19 @@
+<map id="ui::UIManager" name="ui::UIManager">
+<area shape="rect" id="Node000001" title="Manages the main user interface components and interactions." alt="" coords="199,837,301,971"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="111,688,240,773"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,772,197,812,200,821,196,824,191,814,179,774"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_window_manager.html" title="Manages the application&#39;s window, including its creation, event handling, and destruction." alt="" coords="70,363,254,624"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,624,175,671,169,671,167,624"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="271,688,392,773"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="315,774,296,814,292,823,288,821,292,812,310,772"/>
+<area shape="rect" id="Node000005" href="$classui_1_1_renderer.html" title="Manages and coordinates rendering of all UI components within the application." alt="" coords="278,395,398,592"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="338,592,336,671,330,671,333,592"/>
+<area shape="rect" id="Node000006" href="$classevents_1_1_broker.html" title="Manages event distribution among subscribers." alt="" coords="5,5,121,267"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="123,246,136,265,165,305,202,336,219,344,235,347,250,350,268,361,286,380,282,383,264,365,249,355,234,352,218,349,199,341,161,309,132,268,119,249"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="146,93,327,179"/>
+<area shape="poly" id="edge6_Node000005_Node000018" title=" " alt="" coords="240,178,245,253,252,296,262,338,277,378,272,380,257,339,247,297,240,254,234,179"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="351,93,525,179"/>
+<area shape="poly" id="edge7_Node000005_Node000021" title=" " alt="" coords="429,179,373,379,367,378,424,178"/>
+<area shape="rect" id="Node000039" title=" " alt="" coords="549,101,706,171"/>
+<area shape="poly" id="edge8_Node000005_Node000039" title=" " alt="" coords="617,171,580,251,553,297,523,340,470,396,413,443,410,439,466,392,519,337,549,294,575,249,612,169"/>
+</map>

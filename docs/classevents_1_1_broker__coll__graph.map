@@ -1,0 +1,25 @@
+<map id="events::Broker" name="events::Broker">
+<area shape="rect" id="Node000001" title="Manages event distribution among subscribers." alt="" coords="495,565,611,827"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="145,400,285,501"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,500,231,521,242,540,267,566,295,589,357,627,421,655,479,674,477,680,419,660,354,631,292,593,263,569,238,543,226,523,219,502"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="128,181,241,267"/>
+<area shape="poly" id="edge12_Node000001_Node000003" title=" " alt="" coords="132,268,79,317,54,345,33,376,17,407,9,439,11,470,25,500,69,550,122,591,182,623,245,647,309,665,371,678,478,690,477,695,370,683,308,670,243,652,180,628,119,595,65,554,20,503,6,471,4,438,12,405,28,373,50,342,75,313,128,264"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,266,175,319,181,376,183,383,178,385,176,376,170,319,174,266"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="198,16,321,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="241,108,213,168,208,165,236,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="256,291,412,376"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="281,105,294,141,312,209,326,273,321,274,307,210,289,142,276,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="331,376,332,437,337,469,348,500,375,544,409,584,446,618,483,647,479,651,442,622,405,587,370,547,343,502,332,471,326,437,326,376"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="477,408,628,493"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="555,493,555,548,550,548,550,493"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="478,181,627,267"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="555,266,555,391,550,391,550,266"/>
+<area shape="rect" id="Node000008" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="508,5,597,117"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="555,117,555,164,550,164,550,117"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="653,416,727,485"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="673,487,621,579,617,576,669,484"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="751,416,826,485"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="758,487,624,625,620,621,754,483"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="850,416,975,485"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="865,487,626,649,623,644,862,483"/>
+</map>

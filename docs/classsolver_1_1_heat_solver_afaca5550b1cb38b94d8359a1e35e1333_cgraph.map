@@ -1,0 +1,11 @@
+<map id="solver::HeatSolver::resetGrid" name="solver::HeatSolver::resetGrid">
+<area shape="rect" id="Node000001" title="Resets the grid to its initial state." alt="" coords="5,24,130,67"/>
+<area shape="rect" id="Node000002" href="$classmodels_1_1_grid.html#acd1c9b9b38fa1ceff5a1875ce7f3251d" title="Get the height of the grid." alt="" coords="350,5,508,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,21,177,9,258,3,335,6,335,11,258,9,178,15,130,26"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_grid.html#ab2edb50fb391a6ba988ca1add179aec6" title="Get the width of the grid." alt="" coords="352,60,507,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,65,178,76,259,82,336,80,336,85,259,87,177,81,129,70"/>
+<area shape="rect" id="Node000004" href="$classsolver_1_1_heat_solver.html#a1de0891a1442431c0f6a67852cf21e54" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="178,24,302,67"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,43,162,43,162,48,130,48"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="302,34,334,29,335,35,303,39"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="303,52,336,57,336,62,302,57"/>
+</map>

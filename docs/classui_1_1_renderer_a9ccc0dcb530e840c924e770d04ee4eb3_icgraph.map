@@ -1,0 +1,5 @@
+<map id="ui::Renderer::initializeImGui" name="ui::Renderer::initializeImGui">
+<area shape="rect" id="Node000001" title="Initializes the ImGui rendering context." alt="" coords="189,5,335,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_renderer.html#a3c61f942c7dae62f36fa3b80cbe430ca" title="Executes the rendering process for all registered components." alt="" coords="5,13,141,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,29,141,29,141,24,173,24"/>
+</map>

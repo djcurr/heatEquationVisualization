@@ -1,0 +1,12 @@
+<map id="ui::ControlsRenderer::renderSourceSelector" name="ui::ControlsRenderer::renderSourceSelector">
+<area shape="rect" id="Node000001" title="Renders a source selector for setting heat sources in the simulation." alt="" coords="5,29,160,72"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="208,29,347,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,48,192,48,192,53,160,53"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="241,29,240,19,246,10,258,5,277,3,298,5,310,11,307,16,296,10,277,8,260,10,249,15,245,21,247,28"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="395,29,534,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,57,380,57,379,62,347,62"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="582,67,736,93"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="344,70,395,81,483,88,567,86,567,91,483,93,395,87,343,75"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="394,45,362,44,362,39,395,39"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="535,59,567,63,566,69,534,64"/>
+</map>

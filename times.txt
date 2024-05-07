@@ -1,5 +1,0 @@
-20x20, No IC or BC, Copper:
-
-No Optimizations:
-Initializing matrix took 6730 microseconds.
-Solving matrix took 862331 microseconds.

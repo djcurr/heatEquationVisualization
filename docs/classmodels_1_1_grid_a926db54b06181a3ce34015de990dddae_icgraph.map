@@ -1,0 +1,9 @@
+<map id="models::Grid::setInitialTemperature" name="models::Grid::setInitialTemperature">
+<area shape="rect" id="Node000001" title="Set the initial temperature of an element in the grid." alt="" coords="639,5,791,48"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a0722ffcfaf24dcb6463cc71ed41e590f" title="Sets the initial temperature of a specified element in the grid." alt="" coords="408,5,591,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="623,29,592,29,592,24,623,24"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html#a52a606d1f5a15238ad34f8be2d33dc48" title="Applies initial temperatures to specified points on the grid." alt="" coords="191,5,360,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="392,29,361,29,361,24,392,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

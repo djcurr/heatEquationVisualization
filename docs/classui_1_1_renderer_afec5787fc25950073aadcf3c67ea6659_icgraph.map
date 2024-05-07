@@ -1,0 +1,7 @@
+<map id="ui::Renderer::getScaleFactor" name="ui::Renderer::getScaleFactor">
+<area shape="rect" id="Node000001" title="Determines the scale factor to use based on DPI scaling (Windows only)" alt="" coords="410,5,597,32"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_renderer.html#a7ea878716b18911169c4b170e7efb968" title="Loads the default font and applies DPI and size scaling." alt="" coords="205,5,362,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,21,363,21,363,16,394,16"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_renderer.html#a7f7b7d296d528df10e7eba5a62916ce1" title="Constructs the Renderer with a specific window." alt="" coords="5,5,157,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,21,157,21,157,16,189,16"/>
+</map>

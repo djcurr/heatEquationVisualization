@@ -1,0 +1,5 @@
+<map id="solver::HeatSolver::getElements" name="solver::HeatSolver::getElements">
+<area shape="rect" id="Node000001" title="Retrieves the grid elements." alt="" coords="5,5,130,48"/>
+<area shape="rect" id="Node000002" href="$classmodels_1_1_grid.html#a4775621019aadbe85140a7726e4f1c50" title="Get the elements of the grid." alt="" coords="178,13,354,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,24,162,24,162,29,130,29"/>
+</map>

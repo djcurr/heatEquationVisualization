@@ -1,0 +1,13 @@
+<map id="SimulationController::applySources" name="SimulationController::applySources">
+<area shape="rect" id="Node000001" title="Applies source intensities to specified points on the grid." alt="" coords="5,64,143,107"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a7160e71ce20374391d1a4068a84df217" title="Retrieves the grid elements." alt="" coords="205,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,62,189,47,191,53,144,67"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="191,72,344,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,83,175,83,175,88,143,88"/>
+<area shape="rect" id="Node000005" href="$classsolver_1_1_heat_solver.html#af80579453798b76b7de4a9a68c2ea0c5" title="Sets the heat source intensity of a specified element in the grid." alt="" coords="199,123,336,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,104,186,116,184,122,142,109"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_grid.html#a4775621019aadbe85140a7726e4f1c50" title="Get the elements of the grid." alt="" coords="392,13,568,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,24,376,24,376,29,330,29"/>
+<area shape="rect" id="Node000006" href="$classmodels_1_1_grid.html#afc9d8983d48707cd804158b6ac274d07" title="Set the heat source of an element in the grid." alt="" coords="396,123,565,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="336,141,380,141,380,147,336,147"/>
+</map>

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['setcurrentcolormap_0',['setCurrentColorMap',['../classui_1_1_grid_renderer.html#acf797e794b5bc0e8d5057bf221514d43',1,'ui::GridRenderer']]],
+  ['setelementsource_1',['setElementSource',['../classmodels_1_1_grid.html#afc9d8983d48707cd804158b6ac274d07',1,'models::Grid::setElementSource()'],['../classsolver_1_1_heat_solver.html#af80579453798b76b7de4a9a68c2ea0c5',1,'solver::HeatSolver::setElementSource()']]],
+  ['setexternalheat_2',['setExternalHeat',['../classmodels_1_1_element.html#aff1de9e66b57a891d48f3ceb81fc049c',1,'models::Element']]],
+  ['setglobalid_3',['setGlobalId',['../classmodels_1_1_node.html#a3aa9757ec294536b69d18089135f37c8',1,'models::Node']]],
+  ['setinitialheat_4',['setInitialHeat',['../classmodels_1_1_element.html#abac29a2a971afbf0532654a804a01fd1',1,'models::Element']]],
+  ['setinitialtemperature_5',['setInitialTemperature',['../classmodels_1_1_grid.html#a926db54b06181a3ce34015de990dddae',1,'models::Grid']]],
+  ['setinitialtemperaturekelvin_6',['setInitialTemperatureKelvin',['../classsolver_1_1_heat_solver.html#a0722ffcfaf24dcb6463cc71ed41e590f',1,'solver::HeatSolver']]],
+  ['setmaterial_7',['setMaterial',['../classmodels_1_1_element.html#a7d45c1142887331d2437fb4efdf7adcc',1,'models::Element::setMaterial()'],['../classmodels_1_1_grid.html#a7be57ebe0f405f803fb99723235ae78c',1,'models::Grid::setMaterial()'],['../classsolver_1_1_heat_solver.html#a2560e3a172bd5903c4fea665d12e7cd7',1,'solver::HeatSolver::setMaterial(int x, int y, const std::string &amp;materialName)']]],
+  ['setupamgmatrix_8',['setupAmgMatrix',['../classsolver_1_1_heat_solver.html#a8f6cd5a8820b21bde3199b935ec2a3e9',1,'solver::HeatSolver']]],
+  ['setupfont_9',['setupFont',['../classui_1_1_renderer.html#a7ea878716b18911169c4b170e7efb968',1,'ui::Renderer']]],
+  ['setupwindow_10',['setupWindow',['../classui_1_1_grid_renderer.html#a885bc1868a7a62458b8123fa3fdba7b3',1,'ui::GridRenderer']]],
+  ['setwindow_11',['setWindow',['../classui_1_1_controls_renderer.html#a135bfb5d560a37eb6aad927280fe3002',1,'ui::ControlsRenderer']]],
+  ['shouldclose_12',['shouldClose',['../classui_1_1_u_i_manager.html#a48252d2b159e6e013f04176ab84d3c0f',1,'ui::UIManager::shouldClose()'],['../classui_1_1_window_manager.html#a301f93987c87aea910c7544cd3dfc34d',1,'ui::WindowManager::shouldClose()']]],
+  ['simulationcompletedevent_13',['SimulationCompletedEvent',['../classevents_1_1_simulation_completed_event.html#ab60a3a241283e85b3948bb42f3bba5dc',1,'events::SimulationCompletedEvent']]],
+  ['simulationcontroller_14',['SimulationController',['../class_simulation_controller.html#a4df77f45d1c710649969e3ea431bd7ea',1,'SimulationController']]],
+  ['simulationrunningevent_15',['SimulationRunningEvent',['../classevents_1_1_simulation_running_event.html#a9b158f6836cbc6328249f1ed80bd6e2e',1,'events::SimulationRunningEvent']]],
+  ['simulationtemperatureupdate_16',['SimulationTemperatureUpdate',['../classevents_1_1_simulation_temperature_update.html#a32e924bbe8776e1f76f0d6b70fad388f',1,'events::SimulationTemperatureUpdate']]],
+  ['solvetimestep_17',['solveTimeStep',['../classsolver_1_1_heat_solver.html#a01df7b66221240db76b5bf85d9f4ecb9',1,'solver::HeatSolver']]],
+  ['sourcechangeevent_18',['SourceChangeEvent',['../classevents_1_1_source_change_event.html#a0ef7800896cb8f4e929c116ae42901b9',1,'events::SourceChangeEvent']]],
+  ['startsimulation_19',['startSimulation',['../class_simulation_controller.html#a884224ae701a70aba2001215039ff070',1,'SimulationController']]],
+  ['startsimulationevent_20',['StartSimulationEvent',['../classevents_1_1_start_simulation_event.html#a21d378e7da40c6d65dc5b98fe211d7e2',1,'events::StartSimulationEvent']]],
+  ['stopsimulationevent_21',['StopSimulationEvent',['../classevents_1_1_stop_simulation_event.html#a7c3710b60f60baee72be041ee4742fb2',1,'events::StopSimulationEvent']]],
+  ['subscribe_22',['subscribe',['../classevents_1_1_broker.html#a5180610dd668b8e24e562f4494573648',1,'events::Broker::subscribe(ISubscriber *subscriber)'],['../classevents_1_1_broker.html#adaeed9784b599544885eea9d45c19434',1,'events::Broker::subscribe(const std::vector&lt; EventType &gt; &amp;eventTypes, ISubscriber *subscriber)']]]
+];

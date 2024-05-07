@@ -1,0 +1,5 @@
+<map id="events::TimeDurationChangeEvent" name="events::TimeDurationChangeEvent">
+<area shape="rect" id="Node000001" title="Event triggered when the total duration of the simulation is changed." alt="" coords="5,165,189,272"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="53,5,142,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,132,100,165,95,165,95,132"/>
+</map>

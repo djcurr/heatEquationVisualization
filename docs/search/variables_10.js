@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['selectedmaterialindex_0',['selectedMaterialIndex',['../classui_1_1_controls_renderer.html#ae6775485a7660e14efd64b0414a1cb91',1,'ui::ControlsRenderer']]],
+  ['selectedmaterialname_1',['selectedMaterialName',['../class_simulation_controller.html#aaf161ed0ed554e68dacb3115d6afed38',1,'SimulationController']]],
+  ['selectedsource_2',['selectedSource',['../classui_1_1_controls_renderer.html#a6c7b1272b9de99614dc97b6d1e474067',1,'ui::ControlsRenderer::selectedSource'],['../class_simulation_controller.html#a7af6a707a8313959aabb594c4fd987ae',1,'SimulationController::selectedSource']]],
+  ['selectedtemperaturecelsius_3',['selectedTemperatureCelsius',['../classui_1_1_controls_renderer.html#a9868c2c6558a2f77dc41e433f95d15de',1,'ui::ControlsRenderer::selectedTemperatureCelsius'],['../class_simulation_controller.html#aecbc7d12e6c8c5c213c60ece11372f7f',1,'SimulationController::selectedTemperatureCelsius']]],
+  ['simulationcomplete_4',['simulationComplete',['../classui_1_1_controls_renderer.html#a93d88458cc3360477eed1aa2d4371b7d',1,'ui::ControlsRenderer::simulationComplete'],['../class_simulation_controller.html#a11e4fcaa3a6368970f5c387d519ed18e',1,'SimulationController::simulationComplete']]],
+  ['simulationcontroller_5',['simulationController',['../classui_1_1_renderer.html#a445d95e2f4784feb5201b8bbc6685111',1,'ui::Renderer']]],
+  ['simulationcontrollerevents_6',['simulationControllerEvents',['../classui_1_1_renderer.html#aa347f3599da0b6d169a745791bca5519',1,'ui::Renderer']]],
+  ['simulationmutex_7',['simulationMutex',['../class_simulation_controller.html#a0535c94015a2a5097398b487ff00bea5',1,'SimulationController']]],
+  ['simulationrunning_8',['simulationRunning',['../classui_1_1_controls_renderer.html#a11c6426c5b458cda81ce181ffbe7b522',1,'ui::ControlsRenderer::simulationRunning'],['../class_simulation_controller.html#a26c6a93fabbc9bc7641287aaa25af52a',1,'SimulationController::simulationRunning']]],
+  ['simulationtemperature_9',['simulationTemperature',['../classui_1_1_grid_renderer.html#a3018122d0cc01a522e6e1e37ed59f98e',1,'ui::GridRenderer']]],
+  ['simulationtemperatures_10',['simulationTemperatures',['../class_simulation_controller.html#a1c6efc5a198bc2e3087ce84b822ecccb',1,'SimulationController']]],
+  ['simulationtemperaturesmutex_11',['simulationTemperaturesMutex',['../classui_1_1_grid_renderer.html#a07edad6cb1db69f1eb76f0d84cc050bf',1,'ui::GridRenderer']]],
+  ['simulationthread_12',['simulationThread',['../class_simulation_controller.html#a9e7d3f3fd03e157e972fa72a3752c128',1,'SimulationController']]],
+  ['solver1_13',['solver1',['../class_simulation_controller.html#a3bc5983efe121afef36b52f7a471b96d',1,'SimulationController']]],
+  ['specificheat_14',['specificHeat',['../classmodels_1_1_material.html#ace7fe037f3b870430d97fe83a5315cba',1,'models::Material']]],
+  ['stop_15',['stop',['../classthreads_1_1_thread_pool.html#a20ccf4b455be67dbf293de1d02519df9',1,'threads::ThreadPool']]],
+  ['subscribers_16',['subscribers',['../classevents_1_1_broker.html#aeda7c92af35b0dddb305f6c8c5d63e7f',1,'events::Broker']]]
+];

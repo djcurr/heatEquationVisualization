@@ -7,28 +7,29 @@
 
 namespace events {
     void Broker::subscribe(ISubscriber *subscriber) {
-        std::lock_guard<std::mutex> lock(mutex);
+        std::lock_guard lock(mutex);
         generalSubscribers.insert(subscriber);
     }
 
     void Broker::unsubscribe(ISubscriber *subscriber) {
-        std::lock_guard<std::mutex> lock(mutex);
+        std::lock_guard lock(mutex);
         deferredRemovals.push_back(subscriber);
-    }
 
-    void Broker::subscribe(const EventType &eventType, ISubscriber *subscriber) {
-        std::lock_guard<std::mutex> lock(mutex);
-        auto &subscriberList = subscribers[eventType];
-        if (std::find(subscriberList.begin(), subscriberList.end(), subscriber) == subscriberList.end()) {
-            subscriberList.push_back(subscriber);
+        for (auto&[eventType, eventSubscriberList] : subscribers) {
+            eventSubscriberList.remove(subscriber);
         }
     }
 
-    void Broker::unsubscribe(const EventType &eventType, ISubscriber *subscriber) {
-        std::lock_guard<std::mutex> lock(mutex);
-        auto &subs = subscribers[eventType];
-        subs.remove(subscriber);
+    void Broker::subscribe(const std::vector<EventType> &eventTypes, ISubscriber *subscriber) {
+        std::lock_guard lock(mutex);
+        for (EventType et : eventTypes) {
+            auto &subscriberList = subscribers[et];
+            if (std::find(subscriberList.begin(), subscriberList.end(), subscriber) == subscriberList.end()) {
+                subscriberList.push_back(subscriber);
+            }
+        }
     }
+
 
     void Broker::processEvents() {
         while (running) {
@@ -72,8 +73,8 @@ namespace events {
             for (auto* subscriber : deferredRemovals) {
                 generalSubscribers.erase(subscriber);
                 // Also, remove from specific subscriber lists if necessary
-                for (auto& pair : subscribers) {
-                    pair.second.remove(subscriber);
+                for (auto&[eventType, eventSubscriberList] : subscribers) {
+                    eventSubscriberList.remove(subscriber);
                 }
             }
             deferredRemovals.clear();

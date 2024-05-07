@@ -37,12 +37,17 @@ namespace ui {
         ImVec2 cursorStart = ImGui::GetCursorScreenPos();
 
         if (!elements.empty()) {
+            float currentY = cursorStart.y;
             for (int row = 0; row < gridHeight; ++row) {
+                ImVec2 cellPos = cursorStart;
+                cellPos.y = currentY;
                 for (int col = 0; col < gridWidth; ++col) {
-                    renderGridCellAtPosition(row, col, cursorStart, buttonSize);
-                    detectDrawing(row, col);
+                    renderGridCellAtPosition(row, col, cellPos, buttonSize);
+                    detectDrawing(row, col, cellPos, buttonSize);
                     maintainGridLine(col);
+                    cellPos.x += buttonSize.x;
                 }
+                currentY += buttonSize.y; // Move to the next row
             }
         }
     }
@@ -52,10 +57,8 @@ namespace ui {
         return {availableSize.x / static_cast<float>(gridWidth), availableSize.y / static_cast<float>(gridHeight)};
     }
 
-    void GridRenderer::renderGridCellAtPosition(int row, int col, const ImVec2 &cursorStart,
-                                                const ImVec2 &buttonSize) const {
-        ImVec2 cellPos = ImVec2(cursorStart.x + static_cast<float>(col) * buttonSize.x,
-                                cursorStart.y + static_cast<float>(row) * buttonSize.y);
+    void GridRenderer::renderGridCellAtPosition(int row, int col, const ImVec2 &cellPos,
+                                                const ImVec2 &buttonSize) {
         ImVec4 color = calculateCellColor(elements[row * gridWidth + col]);
         renderGridCell(cellPos, buttonSize, color);
     }
@@ -81,17 +84,24 @@ namespace ui {
     void GridRenderer::renderGridCell(const ImVec2 &cellPos, const ImVec2 &cellSize, const ImVec4 &color) {
         ImGui::GetWindowDrawList()->AddRectFilled(cellPos, ImVec2(cellPos.x + cellSize.x, cellPos.y + cellSize.y),
                                                   ImGui::ColorConvertFloat4ToU32(color));
-        ImGui::InvisibleButton("cell", cellSize); // Make each grid cell clickable
     }
 
-    void GridRenderer::detectDrawing(int y, int x) {
-        if (!ImGui::IsItemHovered()) return;
+    void GridRenderer::detectDrawing(int row, int col, const ImVec2 &cellPos, const ImVec2 &buttonSize) {
+        ImVec2 mousePos = ImGui::GetMousePos();
+        bool isWithinCell = (mousePos.x >= cellPos.x && mousePos.x <= (cellPos.x + buttonSize.x) &&
+                             mousePos.y >= cellPos.y && mousePos.y <= (cellPos.y + buttonSize.y));
 
-        bool isMouseDown = ImGui::IsMouseDown(0);
-        updateMouseState(isMouseDown, x, y);
-
-        if (mouseDown) {
-            drawLineToLastHoveredCell(x, y);
+        if (isWithinCell) {
+            if (ImGui::IsMouseDown(0)) {
+                if (!mouseDown) {
+                    mouseDown = true;
+                    lastHoveredCell = {col, row};
+                } else if (mouseDown) {
+                    drawLineToLastHoveredCell(col, row);
+                }
+            } else if (!ImGui::IsMouseDown(0) && mouseDown) {
+                mouseDown = false;
+            }
         }
     }
 
@@ -113,22 +123,22 @@ namespace ui {
     std::vector<models::Point> GridRenderer::BresenhamLineAlgorithm(int currentX, int currentY) const {
         int x1 = lastHoveredCell.first;
         int y1 = lastHoveredCell.second;
-        int const dx = std::abs(currentX - x1);
-        int const dy = -std::abs(currentY - y1);
+        const int dx = std::abs(currentX - x1);
+        const int dy = std::abs(currentY - y1);
         const int sx = x1 < currentX ? 1 : -1;
         const int sy = y1 < currentY ? 1 : -1;
-        int err = dx + dy;
+        int err = dx - dy;
 
         std::vector<models::Point> linePoints;
         while (true) {
             linePoints.push_back({x1, y1}); // Collect each point
             if (x1 == currentX && y1 == currentY) break;
-            const int e2 = 2 * err;
-            if (e2 >= dy) {
-                err += dy;
+            int e2 = 2 * err;
+            if (e2 > -dy) {
+                err -= dy;
                 x1 += sx;
             }
-            if (e2 <= dx) {
+            if (e2 < dx) {
                 err += dx;
                 y1 += sy;
             }
@@ -184,19 +194,21 @@ namespace ui {
         return {uniquePoints.begin(), uniquePoints.end()};
     }
 
-    ImVec4 GridRenderer::calculateCellColor(const models::Element &element) const {
-        float heat;
-        float normalizedHeat;
+    ImVec4 GridRenderer::calculateCellColor(const models::Element &element) {
+        double heat;
+        double normalizedHeat;
         models::Color color;
 
         switch (currentViewMode) {
             case ViewMode::VIEW_INITIAL_TEMPERATURE:
                 heat = element.getInitialHeatKelvin();
-                return currentColorMap->getColor(normalize(heat, minTemp, maxTemp));
+                normalizedHeat = normalize(heat, minTemp, maxTemp);
+                return currentColorMap->getColor(normalizedHeat);
 
             case ViewMode::VIEW_SOURCES:
                 heat = element.getHeatSource();
-                return currentColorMap->getColor(normalize(heat, minSource, maxSource));
+                normalizedHeat = normalize(heat, minSource, maxSource);
+                return currentColorMap->getColor(normalizedHeat);
 
             case ViewMode::VIEW_MATERIAL:
                 color = element.getMaterial().getColor();
@@ -204,29 +216,33 @@ namespace ui {
 
             case ViewMode::VIEW_VISUALIZATION:
                 heat = getCurrentElementTemperatureKelvin(element);
-                return currentColorMap->getColor(normalize(heat, minSimTemp, maxSimTemp));
+                normalizedHeat = normalize(heat, minSimTemp, maxSimTemp);
+                return currentColorMap->getColor(normalizedHeat);
 
             default:
                 return {1.0f, 0.0f, 0.0f, 1.0};
         }
     }
 
-    float GridRenderer::normalize(float value, float min, float max) const {
+    double GridRenderer::normalize(double value, double min, double max) {
         if (max - min <= 0) {
             return 0;
         }
         return (value - min) / (max - min);
     }
 
-    double GridRenderer::getCurrentElementTemperatureKelvin(const models::Element &element) const {
+    double GridRenderer::getCurrentElementTemperatureKelvin(const models::Element &element) {
         const std::array<models::Node, 4> nodes = element.getNodes();
         double totalTemperature = 0.0;
         int validNodes = 0;
         for (const auto &node: nodes) {
             int globalId = node.getGlobalId();
-            if (globalId >= 0 && globalId < simulationTemperature.size()) {
-                totalTemperature += simulationTemperature.coeff(globalId);
-                ++validNodes;
+            {
+                std::lock_guard lock(simulationTemperaturesMutex);
+                if (globalId >= 0 && globalId < simulationTemperature.size()) {
+                    totalTemperature += simulationTemperature.coeff(globalId);
+                    ++validNodes;
+                }
             }
         }
 
@@ -234,7 +250,7 @@ namespace ui {
             throw std::runtime_error("No valid nodes found for the given element.");
         }
 
-        return totalTemperature / validNodes;
+        return totalTemperature / static_cast<double>(validNodes);
     }
 
     void GridRenderer::setCurrentColorMap(ColorMaps colorMap) {
@@ -262,18 +278,22 @@ namespace ui {
                     break;
                 case EventType::ElementsUpdate: {
                     elements = std::get<std::vector<models::Element> >(event->getData(EventDataKey::Elements));
-                    gridWidth = std::get<int>(event->getData(EventDataKey::Width));
-                    gridHeight = std::get<int>(event->getData(EventDataKey::Height));
+                    int newGridWidth = std::get<int>(event->getData(EventDataKey::Width));
+                    int newGridHeight = std::get<int>(event->getData(EventDataKey::Height));
+                    if (newGridWidth != gridWidth || newGridHeight != gridHeight) {
+                        gridWidth = newGridWidth;
+                        gridHeight = newGridHeight;
+                    }
 
                     if (!elements.empty()) {
-                        float minInitialHeat = std::numeric_limits<float>::max();
-                        float maxInitialHeat = std::numeric_limits<float>::lowest();
-                        float minSourceHeat = std::numeric_limits<float>::max();
-                        float maxSourceHeat = std::numeric_limits<float>::lowest();
+                        double minInitialHeat = std::numeric_limits<double>::max();
+                        double maxInitialHeat = std::numeric_limits<double>::lowest();
+                        double minSourceHeat = std::numeric_limits<double>::max();
+                        double maxSourceHeat = std::numeric_limits<double>::lowest();
 
                         for (const auto &element: elements) {
-                            float initialHeat = element.getInitialHeatKelvin();
-                            float sourceHeat = element.getHeatSource(); // Assuming there's a method getHeatSource()
+                            double initialHeat = element.getInitialHeatKelvin();
+                            double sourceHeat = element.getHeatSource(); // Assuming there's a method getHeatSource()
 
                             if (initialHeat < minInitialHeat) minInitialHeat = initialHeat;
                             if (initialHeat > maxInitialHeat) maxInitialHeat = initialHeat;
@@ -289,6 +309,7 @@ namespace ui {
                     break;
                 }
                 case EventType::SimulationTemperatureUpdate: {
+                    std::lock_guard lock(simulationTemperaturesMutex);
                     simulationTemperature = std::get<Eigen::VectorXd>(
                         event->getData(EventDataKey::SimulationTemperatures));
 

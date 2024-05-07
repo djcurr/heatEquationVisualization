@@ -1,0 +1,7 @@
+<map id="IRenderComponent" name="IRenderComponent">
+<area shape="rect" id="Node000001" title="Interface for components that provide rendering functionality." alt="" coords="129,5,278,96"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="5,165,193,725"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,111,176,166,171,165,185,110"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html" title="Renders the simulation grid and handles interactive elements within the grid." alt="" coords="217,144,397,747"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,110,230,143,225,145,216,111"/>
+</map>

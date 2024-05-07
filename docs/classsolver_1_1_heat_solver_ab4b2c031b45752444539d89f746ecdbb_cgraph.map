@@ -1,0 +1,25 @@
+<map id="solver::HeatSolver::updateGridSize" name="solver::HeatSolver::updateGridSize">
+<area shape="rect" id="Node000001" title="Updates the size of the simulation grid." alt="" coords="5,165,130,208"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a1de0891a1442431c0f6a67852cf21e54" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="197,48,321,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,163,208,97,211,101,105,167"/>
+<area shape="rect" id="Node000005" href="$classmodels_1_1_grid.html#af2ba23b8dceffd91cff9f9d007ecc949" title="Resize the grid to specified dimensions." alt="" coords="178,265,340,292"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="115,206,217,256,214,261,112,211"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_grid.html#acd1c9b9b38fa1ceff5a1875ce7f3251d" title="Get the height of the grid." alt="" coords="419,5,577,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="321,54,416,33,417,38,322,59"/>
+<area shape="rect" id="Node000004" href="$classmodels_1_1_grid.html#ab2edb50fb391a6ba988ca1add179aec6" title="Get the width of the grid." alt="" coords="421,56,576,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="321,67,405,67,405,72,321,72"/>
+<area shape="rect" id="Node000006" href="$classmodels_1_1_element.html#a11d00b11d239a67106b706c9ea482f3b" title="Gets the external heat source affecting this element." alt="" coords="412,107,584,149"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="269,263,317,213,350,184,387,159,397,154,399,158,389,164,353,188,321,217,273,267"/>
+<area shape="rect" id="Node000007" href="$classmodels_1_1_element.html#af41f46164aa753eb9aaa2e5d4f0cc840" title="Gets the initial heat of this element in Kelvin." alt="" coords="411,173,586,216"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="292,262,387,225,407,219,408,224,389,231,294,267"/>
+<area shape="rect" id="Node000008" href="$classmodels_1_1_element.html#abf3329c8f9d1a8b83b629b82ba6e180d" title="Gets the material associated with this element." alt="" coords="403,240,594,267"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="340,267,387,262,387,268,341,273"/>
+<area shape="rect" id="Node000009" href="$classmodels_1_1_grid.html#a7f939e1927f117d8d036ee10986cbf41" title="Initialize the grid with default elements." alt="" coords="411,291,585,317"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="341,285,396,291,396,296,340,290"/>
+<area shape="rect" id="Node000010" href="$classmodels_1_1_element.html#aff1de9e66b57a891d48f3ceb81fc049c" title="Sets the external heat source for this element." alt="" coords="388,341,608,368"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="292,290,389,327,416,334,414,340,387,332,290,295"/>
+<area shape="rect" id="Node000011" href="$classmodels_1_1_element.html#abac29a2a971afbf0532654a804a01fd1" title="Sets the initial heat of this element in Kelvin." alt="" coords="397,392,599,419"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="275,291,323,334,355,358,389,378,405,384,403,389,387,382,352,362,319,338,272,294"/>
+<area shape="rect" id="Node000012" href="$classmodels_1_1_element.html#a7d45c1142887331d2437fb4efdf7adcc" title="Sets the material for this element." alt="" coords="403,443,594,469"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="270,291,314,358,349,396,389,428,399,434,397,439,387,433,345,400,310,361,265,294"/>
+</map>

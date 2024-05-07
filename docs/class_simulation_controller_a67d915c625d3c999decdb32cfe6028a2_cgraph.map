@@ -1,0 +1,19 @@
+<map id="SimulationController::runSimulation" name="SimulationController::runSimulation">
+<area shape="rect" id="Node000001" title="Main function that runs the simulation." alt="" coords="5,72,143,115"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#aaec888bf8db1a58f93171f5bafa41c2b" title="Returns a reference to the singleton instance of HeatSolver." alt="" coords="205,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,69,189,51,191,56,139,74"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="201,72,334,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,91,185,91,185,96,143,96"/>
+<area shape="rect" id="Node000020" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="191,139,344,165"/>
+<area shape="poly" id="edge8_Node000001_Node000020" title=" " alt="" coords="144,112,207,131,206,136,142,117"/>
+<area shape="rect" id="Node000004" href="$classthreads_1_1_thread_pool.html#ac7f2717f0f3832626ecb9e8ab585caa7" title="Adds a new task to the thread pool." alt="" coords="392,39,529,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="334,79,377,72,377,77,335,84"/>
+<area shape="rect" id="Node000005" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="399,105,523,148"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="335,102,384,111,383,116,334,107"/>
+<area shape="rect" id="Node000006" href="$classsolver_1_1_heat_solver.html#a0e329203a4f26bcea915b05795336e6d" title="Assembles the global stiffness, mass, and load matrices." alt="" coords="588,39,755,81"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="523,104,586,84,588,89,524,110"/>
+<area shape="rect" id="Node000016" href="$classsolver_1_1_heat_solver.html#ad29394cdde512a9e697eafe2195241f5" title="Computes the initial temperature distribution based on element properties." alt="" coords="577,105,766,148"/>
+<area shape="poly" id="edge6_Node000005_Node000016" title=" " alt="" coords="523,124,562,124,562,129,523,129"/>
+<area shape="rect" id="Node000017" href="$classsolver_1_1_heat_solver.html#a1de0891a1442431c0f6a67852cf21e54" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="609,172,734,215"/>
+<area shape="poly" id="edge7_Node000005_Node000017" title=" " alt="" coords="524,144,595,167,594,172,523,149"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="models::Material" name="models::Material">
+<area shape="rect" id="Node000001" title="Represents a material with physical properties and an associated color." alt="" coords="5,181,171,400"/>
+<area shape="rect" id="Node000002" href="$structmodels_1_1_color.html" title="Represents a color using RGB components." alt="" coords="41,5,135,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,117,91,164,85,164,85,117"/>
+</map>

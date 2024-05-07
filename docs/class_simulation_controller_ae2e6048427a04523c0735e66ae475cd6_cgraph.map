@@ -1,0 +1,15 @@
+<map id="SimulationController::applyMaterials" name="SimulationController::applyMaterials">
+<area shape="rect" id="Node000001" title="Applies material properties to specified points on the grid." alt="" coords="5,64,143,107"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a7160e71ce20374391d1a4068a84df217" title="Retrieves the grid elements." alt="" coords="205,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,62,189,47,191,53,144,67"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="191,72,344,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,83,175,83,175,88,143,88"/>
+<area shape="rect" id="Node000005" href="$classsolver_1_1_heat_solver.html#a2560e3a172bd5903c4fea665d12e7cd7" title="Sets the material of a specified element in the grid using a material name." alt="" coords="205,123,330,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,104,191,118,189,123,142,109"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_grid.html#a4775621019aadbe85140a7726e4f1c50" title="Get the elements of the grid." alt="" coords="392,13,568,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,24,376,24,376,29,330,29"/>
+<area shape="rect" id="Node000006" href="$classmanager_1_1_material_manager.html#ab3c9e2923de682561b8d5b54f554e365" title="Retrieves a material by its name." alt="" coords="393,93,568,136"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="330,133,377,126,378,131,330,138"/>
+<area shape="rect" id="Node000007" href="$classmodels_1_1_grid.html#a7be57ebe0f405f803fb99723235ae78c" title="Set the material of an element in the grid." alt="" coords="397,160,564,187"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="330,150,381,157,380,162,330,155"/>
+</map>

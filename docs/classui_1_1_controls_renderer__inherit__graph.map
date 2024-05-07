@@ -1,0 +1,7 @@
+<map id="ui::ControlsRenderer" name="ui::ControlsRenderer">
+<area shape="rect" id="Node000001" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="66,144,254,704"/>
+<area shape="rect" id="Node000002" href="$class_i_render_component.html" title="Interface for components that provide rendering functionality." alt="" coords="5,5,155,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,110,102,144,97,145,90,111"/>
+<area shape="rect" id="Node000003" href="$classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="179,5,301,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,111,223,145,218,144,225,110"/>
+</map>

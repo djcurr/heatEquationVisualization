@@ -1,0 +1,9 @@
+<map id="ui::WindowManager::WindowManager" name="ui::WindowManager::WindowManager">
+<area shape="rect" id="Node000001" title="Constructs a WindowManager with specified dimensions and title." alt="" coords="5,39,149,81"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_window_manager.html#a219019fb016e524016c7839a68a2ba7b" title="Helper function to initialize the GLFW window." alt="" coords="197,5,340,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,45,181,39,182,44,150,50"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_window_manager.html#a6a14789e4a81d76407c349b4cd7fb8bc" title="Static method to handle viewport updates during window resize events." alt="" coords="197,72,340,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,70,182,76,181,81,149,75"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_window_manager.html#a1a3c5fef3fe0535040c44dde2ef21796" title="Callback function to update the viewport when the framebuffer is resized." alt="" coords="388,5,562,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,24,372,24,372,29,341,29"/>
+</map>

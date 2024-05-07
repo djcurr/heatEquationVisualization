@@ -1,0 +1,5 @@
+<map id="events::MaterialChangeEvent" name="events::MaterialChangeEvent">
+<area shape="rect" id="Node000001" title="Event triggered when the material of the simulation is changed." alt="" coords="5,165,185,256"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="51,5,140,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,133,98,166,93,166,93,133"/>
+</map>

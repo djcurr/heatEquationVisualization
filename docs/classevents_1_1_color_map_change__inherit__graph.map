@@ -1,0 +1,5 @@
+<map id="events::ColorMapChange" name="events::ColorMapChange">
+<area shape="rect" id="Node000001" title="Event triggered to change the color map used in visualization." alt="" coords="5,165,163,256"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="39,5,129,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,133,87,166,81,166,81,133"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="solver::HeatSolver::resetMatrices" name="solver::HeatSolver::resetMatrices">
+<area shape="rect" id="Node000001" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="5,23,130,65"/>
+<area shape="rect" id="Node000002" href="$classmodels_1_1_grid.html#acd1c9b9b38fa1ceff5a1875ce7f3251d" title="Get the height of the grid." alt="" coords="178,5,336,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,33,162,29,163,34,130,38"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_grid.html#ab2edb50fb391a6ba988ca1add179aec6" title="Get the width of the grid." alt="" coords="179,56,335,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,50,164,54,163,60,130,55"/>
+</map>

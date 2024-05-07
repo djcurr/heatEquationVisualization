@@ -1,0 +1,9 @@
+<map id="ui::ControlsRenderer::renderTimeStepSlider" name="ui::ControlsRenderer::renderTimeStepSlider">
+<area shape="rect" id="Node000001" title="Renders a slider for selecting and displaying the current time step." alt="" coords="569,5,723,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#a5d6cdd36b677a922de135c4c7360535b" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="380,5,521,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="554,29,522,29,522,24,554,24"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="193,5,332,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,29,332,29,332,24,365,24"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#a3cad210f4749b5e8e902a82250948740" title="Render the controls to the associated GLFW window." alt="" coords="5,5,145,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,29,145,29,145,24,177,24"/>
+</map>

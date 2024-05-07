@@ -1,0 +1,12 @@
+<map id="ui::ControlsRenderer::renderTimeStepSlider" name="ui::ControlsRenderer::renderTimeStepSlider">
+<area shape="rect" id="Node000001" title="Renders a slider for selecting and displaying the current time step." alt="" coords="5,29,159,72"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="207,29,346,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,48,191,48,191,53,159,53"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="240,29,239,19,245,10,257,5,276,3,297,5,309,11,306,16,295,10,276,8,259,10,248,15,244,21,246,28"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="394,29,533,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,57,379,57,378,62,346,62"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="581,67,735,93"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="343,70,394,81,482,88,566,86,566,91,482,93,394,87,342,75"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="393,45,361,44,361,39,394,39"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="534,59,566,63,565,69,533,64"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="solver::HeatSolver::performSimulation" name="solver::HeatSolver::performSimulation">
+<area shape="rect" id="Node000001" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="5,164,139,207"/>
+<area shape="rect" id="Node000002" href="$classthreads_1_1_thread_pool.html#ac7f2717f0f3832626ecb9e8ab585caa7" title="Adds a new task to the thread pool." alt="" coords="187,131,324,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,171,171,165,172,170,140,176"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="193,197,318,240"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,195,178,202,177,207,139,200"/>
+<area shape="rect" id="Node000004" href="$classsolver_1_1_heat_solver.html#a0e329203a4f26bcea915b05795336e6d" title="Assembles the global stiffness, mass, and load matrices." alt="" coords="383,131,550,173"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="317,196,381,176,383,181,319,202"/>
+<area shape="rect" id="Node000014" href="$classsolver_1_1_heat_solver.html#ad29394cdde512a9e697eafe2195241f5" title="Computes the initial temperature distribution based on element properties." alt="" coords="372,197,560,240"/>
+<area shape="poly" id="edge8_Node000003_Node000014" title=" " alt="" coords="318,216,357,216,357,221,318,221"/>
+<area shape="rect" id="Node000015" href="$classsolver_1_1_heat_solver.html#a1de0891a1442431c0f6a67852cf21e54" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="404,264,528,307"/>
+<area shape="poly" id="edge10_Node000003_Node000015" title=" " alt="" coords="319,236,390,259,388,264,317,241"/>
+<area shape="rect" id="Node000005" href="$classsolver_1_1_heat_solver.html#a9008a6ef30a966f8175b7b5798db6752" title="Creates a load vector for a given element." alt="" coords="631,5,762,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="495,128,546,93,607,58,618,52,621,57,610,62,549,98,498,133"/>
+<area shape="rect" id="Node000007" href="$classsolver_1_1_heat_solver.html#a93d96db7a0cb7c31d369ab2fdf6e70bb" title="Creates a mass matrix for a given element." alt="" coords="630,72,763,115"/>
+<area shape="poly" id="edge5_Node000004_Node000007" title=" " alt="" coords="550,128,614,111,615,117,551,133"/>
+<area shape="rect" id="Node000011" href="$classsolver_1_1_heat_solver.html#a1e87d612863ef21ff1595a66fd28b5aa" title="Creates a stiffness matrix for a given element." alt="" coords="621,139,772,181"/>
+<area shape="poly" id="edge6_Node000004_Node000011" title=" " alt="" coords="550,152,605,154,605,160,550,158"/>
+<area shape="rect" id="Node000013" href="$classmodels_1_1_grid.html#a4775621019aadbe85140a7726e4f1c50" title="Get the elements of the grid." alt="" coords="608,205,785,232"/>
+<area shape="poly" id="edge7_Node000004_Node000013" title=" " alt="" coords="543,171,609,191,634,198,632,203,608,196,541,176"/>
+<area shape="poly" id="edge9_Node000014_Node000013" title=" " alt="" coords="561,216,593,216,593,221,561,221"/>
+<area shape="rect" id="Node000016" href="$classmodels_1_1_grid.html#acd1c9b9b38fa1ceff5a1875ce7f3251d" title="Get the height of the grid." alt="" coords="617,264,776,291"/>
+<area shape="poly" id="edge11_Node000015_Node000016" title=" " alt="" coords="528,281,602,278,602,283,529,286"/>
+<area shape="rect" id="Node000017" href="$classmodels_1_1_grid.html#ab2edb50fb391a6ba988ca1add179aec6" title="Get the width of the grid." alt="" coords="619,315,774,341"/>
+<area shape="poly" id="edge12_Node000015_Node000017" title=" " alt="" coords="529,294,606,309,605,314,528,299"/>
+</map>

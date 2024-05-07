@@ -1,0 +1,9 @@
+<map id="models::Element::setInitialHeat" name="models::Element::setInitialHeat">
+<area shape="rect" id="Node000001" title="Sets the initial heat of this element in Kelvin." alt="" coords="573,13,776,40"/>
+<area shape="rect" id="Node000002" href="$classmodels_1_1_grid.html#af2ba23b8dceffd91cff9f9d007ecc949" title="Resize the grid to specified dimensions." alt="" coords="363,13,525,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="558,29,526,29,526,24,558,24"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#ab4b2c031b45752444539d89f746ecdbb" title="Updates the size of the simulation grid." alt="" coords="191,5,315,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,29,315,29,315,24,348,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

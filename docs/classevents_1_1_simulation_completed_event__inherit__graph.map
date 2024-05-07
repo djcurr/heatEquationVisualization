@@ -1,0 +1,5 @@
+<map id="events::SimulationCompletedEvent" name="events::SimulationCompletedEvent">
+<area shape="rect" id="Node000001" title="Event triggered when the simulation completes." alt="" coords="5,165,192,272"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="54,5,143,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,132,101,165,96,165,96,132"/>
+</map>

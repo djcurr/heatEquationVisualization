@@ -1,0 +1,3 @@
+<map id="events::ISubscriber" name="events::ISubscriber">
+<area shape="rect" id="Node000001" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="5,5,128,96"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="SimulationController::startSimulation" name="SimulationController::startSimulation">
+<area shape="rect" id="Node000001" title="Starts the simulation on a new thread." alt="" coords="5,27,143,69"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="376,5,529,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,40,360,23,361,28,143,45"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html#a67d915c625d3c999decdb32cfe6028a2" title="Main function that runs the simulation." alt="" coords="191,56,328,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,56,176,61,175,67,142,61"/>
+<area shape="poly" id="edge7_Node000003_Node000002" title=" " alt="" coords="328,54,391,34,393,40,329,59"/>
+<area shape="rect" id="Node000004" href="$classsolver_1_1_heat_solver.html#aaec888bf8db1a58f93171f5bafa41c2b" title="Returns a reference to the singleton instance of HeatSolver." alt="" coords="391,56,515,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="328,75,375,75,375,80,328,80"/>
+<area shape="rect" id="Node000005" href="$classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="386,123,519,165"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="324,97,376,115,374,120,322,102"/>
+<area shape="rect" id="Node000006" href="$classthreads_1_1_thread_pool.html#ac7f2717f0f3832626ecb9e8ab585caa7" title="Adds a new task to the thread pool." alt="" coords="577,89,715,132"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="519,130,562,122,563,128,520,135"/>
+<area shape="rect" id="Node000007" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="584,156,708,199"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="520,153,569,161,568,167,519,158"/>
+</map>

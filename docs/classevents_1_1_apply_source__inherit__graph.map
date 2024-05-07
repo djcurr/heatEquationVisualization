@@ -1,0 +1,5 @@
+<map id="events::ApplySource" name="events::ApplySource">
+<area shape="rect" id="Node000001" title="Event triggered to apply a heat source to specific points on the grid." alt="" coords="5,165,137,256"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="27,5,116,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,133,74,166,69,166,69,133"/>
+</map>

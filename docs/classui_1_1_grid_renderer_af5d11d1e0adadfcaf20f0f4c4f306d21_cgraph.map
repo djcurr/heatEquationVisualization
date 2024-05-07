@@ -1,0 +1,7 @@
+<map id="ui::GridRenderer::detectDrawing" name="ui::GridRenderer::detectDrawing">
+<area shape="rect" id="Node000001" title="Detects drawing actions based on mouse movement." alt="" coords="5,5,165,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a737de3a0df414b8c6e363534632c1fac" title="Draws a line to the last hovered cell." alt="" coords="213,5,387,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,24,197,24,197,29,165,29"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html#a966a5849384b14b897712751787fa696" title="Implements Bresenham&#39;s line algorithm for drawing lines." alt="" coords="435,5,624,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,24,419,24,419,29,387,29"/>
+</map>

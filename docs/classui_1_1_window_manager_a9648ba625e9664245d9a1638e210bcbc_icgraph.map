@@ -1,0 +1,5 @@
+<map id="ui::WindowManager::terminateWindow" name="ui::WindowManager::terminateWindow">
+<area shape="rect" id="Node000001" title="Cleans up the window and associated resources." alt="" coords="197,5,340,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_window_manager.html#a85e9111309695ba6f8dda9a16ef07eaa" title="Destructor that cleans up the window and related resources." alt="" coords="5,5,149,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,29,149,29,149,24,181,24"/>
+</map>

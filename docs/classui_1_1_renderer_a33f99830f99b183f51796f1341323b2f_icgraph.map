@@ -1,0 +1,5 @@
+<map id="ui::Renderer::finalizeRender" name="ui::Renderer::finalizeRender">
+<area shape="rect" id="Node000001" title="Finalizes the rendering process." alt="" coords="189,5,369,32"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_renderer.html#a3c61f942c7dae62f36fa3b80cbe430ca" title="Executes the rendering process for all registered components." alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,21,141,21,141,16,173,16"/>
+</map>

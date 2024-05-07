@@ -1,0 +1,5 @@
+<map id="SimulationController::applyInitialTemperatures" name="SimulationController::applyInitialTemperatures">
+<area shape="rect" id="Node000001" title="Applies initial temperatures to specified points on the grid." alt="" coords="191,5,360,48"/>
+<area shape="rect" id="Node000002" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

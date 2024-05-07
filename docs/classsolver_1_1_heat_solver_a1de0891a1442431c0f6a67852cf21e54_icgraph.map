@@ -1,0 +1,20 @@
+<map id="solver::HeatSolver::resetMatrices" name="solver::HeatSolver::resetMatrices">
+<area shape="rect" id="Node000001" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="548,72,673,115"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="376,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,69,494,51,496,46,541,64"/>
+<area shape="rect" id="Node000007" href="$classsolver_1_1_heat_solver.html#afaca5550b1cb38b94d8359a1e35e1333" title="Resets the grid to its initial state." alt="" coords="376,72,500,115"/>
+<area shape="poly" id="edge4_Node000001_Node000007" title=" " alt="" coords="533,96,501,96,501,91,533,91"/>
+<area shape="rect" id="Node000009" href="$classsolver_1_1_heat_solver.html#ab4b2c031b45752444539d89f746ecdbb" title="Updates the size of the simulation grid." alt="" coords="376,139,500,181"/>
+<area shape="poly" id="edge7_Node000001_Node000009" title=" " alt="" coords="541,123,496,141,494,136,539,118"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="193,5,326,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,29,326,29,326,24,360,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#a67d915c625d3c999decdb32cfe6028a2" title="Main function that runs the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,29,143,29,143,24,177,24"/>
+<area shape="rect" id="Node000008" href="$class_simulation_controller.html#a3d3c8ad17b48aa7a8155d2c822269a29" title="Resets the grid to its initial state." alt="" coords="191,72,328,115"/>
+<area shape="poly" id="edge5_Node000007_Node000008" title=" " alt="" coords="361,96,328,96,328,91,361,91"/>
+<area shape="rect" id="Node000006" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,105,143,148"/>
+<area shape="poly" id="edge6_Node000008_Node000006" title=" " alt="" coords="176,111,144,117,143,112,175,106"/>
+<area shape="rect" id="Node000010" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="191,139,328,181"/>
+<area shape="poly" id="edge8_Node000009_Node000010" title=" " alt="" coords="361,163,328,163,328,157,361,157"/>
+<area shape="poly" id="edge9_Node000010_Node000006" title=" " alt="" coords="175,148,143,142,144,136,176,142"/>
+</map>

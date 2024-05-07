@@ -1,0 +1,15 @@
+<map id="src/ui/WindowManager.cpp" name="src/ui/WindowManager.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="191,5,370,32"/>
+<area shape="rect" id="Node000002" href="$_window_manager_8h.html" title=" " alt="" coords="59,80,187,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,35,166,75,163,71,252,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="211,80,267,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="275,34,256,68,251,65,271,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="291,80,352,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="290,31,309,65,305,68,285,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="377,80,448,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="305,30,378,70,375,75,302,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,129,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,109,88,144,84,141,111,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="152,155,206,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="135,106,162,141,158,144,131,109"/>
+</map>

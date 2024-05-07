@@ -6,26 +6,55 @@
 #include <future>
 #include <numeric>
 #include <thread>
+#include <amgcl/adapter/eigen.hpp>
+
 
 #include "../events/ISubscriber.h"
 #include "../threads/ThreadPool.h"
 
 namespace solver {
-    // https://github.com/MatthewGeleta/Finite-element-method-for-the-heat-equation/blob/master/FEM_for_heat_equation.m
+    HeatSolver::HeatSolver(const int width, const int height) : globalStiffnessMatrix((height + 1) * (width + 1),
+                                                                    (height + 1) * (width + 1)),
+                                                                globalLoadVector((height + 1) * (width + 1)),
+                                                                globalMassMatrix((height + 1) * (width + 1),
+                                                                    (height + 1) * (width + 1)),
+                                                                globalTemperatureVector((height + 1) * (width + 1)),
+                                                                grid(width, height) {
+    }
+
     Eigen::VectorXd HeatSolver::solveTimeStep(const float timeStep) {
-        Eigen::BiCGSTAB<Eigen::SparseMatrix<double> > solver;
+        Eigen::SparseMatrix<double, Eigen::RowMajor> A = globalMassMatrix + timeStep * globalStiffnessMatrix;
+        Eigen::VectorXd b = globalMassTempMatrix + timeStep * globalLoadVector;
+        int n = A.outerSize();
+        std::vector<double> rhs = std::vector<double>(b.begin(), b.end());
 
-        const Eigen::SparseVector<double> b = globalMassMatrix * globalTemperatureVector + timeStep * globalLoadVector;
-        const Eigen::SparseMatrix<double> A = globalMassMatrix + timeStep * globalStiffnessMatrix;
+        std::vector<double> x(n, 0.0);
+        if (!lastTemp.empty()) {
+            std::copy(lastTemp.begin(), lastTemp.end(), x.begin());
+        }
 
-        solver.compute(A);
-        Eigen::VectorXd newTemperature = solver.solve(b);
+        Solver solver(A);
+
+        int iters;
+        double error;
+        std::tie(iters, error) = solver(rhs, x);
+
+        // std::cout << "Matrix converged in: " << iters << " iterations, timestep: " << timeStep << std::endl;
+        Eigen::VectorXd newTemperature = Eigen::Map<Eigen::VectorXd>(x.data(), x.size());
+        {
+            std::lock_guard lock(lastTempMutex);
+            if (lastTemp.empty()) {
+                lastTemp.resize(x.size());
+                std::copy(x.begin(), x.end(), lastTemp.begin());
+            }
+        }
         broker.publish<events::TimeStepCompleted>(events::TimeStepCompleted());
-
         return newTemperature;
     }
 
+
     std::vector<Eigen::VectorXd> HeatSolver::performSimulation(const int numTimesteps, const int timeStep) {
+        auto start = std::chrono::high_resolution_clock::now();
         threads::ThreadPool pool(std::thread::hardware_concurrency() - 2);
         std::vector<std::future<Eigen::VectorXd> > futures;
         std::vector<Eigen::VectorXd> results;
@@ -47,10 +76,17 @@ namespace solver {
         for (auto &future: futures) {
             results.emplace_back(future.get());
         }
+        auto stop = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+
+        // Print the execution time
+        std::cout << "Execution time of solveTimeStep: " << duration.count() << " milliseconds" << std::endl;
+
         return results;
     }
 
     void HeatSolver::initializeSystem() {
+        resetMatrices();
         assembleGlobalSystem();
         computeInitialTemperatures();
         initialized = true;
@@ -64,7 +100,6 @@ namespace solver {
         globalLoadVector.resize((height + 1) * (width + 1));
         globalMassMatrix.resize((height + 1) * (width + 1), (height + 1) * (width + 1));
         globalTemperatureVector.resize((height + 1) * (width + 1));
-        initialized = false;
     }
 
     void HeatSolver::assembleGlobalSystem() {
@@ -91,7 +126,12 @@ namespace solver {
         }
         globalStiffnessMatrix.setFromTriplets(stiffnessTriplets.begin(), stiffnessTriplets.end());
         globalMassMatrix.setFromTriplets(massTriplets.begin(), massTriplets.end());
+        {
+            std::lock_guard lock(lastTempMutex);
+            lastTemp.clear();
+        }
     }
+
 
     Eigen::Matrix4d HeatSolver::createStiffnessMatrix(const models::Element &element) {
         Eigen::Matrix4d K = Eigen::Matrix4d::Zero(4, 4);
@@ -151,10 +191,18 @@ namespace solver {
             const double avgTemp = std::accumulate(temps.begin(), temps.end(), 0.0) / static_cast<double>(temps.size());
             globalTemperatureVector.coeffRef(nodeId) = avgTemp; // Assuming indexing starts at 0 or matches node IDs
         }
+
+        globalMassTempMatrix = globalMassMatrix * globalTemperatureVector;
+
     }
 
     void HeatSolver::updateGridSize(const int newWidth, const int newHeight) {
-        grid = models::Grid(newWidth, newHeight);
+        grid.resizeGrid(newWidth, newHeight);
+        resetMatrices();
+    }
+
+    void HeatSolver::resetGrid() {
+        grid = models::Grid(grid.getWidth(), grid.getHeight());
         resetMatrices();
     }
 } // solver

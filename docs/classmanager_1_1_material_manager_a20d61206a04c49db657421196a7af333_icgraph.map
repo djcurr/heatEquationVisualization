@@ -1,0 +1,5 @@
+<map id="manager::MaterialManager::initializeDefaults" name="manager::MaterialManager::initializeDefaults">
+<area shape="rect" id="Node000001" title="Initializes the manager with default materials." alt="" coords="229,5,404,48"/>
+<area shape="rect" id="Node000002" href="$classmanager_1_1_material_manager.html#ae982be8d54ecc5bf5789041044eb8e3f" title="Private constructor to enforce the singleton pattern." alt="" coords="5,5,181,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,29,181,29,181,24,213,24"/>
+</map>

@@ -12,13 +12,13 @@ namespace manager {
     }
 
     const models::Material& MaterialManager::getMaterial(const std::string& name) const {
-        auto it = materials.find(name);
+        const auto it = materials.find(name);
         assert(it != materials.end());
         return it->second;
     }
 
     const models::Material& MaterialManager::getDefaultMaterial() const {
-        auto it = materials.find("Copper");
+        const auto it = materials.find("Copper");
         assert(it != materials.end());
         return it->second;
     }
@@ -32,8 +32,9 @@ namespace manager {
 
     std::vector<std::string> MaterialManager::getAllMaterialNames() const {
         std::vector<std::string> names;
-        for (const auto& pair : materials) {
-            names.push_back(pair.first);
+        names.reserve(materials.size());
+        for (const auto&[name, Material] : materials) {
+            names.push_back(name);
         }
         return names;
     }

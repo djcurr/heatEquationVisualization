@@ -1,0 +1,9 @@
+<map id="ui::Renderer::Renderer" name="ui::Renderer::Renderer">
+<area shape="rect" id="Node000001" title="Constructs the Renderer with a specific window." alt="" coords="5,31,157,57"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_renderer.html#a7ea878716b18911169c4b170e7efb968" title="Loads the default font and applies DPI and size scaling." alt="" coords="210,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,32,194,27,195,33,157,37"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a5180610dd668b8e24e562f4494573648" title="Subscribe a subscriber to all events." alt="" coords="205,56,373,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,51,189,55,189,60,157,56"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_renderer.html#afec5787fc25950073aadcf3c67ea6659" title="Determines the scale factor to use based on DPI scaling (Windows only)" alt="" coords="421,5,608,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,16,406,16,406,21,368,21"/>
+</map>

@@ -29,26 +29,39 @@ void SimulationController::updateGridSize(const int width, const int height) con
     broker.publish<events::ElementsUpdate>(events::ElementsUpdate(solver1.getElements(), width, height));
 }
 
+void SimulationController::resetGrid() const {
+    solver1.resetGrid();
+    broker.publish<events::ElementsUpdate>(events::ElementsUpdate(solver1.getElements(), width, height));
+}
+
 void SimulationController::applyMaterials(const std::vector<models::Point> &points) const {
-    for (const auto [x, y]: points) {
+    // #pragma omp parallel for
+    for (int i = 0; i < points.size(); i++) {
+        auto [x, y] = points[i];
         solver1.setMaterial(x, y, selectedMaterialName);
     }
     broker.publish<events::ElementsUpdate>(events::ElementsUpdate(solver1.getElements(), width, height));
 }
 
+
 void SimulationController::applyInitialTemperatures(const std::vector<models::Point> &points) const {
-    for (const auto [x, y]: points) {
+    // #pragma omp parallel for
+    for (int i = 0; i < points.size(); i++) {
+        auto [x, y] = points[i];
         solver1.setInitialTemperatureKelvin(x, y, selectedTemperatureCelsius);
     }
     broker.publish<events::ElementsUpdate>(events::ElementsUpdate(solver1.getElements(), width, height));
 }
 
 void SimulationController::applySources(const std::vector<models::Point> &points) const {
-    for (const auto [x, y]: points) {
+    // #pragma omp parallel for
+    for (int i = 0; i < points.size(); i++) {
+        auto [x, y] = points[i];
         solver1.setElementSource(x, y, selectedSource);
     }
     broker.publish<events::ElementsUpdate>(events::ElementsUpdate(solver1.getElements(), width, height));
 }
+
 
 void SimulationController::onEvent(const std::shared_ptr<events::Event> &event) {
     switch (event->getType()) {
@@ -56,7 +69,7 @@ void SimulationController::onEvent(const std::shared_ptr<events::Event> &event) 
             startSimulation();
             break;
         case EventType::ResetSimulation:
-            updateGridSize(width, height);
+            resetGrid();
             break;
         case EventType::GridWidthChange:
             width = std::get<int>(event->getData(EventDataKey::Width));
@@ -99,7 +112,6 @@ void SimulationController::onEvent(const std::shared_ptr<events::Event> &event) 
             timeStepSizeSeconds = std::get<int>(event->getData(EventDataKey::TimeStepSize));
             break;
         case EventType::TimeStepChangeEvent: {
-            // std::lock_guard<std::mutex> lock(simulationMutex);
             activeTimeStep = std::get<int>(event->getData(EventDataKey::ActiveTimeStep));
             broker.publish<events::SimulationTemperatureUpdate>(simulationTemperatures[activeTimeStep]);
             break;

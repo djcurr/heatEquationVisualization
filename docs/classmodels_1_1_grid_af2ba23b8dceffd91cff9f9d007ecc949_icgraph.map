@@ -1,0 +1,9 @@
+<map id="models::Grid::resizeGrid" name="models::Grid::resizeGrid">
+<area shape="rect" id="Node000001" title="Resize the grid to specified dimensions." alt="" coords="548,13,711,40"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#ab4b2c031b45752444539d89f746ecdbb" title="Updates the size of the simulation grid." alt="" coords="376,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="533,29,501,29,501,24,533,24"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="191,5,328,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,29,328,29,328,24,361,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

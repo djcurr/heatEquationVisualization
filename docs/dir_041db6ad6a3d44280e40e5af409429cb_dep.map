@@ -1,0 +1,16 @@
+<map id="src/solver" name="src/solver">
+<area shape="rect" id="node1" href="dir_14e1e259e8275dc0c459acef3bbf05ae.html" title="events" alt="" coords="27,128,85,155"/>
+<area shape="rect" id="node2" href="dir_bdeba5f06b852fec80257c0bf4c3c36e.html" title="models" alt="" coords="110,128,173,155"/>
+<area shape="rect" id="node3" href="dir_7e83d1792d529f4aa7126ac7e0b3b699.html" title="config" alt="" coords="198,128,253,155"/>
+<area shape="rect" id="node4" href="dir_3454632d1a606e9a309cdaae2c26d5ae.html" title="threads" alt="" coords="277,128,342,155"/>
+<area shape="rect" id="node5" href="dir_041db6ad6a3d44280e40e5af409429cb.html" title="solver" alt="" coords="156,53,210,80"/>
+<area shape="poly" id="edge1" href="dir_000004_000001.html" alt="" coords="162,83,93,122,90,118,159,78"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000001.html" title="2" alt="" coords="95,118,102,134"/>
+<area shape="poly" id="edge4" href="dir_000004_000003.html" alt="" coords="178,82,158,116,154,113,173,79"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000004_000003.html" title="2" alt="" coords="161,108,168,124"/>
+<area shape="poly" id="edge3" href="dir_000004_000000.html" alt="" coords="192,79,213,113,208,116,188,82"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000004_000000.html" title="1" alt="" coords="213,100,220,116"/>
+<area shape="poly" id="edge2" href="dir_000004_000006.html" alt="" coords="206,78,275,118,273,122,203,83"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000006.html" title="1" alt="" coords="272,103,279,119"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,352,165"/>
+</map>

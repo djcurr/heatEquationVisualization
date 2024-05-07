@@ -1,0 +1,24 @@
+<map id="src/models/Material.h" name="src/models/Material.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="359,5,505,32"/>
+<area shape="rect" id="Node000002" href="$_material_manager_8h.html" title=" " alt="" coords="260,80,465,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="411,45,376,81,373,78,408,41"/>
+<area shape="rect" id="Node000004" href="$_element_8h.html" title=" " alt="" coords="454,155,602,181"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="453,43,479,79,523,153,519,155,475,81,449,46"/>
+<area shape="rect" id="Node000003" href="$_material_manager_8cpp.html" title=" " alt="" coords="5,155,224,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,114,159,157,157,151,304,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,111,500,152,498,156,404,116"/>
+<area shape="rect" id="Node000018" href="$_controls_renderer_8cpp.html" title=" " alt="" coords="247,155,430,181"/>
+<area shape="poly" id="edge11_Node000002_Node000018" title=" " alt="" coords="356,123,345,155,340,153,351,121"/>
+<area shape="rect" id="Node000005" href="$_event_8h.html" title=" " alt="" coords="244,229,372,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="476,189,347,231,346,226,474,184"/>
+<area shape="rect" id="Node000021" href="$_grid_renderer_8h.html" title=" " alt="" coords="286,304,431,331"/>
+<area shape="poly" id="edge10_Node000004_Node000021" title=" " alt="" coords="493,192,436,231,398,271,369,306,365,302,394,267,433,227,490,187"/>
+<area shape="rect" id="Node000022" href="$_element_8cpp.html" title=" " alt="" coords="447,229,609,256"/>
+<area shape="poly" id="edge6_Node000004_Node000022" title=" " alt="" coords="531,197,531,229,525,229,525,197"/>
+<area shape="rect" id="Node000023" href="$_grid_8h.html" title=" " alt="" coords="634,229,758,256"/>
+<area shape="poly" id="edge7_Node000004_Node000023" title=" " alt="" coords="572,185,667,226,665,231,570,190"/>
+<area shape="rect" id="Node000009" href="$_heat_solver_8h.html" title=" " alt="" coords="669,304,822,331"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="618,177,710,196,748,210,773,228,780,247,777,269,757,305,753,302,772,267,775,248,768,231,746,215,709,201,617,182"/>
+<area shape="poly" id="edge5_Node000005_Node000021" title=" " alt="" coords="327,267,352,302,348,305,323,270"/>
+<area shape="poly" id="edge8_Node000023_Node000009" title=" " alt="" coords="715,268,739,302,734,305,711,271"/>
+</map>

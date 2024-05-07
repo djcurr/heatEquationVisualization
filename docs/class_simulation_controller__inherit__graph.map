@@ -1,0 +1,5 @@
+<map id="SimulationController" name="SimulationController">
+<area shape="rect" id="Node000001" title="Manages the execution and state of simulations, coordinating events and updates." alt="" coords="5,144,193,683"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="38,5,161,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,111,102,144,97,144,97,111"/>
+</map>

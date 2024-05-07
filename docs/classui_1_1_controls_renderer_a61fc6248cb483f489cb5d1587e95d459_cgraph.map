@@ -1,0 +1,15 @@
+<map id="ui::ControlsRenderer::renderColorSettings" name="ui::ControlsRenderer::renderColorSettings">
+<area shape="rect" id="Node000001" title="Renders settings for selecting color maps used in visualization." alt="" coords="5,80,149,123"/>
+<area shape="rect" id="Node000002" href="$_color_map_8h.html#ac7347cea381b129f646bb601a27f0a02" title="Converts a ColorMaps enum value to its corresponding name string." alt="" coords="202,5,331,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,77,196,42,210,36,212,40,198,46,122,82"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="197,80,336,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,99,181,99,181,104,149,104"/>
+<area shape="rect" id="Node000005" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="571,121,725,148"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="145,121,197,132,292,141,388,144,556,139,556,145,388,149,292,146,196,137,143,126"/>
+<area shape="poly" id="edge6_Node000003_Node000003" title=" " alt="" coords="230,80,229,70,235,61,247,55,266,53,287,56,299,62,296,67,285,61,266,59,249,61,238,65,234,71,236,79"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="384,55,523,97"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="336,98,368,94,369,99,337,103"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="337,105,556,124,556,129,336,110"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="384,79,352,84,351,78,383,74"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="524,94,588,114,586,119,523,100"/>
+</map>

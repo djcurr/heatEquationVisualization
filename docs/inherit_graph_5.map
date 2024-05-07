@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_i_render_component.html" title="Interface for components that provide rendering functionality." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="Node000001" href="$classui_1_1_controls_renderer.html" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="185,56,324,83"/>
+<area shape="poly" id="edge25_Node000000_Node000001" title=" " alt="" coords="138,34,204,53,203,58,136,39"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html" title="Renders the simulation grid and handles interactive elements within the grid." alt="" coords="197,5,312,32"/>
+<area shape="poly" id="edge26_Node000000_Node000004" title=" " alt="" coords="152,16,197,16,197,21,152,21"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="5,56,137,83"/>
+<area shape="poly" id="edge28_Node000002_Node000001" title=" " alt="" coords="152,67,184,67,184,72,152,72"/>
+<area shape="poly" id="edge29_Node000002_Node000004" title=" " alt="" coords="136,49,203,30,204,35,138,54"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html" title="Manages the execution and state of simulations, coordinating events and updates." alt="" coords="186,107,323,133"/>
+<area shape="poly" id="edge27_Node000002_Node000003" title=" " alt="" coords="138,85,204,103,203,109,136,90"/>
+</map>

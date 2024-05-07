@@ -1,0 +1,35 @@
+<map id="ui::ControlsRenderer::renderViewSelector" name="ui::ControlsRenderer::renderViewSelector">
+<area shape="rect" id="Node000001" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="5,215,147,257"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#a8c604ac7aee9fb4afb2fe787476b3f9a" title="Handles the rendering of radio buttons and updates the view mode if changed." alt="" coords="202,64,341,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,212,136,165,193,117,200,112,203,117,196,121,140,169,97,216"/>
+<area shape="rect" id="Node000006" href="$classui_1_1_controls_renderer.html#aff4d30a5ba44e41ad323cd5ee594864d" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="409,357,568,400"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="94,256,135,306,164,331,196,351,244,368,295,379,346,383,393,384,393,389,346,389,294,384,243,373,194,356,161,336,132,310,90,260"/>
+<area shape="rect" id="Node000009" href="$classui_1_1_controls_renderer.html#a574a4ff66998622579b0fbe96349d05d" title="Renders a progress bar showing the completion status of the simulation." alt="" coords="202,131,341,173"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="126,212,205,177,207,182,129,217"/>
+<area shape="rect" id="Node000010" href="$classui_1_1_controls_renderer.html#a307d37a6999d04dde57aa57a7bc2fc56" title="Renders a source selector for setting heat sources in the simulation." alt="" coords="412,173,566,216"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="147,226,396,201,396,207,147,232"/>
+<area shape="rect" id="Node000011" href="$classui_1_1_controls_renderer.html#a83b89acf3bcb8c0954727b712eb19349" title="Renders a temperature selector for setting initial conditions." alt="" coords="396,240,581,283"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="147,238,381,252,380,257,147,243"/>
+<area shape="rect" id="Node000012" href="$classui_1_1_controls_renderer.html#a5d1d8009380e802a80a741f78c995bf7" title="Renders a slider for selecting and displaying the current time step." alt="" coords="195,299,348,341"/>
+<area shape="poly" id="edge20_Node000001_Node000012" title=" " alt="" coords="129,255,207,290,205,295,126,260"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="419,5,558,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,64,403,47,404,52,342,69"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="647,149,787,192"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="342,94,582,137,633,148,632,154,581,143,341,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="522,46,583,76,628,107,669,138,666,142,625,111,580,81,520,51"/>
+<area shape="rect" id="Node000005" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="853,157,1006,184"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="559,39,675,69,806,111,889,148,887,153,804,116,674,75,558,45"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="698,151,647,104,580,57,571,52,574,47,583,52,651,100,702,147"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="676,149,675,139,682,130,696,125,717,123,740,125,753,131,751,136,738,130,717,128,697,130,685,135,680,141,682,148"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="787,168,837,168,837,173,787,173"/>
+<area shape="poly" id="edge12_Node000006_Node000004" title=" " alt="" coords="555,355,579,337,598,310,604,283,610,255,627,225,657,199,661,203,631,228,615,257,609,284,602,312,583,341,558,359"/>
+<area shape="poly" id="edge13_Node000006_Node000005" title=" " alt="" coords="544,354,580,336,604,319,628,302,693,267,760,235,875,188,877,192,762,240,696,272,631,306,607,324,583,341,546,359"/>
+<area shape="rect" id="Node000007" href="$classmanager_1_1_material_manager.html#aaff06224e82438ec99bdbecfa0d888d3" title="Gets all material names stored in the manager." alt="" coords="629,316,805,359"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="568,362,613,353,614,359,569,367"/>
+<area shape="rect" id="Node000008" href="$classmanager_1_1_material_manager.html#a20ce21fd0e624bfe861682d011fb49d2" title="Singleton access to MaterialManager instance." alt="" coords="629,383,805,425"/>
+<area shape="poly" id="edge11_Node000006_Node000008" title=" " alt="" coords="569,385,614,390,613,395,569,390"/>
+<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="341,151,581,159,632,162,631,167,581,164,341,156"/>
+<area shape="poly" id="edge17_Node000010_Node000004" title=" " alt="" coords="566,184,632,177,633,182,567,189"/>
+<area shape="poly" id="edge19_Node000011_Node000004" title=" " alt="" coords="551,237,580,226,652,196,654,201,582,230,553,242"/>
+<area shape="poly" id="edge21_Node000012_Node000004" title=" " alt="" coords="348,328,403,331,463,328,523,316,580,292,597,278,605,262,613,244,627,225,661,199,664,203,631,229,617,247,610,265,601,282,583,297,525,321,463,333,403,336,348,334"/>
+</map>

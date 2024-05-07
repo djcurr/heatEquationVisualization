@@ -1,0 +1,39 @@
+<map id="ui::GridRenderer::render" name="ui::GridRenderer::render">
+<area shape="rect" id="Node000001" title="Renders the grid and handles user interactions." alt="" coords="5,231,165,257"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a05f9185107b7f71fd36434769ca4fee7" title="Applies styling to the ImGui elements being rendered." alt="" coords="218,39,409,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,229,143,173,211,109,269,71,272,75,214,113,147,177,99,232"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html#a32a1106ed4ff76a158ee5b7fd22d36a3" title="Finalizes rendering operations." alt="" coords="232,123,395,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,228,212,179,236,169,238,174,214,184,114,232"/>
+<area shape="rect" id="Node000009" href="$classui_1_1_grid_renderer.html#a8e0f8fe3943f9131a1a7fe94fa75282b" title="Processes pending updates in the update queue." alt="" coords="229,193,398,236"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="165,231,213,225,213,230,166,236"/>
+<area shape="rect" id="Node000010" href="$classui_1_1_grid_renderer.html#af9b1eb2c40902163118bdc02efeba1ce" title="Renders the grid cells." alt="" coords="222,260,405,287"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="166,252,207,257,206,262,165,257"/>
+<area shape="rect" id="Node000027" href="$classui_1_1_grid_renderer.html#a57271e75d05f1878b31640629265e849" title="Resets the mouse state when necessary." alt="" coords="218,311,409,353"/>
+<area shape="poly" id="edge17_Node000001_Node000027" title=" " alt="" coords="118,256,214,296,231,303,229,308,212,301,116,260"/>
+<area shape="rect" id="Node000028" href="$classui_1_1_grid_renderer.html#a885bc1868a7a62458b8123fa3fdba7b3" title="Sets up window properties for rendering." alt="" coords="213,377,414,404"/>
+<area shape="poly" id="edge18_Node000001_Node000028" title=" " alt="" coords="99,256,145,308,177,338,214,363,226,369,224,374,211,368,174,342,141,312,95,259"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_style_manager.html#ab97b24ad59b7b74dd79579fe93ee119d" title="Applies a collection of color and variable styles to ImGui." alt="" coords="462,5,650,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,36,446,31,447,36,410,41"/>
+<area shape="rect" id="Node000005" href="$classui_1_1_grid_renderer.html#a5d32e8937bee1b5a141bf29be92f99ea" title="Applies parameters to elements based on current brush and settings." alt="" coords="462,56,650,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="393,120,461,101,462,106,394,125"/>
+<area shape="rect" id="Node000008" href="$classui_1_1_style_manager.html#ad61026d3b4a0eb236572c474735dba0b" title="Removes a specified number of color and variable styles from ImGui." alt="" coords="472,123,640,165"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="396,141,456,141,456,147,396,147"/>
+<area shape="rect" id="Node000006" href="$classui_1_1_grid_renderer.html#ad98b2b0b3e16a361383d74d7372abba9" title="Combines affected points for batch processing." alt="" coords="700,27,872,69"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="650,63,684,58,685,64,651,68"/>
+<area shape="rect" id="Node000007" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="709,93,863,120"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="651,87,694,92,693,98,650,92"/>
+<area shape="rect" id="Node000011" href="$classui_1_1_grid_renderer.html#a4b4632ad03f8bbe80b84026051d17af0" title="Calculates the size of buttons used for grid cells based on window size and grid dimensions." alt="" coords="469,189,644,232"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="369,257,413,245,457,234,459,239,415,251,371,262"/>
+<area shape="rect" id="Node000012" href="$classui_1_1_grid_renderer.html#af5d11d1e0adadfcaf20f0f4c4f306d21" title="Detects drawing actions based on mouse movement." alt="" coords="477,256,636,299"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="406,272,461,273,461,278,405,278"/>
+<area shape="rect" id="Node000015" href="$classui_1_1_grid_renderer.html#a7f02172c5b5282c703619b535b7ec7ff" title="Maintains a visual line while interacting with the grid." alt="" coords="470,323,642,365"/>
+<area shape="poly" id="edge13_Node000010_Node000015" title=" " alt="" coords="372,285,415,296,476,315,475,320,413,301,371,290"/>
+<area shape="rect" id="Node000016" href="$classui_1_1_grid_renderer.html#aab058bbbb9ede252a4be953c0ec56ac2" title="Renders a single grid cell at the specified row and column." alt="" coords="477,389,636,432"/>
+<area shape="poly" id="edge14_Node000010_Node000016" title=" " alt="" coords="395,285,416,297,433,316,441,336,448,356,464,375,468,379,465,383,460,379,443,359,436,338,429,319,412,301,392,290"/>
+<area shape="rect" id="Node000013" href="$classui_1_1_grid_renderer.html#a737de3a0df414b8c6e363534632c1fac" title="Draws a line to the last hovered cell." alt="" coords="699,256,873,299"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="636,275,683,275,683,280,636,280"/>
+<area shape="rect" id="Node000017" href="$classui_1_1_grid_renderer.html#a4c2e7a058afd090b84afa168507b9844" title="Calculates the color of a cell based on the current color map and element properties." alt="" coords="698,356,874,399"/>
+<area shape="poly" id="edge15_Node000016_Node000017" title=" " alt="" coords="636,396,683,390,683,395,637,402"/>
+<area shape="rect" id="Node000026" href="$classui_1_1_grid_renderer.html#a7b744d7573f6c0a55a7ca3df3efdf986" title="Renders an individual grid cell." alt="" coords="706,423,866,465"/>
+<area shape="poly" id="edge16_Node000016_Node000026" title=" " alt="" coords="637,420,691,428,691,433,636,425"/>
+</map>

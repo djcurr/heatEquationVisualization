@@ -1,0 +1,9 @@
+<map id="getColorMapName" name="getColorMapName">
+<area shape="rect" id="Node000001" title="Converts a ColorMaps enum value to its corresponding name string." alt="" coords="571,13,700,40"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#a61fc6248cb483f489cb5d1587e95d459" title="Renders settings for selecting color maps used in visualization." alt="" coords="380,5,523,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="556,29,523,29,523,24,556,24"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="193,5,332,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,29,332,29,332,24,365,24"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#a3cad210f4749b5e8e902a82250948740" title="Render the controls to the associated GLFW window." alt="" coords="5,5,145,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,29,145,29,145,24,177,24"/>
+</map>

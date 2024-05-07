@@ -1,0 +1,9 @@
+<map id="models::Material::getSpecificHeat" name="models::Material::getSpecificHeat">
+<area shape="rect" id="Node000001" title="Gets the specific heat of the material." alt="" coords="574,13,791,40"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a93d96db7a0cb7c31d369ab2fdf6e70bb" title="Creates a mass matrix for a given element." alt="" coords="393,5,526,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,29,527,29,527,24,559,24"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a0e329203a4f26bcea915b05795336e6d" title="Assembles the global stiffness, mass, and load matrices." alt="" coords="178,5,345,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,29,346,29,346,24,377,24"/>
+<area shape="rect" id="Node000004" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="5,5,130,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,29,130,29,130,24,162,24"/>
+</map>

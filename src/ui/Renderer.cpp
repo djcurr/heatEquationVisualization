@@ -4,30 +4,50 @@
 
 #include "Renderer.h"
 
-#include <mutex>
+#include <glfw3.h>
+#include <imgui_impl_opengl3.h>
+
+#if defined(_WIN32)
+#include <Windows.h>
+#endif
 
 #include "GridRenderer.h"
 #include "ControlsRenderer.h"
 #include "../events/Broker.h"
+#include "Roboto-Regular.h"
 
 namespace ui {
+    void Renderer::setupFont(ImGuiIO &io) {
+        io.Fonts->Clear();
+
+        const float fontSize = config::Config::config.fontSize;
+        const float scaleFactor = getScaleFactor();
+        ImFont *font = io.Fonts->AddFontFromMemoryTTF(assets_Roboto_Regular_ttf, sizeof(assets_Roboto_Regular_ttf),
+                                                      fontSize * scaleFactor);
+        if (font == nullptr) {
+            throw std::exception("Font not available");
+        }
+
+        io.Fonts->Build();
+        io.FontDefault = font;
+    }
+
     Renderer::Renderer(GLFWwindow *window) : window(window) {
         simulationController = std::make_shared<SimulationController>();
-        renderComponents.push_back(std::make_shared<GridRenderer>(window));
-        renderComponents.push_back(std::make_shared<ControlsRenderer>(window));
+        std::shared_ptr<IRenderComponent> gridRenderer = std::make_shared<GridRenderer>(window);
+        std::shared_ptr<IRenderComponent> controlsRenderer = std::make_shared<ControlsRenderer>(window);
+        renderComponents.push_back(gridRenderer);
+        renderComponents.push_back(controlsRenderer);
 
-        // Subscribe the controller and renderers to the event broker
-        for (auto &component: renderComponents) {
-            broker.subscribe(std::dynamic_pointer_cast<events::ISubscriber>(component).get());
-        }
-        broker.subscribe(simulationController.get());
+        broker.subscribe(gridRendererEvents, std::dynamic_pointer_cast<events::ISubscriber>(gridRenderer).get());
+        broker.subscribe(controlsRendererEvents, std::dynamic_pointer_cast<events::ISubscriber>(controlsRenderer).get());
+        broker.subscribe(simulationControllerEvents, std::dynamic_pointer_cast<events::ISubscriber>(simulationController).get());
 
         IMGUI_CHECKVERSION();
         ImGui::CreateContext();
         ImGuiIO &io = ImGui::GetIO();
         (void) io;
-        float fontSize = config::Config::config.fontSize;
-        io.Fonts->AddFontDefault()->Scale = fontSize / 13.0f;
+        setupFont(io);
         ImGui_ImplGlfw_InitForOpenGL(window, true);
         ImGui_ImplOpenGL3_Init("#version 460");
     }
@@ -48,13 +68,13 @@ namespace ui {
         ImGui::NewFrame();
     }
 
-    void Renderer::finalizeRender() {
+    void Renderer::finalizeRender() const {
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         glfwSwapBuffers(window);
     }
 
-    void Renderer::render() {
+    void Renderer::render() const {
         initializeImGui();
 
         for (auto &component: renderComponents) {
@@ -62,5 +82,17 @@ namespace ui {
         }
 
         finalizeRender();
+    }
+
+    double Renderer::getScaleFactor() {
+#if defined(_WIN32)
+        HWND hwnd = GetActiveWindow(); // Get a window handle somehow
+        UINT dpi = GetDpiForWindow(hwnd);
+        return dpi / 96.0; // Default DPI is 96
+#elif defined(__APPLE__)
+        return 1.0;
+#else
+        return 1.0;
+#endif
     }
 } // ui

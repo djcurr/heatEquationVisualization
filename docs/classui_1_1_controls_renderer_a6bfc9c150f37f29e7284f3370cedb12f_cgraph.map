@@ -1,0 +1,13 @@
+<map id="ui::ControlsRenderer::renderGridSizeSelector" name="ui::ControlsRenderer::renderGridSizeSelector">
+<area shape="rect" id="Node000001" title="Renders selectors for adjusting the grid dimensions." alt="" coords="5,85,169,128"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="217,31,356,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,82,201,73,202,78,168,87"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="591,72,745,99"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="169,101,576,86,576,91,169,106"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="250,31,249,21,255,12,267,6,286,4,307,6,319,13,316,17,305,12,286,9,269,11,258,16,254,22,256,30"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="404,5,543,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,49,388,44,389,50,357,54"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="357,55,576,75,576,80,356,61"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="404,30,372,34,371,29,403,25"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="544,45,608,65,606,70,543,50"/>
+</map>

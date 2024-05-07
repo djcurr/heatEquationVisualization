@@ -1,0 +1,22 @@
+<map id="src/ui/UIManager.cpp" name="src/ui/UIManager.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="186,5,331,32"/>
+<area shape="rect" id="Node000002" href="$_u_i_manager_8h.html" title=" " alt="" coords="211,80,306,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,33,261,64,256,64,256,33"/>
+<area shape="rect" id="Node000003" href="$_renderer_8h.html" title=" " alt="" coords="216,155,301,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,107,261,139,256,139,256,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,304,61,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,177,112,197,65,212,48,221,36,231,30,244,26,259,28,289,23,289,21,258,24,242,32,228,45,217,63,208,111,192,215,172"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="98,304,166,331"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="255,183,237,218,210,258,166,297,162,293,206,254,233,215,251,180"/>
+<area shape="rect" id="Node000006" href="$_i_render_component_8h.html" title=" " alt="" coords="321,229,463,256"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="283,180,357,219,354,224,280,184"/>
+<area shape="rect" id="Node000007" href="$_simulation_controller_8h.html" title=" " alt="" coords="47,229,195,256"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="236,184,160,224,157,219,233,180"/>
+<area shape="rect" id="Node000031" href="$_broker_8h.html" title=" " alt="" coords="211,304,335,331"/>
+<area shape="poly" id="edge11_Node000003_Node000031" title=" " alt="" coords="262,182,273,288,268,289,257,182"/>
+<area shape="rect" id="Node000043" href="$_window_manager_8h.html" title=" " alt="" coords="488,229,616,256"/>
+<area shape="poly" id="edge10_Node000003_Node000043" title=" " alt="" coords="302,177,486,223,485,228,300,182"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="107,259,62,296,58,292,104,254"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="125,256,130,288,125,289,120,257"/>
+<area shape="poly" id="edge9_Node000007_Node000031" title=" " alt="" coords="149,254,234,294,231,299,146,259"/>
+</map>

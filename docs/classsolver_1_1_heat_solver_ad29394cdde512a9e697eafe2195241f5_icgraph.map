@@ -1,0 +1,9 @@
+<map id="solver::HeatSolver::computeInitialTemperatures" name="solver::HeatSolver::computeInitialTemperatures">
+<area shape="rect" id="Node000001" title="Computes the initial temperature distribution based on element properties." alt="" coords="544,5,733,48"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="372,5,496,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="529,29,497,29,497,24,529,24"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="191,5,324,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,29,324,29,324,24,356,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#a67d915c625d3c999decdb32cfe6028a2" title="Main function that runs the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

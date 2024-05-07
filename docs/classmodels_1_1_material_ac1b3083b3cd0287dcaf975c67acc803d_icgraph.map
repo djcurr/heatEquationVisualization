@@ -1,0 +1,9 @@
+<map id="models::Material::getColor" name="models::Material::getColor">
+<area shape="rect" id="Node000001" title="Gets the color of the material." alt="" coords="667,13,841,40"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a4c2e7a058afd090b84afa168507b9844" title="Calculates the color of a cell based on the current color map and element properties." alt="" coords="444,5,619,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="652,29,620,29,620,24,652,24"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html#aab058bbbb9ede252a4be953c0ec56ac2" title="Renders a single grid cell at the specified row and column." alt="" coords="237,5,396,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,29,397,29,397,24,429,24"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html#af9b1eb2c40902163118bdc02efeba1ce" title="Renders the grid cells." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

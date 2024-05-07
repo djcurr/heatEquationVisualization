@@ -1,0 +1,7 @@
+<map id="solver::HeatSolver::setMaterial" name="solver::HeatSolver::setMaterial">
+<area shape="rect" id="Node000001" title="Sets the material of a specified element in the grid using a material name." alt="" coords="5,35,130,77"/>
+<area shape="rect" id="Node000002" href="$classmanager_1_1_material_manager.html#ab3c9e2923de682561b8d5b54f554e365" title="Retrieves a material by its name." alt="" coords="178,5,353,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,44,162,39,163,45,130,49"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_grid.html#a7be57ebe0f405f803fb99723235ae78c" title="Set the material of an element in the grid." alt="" coords="182,72,349,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,63,167,68,166,73,130,68"/>
+</map>

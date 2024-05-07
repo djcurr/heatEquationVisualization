@@ -1,0 +1,13 @@
+<map id="ui::ControlsRenderer::publishIfChanged" name="ui::ControlsRenderer::publishIfChanged">
+<area shape="rect" id="Node000001" title="Publishes an event if a value has changed." alt="" coords="5,85,145,128"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,31,332,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,84,177,74,178,79,146,89"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,72,721,99"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="145,101,552,86,552,91,145,107"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="226,31,225,21,231,12,243,6,262,4,283,6,295,13,292,17,281,12,262,9,245,11,234,16,230,22,232,30"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,5,519,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,49,364,44,365,50,333,54"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="333,55,552,75,552,80,332,61"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="380,30,348,34,347,29,379,25"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="520,45,584,65,582,70,519,50"/>
+</map>

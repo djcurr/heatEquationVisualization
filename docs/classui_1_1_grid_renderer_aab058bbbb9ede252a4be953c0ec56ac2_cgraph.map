@@ -1,0 +1,23 @@
+<map id="ui::GridRenderer::renderGridCellAtPosition" name="ui::GridRenderer::renderGridCellAtPosition">
+<area shape="rect" id="Node000001" title="Renders a single grid cell at the specified row and column." alt="" coords="5,207,165,249"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a4c2e7a058afd090b84afa168507b9844" title="Calculates the color of a cell based on the current color map and element properties." alt="" coords="213,173,388,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,213,197,208,197,213,165,218"/>
+<area shape="rect" id="Node000011" href="$classui_1_1_grid_renderer.html#a7b744d7573f6c0a55a7ca3df3efdf986" title="Renders an individual grid cell." alt="" coords="221,240,380,283"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="165,238,205,244,205,249,165,243"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_material.html#ac1b3083b3cd0287dcaf975c67acc803d" title="Gets the color of the material." alt="" coords="445,5,618,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,172,361,107,395,72,435,42,445,36,447,41,437,46,399,76,365,111,317,175"/>
+<area shape="rect" id="Node000004" href="$class_color_map.html#a21e9d463b08ae4b40152b24877c6ed8a" title="Retrieves the color corresponding to a given value." alt="" coords="466,56,598,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="323,171,373,131,435,92,450,86,453,91,437,97,376,135,327,175"/>
+<area shape="rect" id="Node000005" href="$classui_1_1_grid_renderer.html#a20462c03f2cb24ae712a080f5532583a" title="Retrieves the current temperature of an element in Kelvin." alt="" coords="440,107,623,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="376,170,440,152,441,157,377,175"/>
+<area shape="rect" id="Node000007" href="$classmodels_1_1_element.html#a11d00b11d239a67106b706c9ea482f3b" title="Gets the external heat source affecting this element." alt="" coords="446,173,618,216"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="388,192,430,192,430,197,388,197"/>
+<area shape="rect" id="Node000008" href="$classmodels_1_1_element.html#af41f46164aa753eb9aaa2e5d4f0cc840" title="Gets the initial heat of this element in Kelvin." alt="" coords="444,240,619,283"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="377,214,441,233,440,238,376,219"/>
+<area shape="rect" id="Node000009" href="$classmodels_1_1_element.html#abf3329c8f9d1a8b83b629b82ba6e180d" title="Gets the material associated with this element." alt="" coords="436,307,627,333"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="371,214,390,226,406,243,414,261,422,277,438,293,446,297,443,302,434,297,418,280,409,263,401,246,386,230,368,219"/>
+<area shape="rect" id="Node000010" href="$classui_1_1_grid_renderer.html#abeaab3a4331e68d7be585b6db009bafb" title="Normalizes a value within a specified range." alt="" coords="442,357,621,384"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="375,214,390,226,402,241,409,257,414,287,419,316,426,330,438,343,442,347,439,351,434,347,421,333,414,318,409,288,404,258,398,244,386,230,371,219"/>
+<area shape="rect" id="Node000006" href="$classmodels_1_1_element.html#a49fc438ec4eafaa6a8aa7664643143ad" title="Gets the nodes that make up this element." alt="" coords="675,115,858,141"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="623,125,660,125,660,131,623,131"/>
+</map>

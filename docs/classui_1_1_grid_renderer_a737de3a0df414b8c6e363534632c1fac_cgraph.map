@@ -1,0 +1,5 @@
+<map id="ui::GridRenderer::drawLineToLastHoveredCell" name="ui::GridRenderer::drawLineToLastHoveredCell">
+<area shape="rect" id="Node000001" title="Draws a line to the last hovered cell." alt="" coords="5,5,180,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a966a5849384b14b897712751787fa696" title="Implements Bresenham&#39;s line algorithm for drawing lines." alt="" coords="228,5,417,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,24,212,24,212,29,180,29"/>
+</map>

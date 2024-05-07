@@ -1,0 +1,24 @@
+<map id="models::Element::getMaterial" name="models::Element::getMaterial">
+<area shape="rect" id="Node000001" title="Gets the material associated with this element." alt="" coords="675,113,867,140"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a4c2e7a058afd090b84afa168507b9844" title="Calculates the color of a cell based on the current color map and element properties." alt="" coords="452,5,627,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="727,109,626,62,598,51,600,46,628,58,729,104"/>
+<area shape="rect" id="Node000006" href="$classsolver_1_1_heat_solver.html#a93d96db7a0cb7c31d369ab2fdf6e70bb" title="Creates a mass matrix for a given element." alt="" coords="473,72,606,115"/>
+<area shape="poly" id="edge4_Node000001_Node000006" title=" " alt="" coords="659,113,606,106,607,100,660,108"/>
+<area shape="rect" id="Node000013" href="$classsolver_1_1_heat_solver.html#a1e87d612863ef21ff1595a66fd28b5aa" title="Creates a stiffness matrix for a given element." alt="" coords="464,139,615,181"/>
+<area shape="poly" id="edge7_Node000001_Node000013" title=" " alt="" coords="660,145,616,152,615,146,659,140"/>
+<area shape="rect" id="Node000014" href="$classmodels_1_1_grid.html#af2ba23b8dceffd91cff9f9d007ecc949" title="Resize the grid to specified dimensions." alt="" coords="459,205,621,232"/>
+<area shape="poly" id="edge9_Node000001_Node000014" title=" " alt="" coords="731,150,628,196,594,207,592,202,626,191,729,145"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html#aab058bbbb9ede252a4be953c0ec56ac2" title="Renders a single grid cell at the specified row and column." alt="" coords="241,5,400,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,29,401,29,401,24,436,24"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html#af9b1eb2c40902163118bdc02efeba1ce" title="Renders the grid cells." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,29,189,29,189,24,226,24"/>
+<area shape="rect" id="Node000007" href="$classsolver_1_1_heat_solver.html#a0e329203a4f26bcea915b05795336e6d" title="Assembles the global stiffness, mass, and load matrices." alt="" coords="237,101,404,144"/>
+<area shape="poly" id="edge5_Node000006_Node000007" title=" " alt="" coords="458,107,405,114,404,109,457,102"/>
+<area shape="rect" id="Node000008" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="35,101,159,144"/>
+<area shape="poly" id="edge6_Node000007_Node000008" title=" " alt="" coords="221,125,160,125,160,120,221,120"/>
+<area shape="poly" id="edge8_Node000013_Node000007" title=" " alt="" coords="448,147,404,140,405,134,449,142"/>
+<area shape="rect" id="Node000015" href="$classsolver_1_1_heat_solver.html#ab4b2c031b45752444539d89f746ecdbb" title="Updates the size of the simulation grid." alt="" coords="258,197,383,240"/>
+<area shape="poly" id="edge10_Node000014_Node000015" title=" " alt="" coords="443,221,383,221,383,216,443,216"/>
+<area shape="rect" id="Node000016" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="28,197,166,240"/>
+<area shape="poly" id="edge11_Node000015_Node000016" title=" " alt="" coords="242,221,166,221,166,216,242,216"/>
+</map>

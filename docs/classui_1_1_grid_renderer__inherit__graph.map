@@ -1,0 +1,7 @@
+<map id="ui::GridRenderer" name="ui::GridRenderer">
+<area shape="rect" id="Node000001" title="Renders the simulation grid and handles interactive elements within the grid." alt="" coords="70,144,250,747"/>
+<area shape="rect" id="Node000002" href="$class_i_render_component.html" title="Interface for components that provide rendering functionality." alt="" coords="5,5,155,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,110,101,144,96,145,89,111"/>
+<area shape="rect" id="Node000003" href="$classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="179,5,301,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,111,224,145,219,144,225,110"/>
+</map>

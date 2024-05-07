@@ -1,0 +1,17 @@
+<map id="ui::ControlsRenderer::renderMaterialSelector" name="ui::ControlsRenderer::renderMaterialSelector">
+<area shape="rect" id="Node000001" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="5,117,165,160"/>
+<area shape="rect" id="Node000002" href="$classmanager_1_1_material_manager.html#aaff06224e82438ec99bdbecfa0d888d3" title="Gets all material names stored in the manager." alt="" coords="213,5,388,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,115,160,86,211,58,223,52,225,57,214,62,163,91,119,119"/>
+<area shape="rect" id="Node000003" href="$classmanager_1_1_material_manager.html#a20ce21fd0e624bfe861682d011fb49d2" title="Singleton access to MaterialManager instance." alt="" coords="213,72,388,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,119,197,112,198,118,165,125"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="231,163,370,205"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,153,216,164,215,169,164,158"/>
+<area shape="rect" id="Node000006" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="623,204,777,231"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="113,158,158,190,185,204,213,215,264,227,317,235,423,241,523,238,608,229,608,235,523,243,423,246,317,240,263,232,212,220,183,209,155,194,110,163"/>
+<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="261,163,260,153,266,144,280,138,300,136,322,138,336,145,333,149,321,144,300,141,281,143,269,148,265,154,266,162"/>
+<area shape="rect" id="Node000005" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="436,137,575,180"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="370,181,420,175,421,181,371,187"/>
+<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="371,187,608,207,607,212,370,192"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="436,161,386,167,385,162,435,156"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="576,177,640,197,638,202,575,182"/>
+</map>

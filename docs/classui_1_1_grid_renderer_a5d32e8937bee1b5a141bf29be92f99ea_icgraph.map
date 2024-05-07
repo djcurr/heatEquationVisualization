@@ -1,0 +1,7 @@
+<map id="ui::GridRenderer::batchApplyElementParameters" name="ui::GridRenderer::batchApplyElementParameters">
+<area shape="rect" id="Node000001" title="Applies parameters to elements based on current brush and settings." alt="" coords="424,5,612,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a32a1106ed4ff76a158ee5b7fd22d36a3" title="Finalizes rendering operations." alt="" coords="213,5,376,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,29,376,29,376,24,408,24"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html#a791d3be47df11aa6287568fbe4461550" title="Renders the grid and handles user interactions." alt="" coords="5,13,165,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,29,165,29,165,24,197,24"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="src/ui/StyleManager.h" name="src/ui/StyleManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="48,5,197,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,69,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,35,65,72,61,68,106,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,80,152,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,33,125,64,120,64,120,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="176,80,231,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,31,180,68,177,72,135,35"/>
+</map>

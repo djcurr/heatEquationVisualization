@@ -1,0 +1,19 @@
+<map id="solver::HeatSolver::getElements" name="solver::HeatSolver::getElements">
+<area shape="rect" id="Node000001" title="Retrieves the grid elements." alt="" coords="408,139,532,181"/>
+<area shape="rect" id="Node000002" href="$class_simulation_controller.html#a52a606d1f5a15238ad34f8be2d33dc48" title="Applies initial temperatures to specified points on the grid." alt="" coords="191,5,360,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,129,401,95,359,62,338,51,340,46,361,58,405,91,441,125"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#ae2e6048427a04523c0735e66ae475cd6" title="Applies material properties to specified points on the grid." alt="" coords="207,72,344,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="392,136,339,118,341,113,394,131"/>
+<area shape="rect" id="Node000005" href="$class_simulation_controller.html#a3394d95474dadef4f2c7b6fe83782b57" title="Applies source intensities to specified points on the grid." alt="" coords="207,139,344,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="393,163,344,163,344,157,393,157"/>
+<area shape="rect" id="Node000006" href="$class_simulation_controller.html#a3d3c8ad17b48aa7a8155d2c822269a29" title="Resets the grid to its initial state." alt="" coords="207,205,344,248"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="394,189,341,207,339,202,392,184"/>
+<area shape="rect" id="Node000007" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="207,272,344,315"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="441,195,405,229,361,262,340,274,338,269,359,258,401,225,437,191"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,139,143,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="200,58,192,62,140,101,98,140,94,136,136,97,189,58,198,53"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="196,122,142,141,140,135,194,117"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="191,163,143,163,143,157,191,157"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="194,203,140,185,142,179,196,198"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="198,267,189,262,136,223,94,184,98,180,140,219,192,258,200,262"/>
+</map>

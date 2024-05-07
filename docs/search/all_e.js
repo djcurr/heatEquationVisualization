@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['particle_0',['Particle',['../classmodels_1_1_particle.html',1,'models::Particle'],['../classmodels_1_1_particle.html#a6abfe0749785b6ced2fd6d3bbc88072d',1,'models::Particle::Particle()']]],
+  ['particle_2ecpp_1',['Particle.cpp',['../_particle_8cpp.html',1,'']]],
+  ['particle_2eh_2',['Particle.h',['../_particle_8h.html',1,'']]],
+  ['performsimulation_3',['performSimulation',['../classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a',1,'solver::HeatSolver']]],
+  ['plasma_4',['PLASMA',['../_color_map_8h.html#ace3c23cedb6100f65f7e7444de1f851da1e681943ea699639eb4b334489b28853',1,'ColorMap.h']]],
+  ['plasmacolormap_5',['PlasmaColorMap',['../class_plasma_color_map.html',1,'PlasmaColorMap'],['../class_plasma_color_map.html#a2f9255383a0db05532f9807a40be4574',1,'PlasmaColorMap::PlasmaColorMap()']]],
+  ['point_6',['Point',['../classmodels_1_1_point.html',1,'models']]],
+  ['point_2eh_7',['Point.h',['../_point_8h.html',1,'']]],
+  ['points_8',['Points',['../_event_types_8h.html#ac126e25ef487d883fe951adc47f8c13ba75dd5f1160a3f02b6fae89c54361a1b3',1,'EventTypes.h']]],
+  ['precomputecolors_9',['precomputeColors',['../class_viridis_color_map.html#abb7c788328757efa0f20e5d044a719dc',1,'ViridisColorMap::precomputeColors()'],['../class_plasma_color_map.html#a7d6f2e3db68a4492e0ee8b9a7750548e',1,'PlasmaColorMap::precomputeColors()']]],
+  ['precomputedcolors_10',['precomputedColors',['../class_viridis_color_map.html#a13f2231e57215d9627b31a600298b65e',1,'ViridisColorMap::precomputedColors'],['../class_plasma_color_map.html#ac2d3704e4adfcbdc29061c47c807bc14',1,'PlasmaColorMap::precomputedColors']]],
+  ['pressure_11',['pressure',['../classmodels_1_1_particle.html#a08f8b2bdd5e67ae4a295e36577038f2e',1,'models::Particle']]],
+  ['processevents_12',['processEvents',['../classevents_1_1_broker.html#a01ec47468c4a444d2d960e5a1bc00d21',1,'events::Broker']]],
+  ['processinput_13',['processInput',['../classui_1_1_window_manager.html#a31aba5eb307fd21c34229f02bebf7f99',1,'ui::WindowManager']]],
+  ['processupdates_14',['processUpdates',['../classui_1_1_grid_renderer.html#a8e0f8fe3943f9131a1a7fe94fa75282b',1,'ui::GridRenderer']]],
+  ['publish_15',['publish',['../classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca',1,'events::Broker']]],
+  ['publishifchanged_16',['publishIfChanged',['../classui_1_1_controls_renderer.html#aada38792efbc5bd1ed04dfb2844315df',1,'ui::ControlsRenderer']]]
+];

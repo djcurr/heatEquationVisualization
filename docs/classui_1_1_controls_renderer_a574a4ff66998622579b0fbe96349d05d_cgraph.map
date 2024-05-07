@@ -1,0 +1,12 @@
+<map id="ui::ControlsRenderer::renderProgressBar" name="ui::ControlsRenderer::renderProgressBar">
+<area shape="rect" id="Node000001" title="Renders a progress bar showing the completion status of the simulation." alt="" coords="5,29,145,72"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,29,332,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,48,177,48,177,53,145,53"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="226,29,225,19,231,10,243,5,262,3,283,5,295,11,292,16,281,10,262,8,245,10,234,15,230,21,232,28"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,29,519,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,57,365,57,364,62,332,62"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,67,721,93"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="329,70,380,81,468,88,552,86,552,91,468,93,380,87,328,75"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="379,45,347,44,347,39,380,39"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="520,59,552,63,551,69,519,64"/>
+</map>

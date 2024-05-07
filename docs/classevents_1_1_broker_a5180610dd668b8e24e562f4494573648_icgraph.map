@@ -1,0 +1,5 @@
+<map id="events::Broker::subscribe" name="events::Broker::subscribe">
+<area shape="rect" id="Node000001" title="Subscribe a subscriber to all events." alt="" coords="205,5,373,32"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_renderer.html#a7f7b7d296d528df10e7eba5a62916ce1" title="Constructs the Renderer with a specific window." alt="" coords="5,5,157,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,21,157,21,157,16,189,16"/>
+</map>

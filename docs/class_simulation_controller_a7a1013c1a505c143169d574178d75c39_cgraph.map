@@ -1,0 +1,67 @@
+<map id="SimulationController::onEvent" name="SimulationController::onEvent">
+<area shape="rect" id="Node000001" title="Handles incoming events that affect the simulation." alt="" coords="5,433,143,476"/>
+<area shape="rect" id="Node000002" href="$class_simulation_controller.html#a52a606d1f5a15238ad34f8be2d33dc48" title="Applies initial temperatures to specified points on the grid." alt="" coords="191,257,360,300"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,431,133,381,189,327,218,306,222,311,192,331,137,385,94,435"/>
+<area shape="rect" id="Node000005" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="651,475,804,501"/>
+<area shape="poly" id="edge18_Node000001_Node000005" title=" " alt="" coords="140,474,191,485,311,497,431,500,542,498,635,493,635,498,542,503,431,505,310,502,190,491,139,479"/>
+<area shape="rect" id="Node000008" href="$class_simulation_controller.html#ae2e6048427a04523c0735e66ae475cd6" title="Applies material properties to specified points on the grid." alt="" coords="207,140,344,183"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="83,432,124,347,154,294,189,244,236,192,240,195,193,247,159,297,129,349,87,434"/>
+<area shape="rect" id="Node000012" href="$class_simulation_controller.html#a3394d95474dadef4f2c7b6fe83782b57" title="Applies source intensities to specified points on the grid." alt="" coords="207,341,344,384"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="121,430,212,389,214,393,124,435"/>
+<area shape="rect" id="Node000015" href="$class_simulation_controller.html#a3d3c8ad17b48aa7a8155d2c822269a29" title="Resets the grid to its initial state." alt="" coords="207,551,344,593"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="107,474,192,530,213,541,210,546,189,534,104,479"/>
+<area shape="rect" id="Node000020" href="$class_simulation_controller.html#a884224ae701a70aba2001215039ff070" title="Starts the simulation on a new thread." alt="" coords="207,617,344,660"/>
+<area shape="poly" id="edge28_Node000001_Node000020" title=" " alt="" coords="89,475,130,538,159,573,192,603,198,607,195,611,189,607,155,576,126,541,85,478"/>
+<area shape="rect" id="Node000036" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="207,433,344,476"/>
+<area shape="poly" id="edge34_Node000001_Node000036" title=" " alt="" coords="143,452,191,452,191,457,143,457"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a7160e71ce20374391d1a4068a84df217" title="Retrieves the grid elements." alt="" coords="438,265,562,308"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,279,422,281,422,287,360,284"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="325,254,384,235,454,222,490,220,526,224,561,234,593,251,609,266,619,281,625,313,628,348,633,366,642,385,671,427,703,462,699,465,667,430,637,388,628,368,623,348,620,314,614,283,605,269,590,256,559,239,525,229,490,226,454,227,385,240,327,259"/>
+<area shape="rect" id="Node000006" href="$classsolver_1_1_heat_solver.html#a0722ffcfaf24dcb6463cc71ed41e590f" title="Sets the initial temperature of a specified element in the grid." alt="" coords="408,148,591,191"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="315,254,407,207,433,195,435,200,409,212,318,259"/>
+<area shape="rect" id="Node000004" href="$classmodels_1_1_grid.html#a4775621019aadbe85140a7726e4f1c50" title="Get the elements of the grid." alt="" coords="639,273,816,300"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="562,284,624,284,624,289,562,289"/>
+<area shape="rect" id="Node000007" href="$classmodels_1_1_grid.html#a926db54b06181a3ce34015de990dddae" title="Set the initial temperature of an element in the grid." alt="" coords="652,148,803,191"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="592,167,636,167,636,172,592,172"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="317,181,448,255,445,260,314,185"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="322,137,382,116,454,101,491,99,527,103,562,115,593,134,619,162,631,191,635,220,632,250,626,315,629,349,642,386,669,428,701,462,697,466,665,431,637,388,624,350,621,315,627,250,629,220,626,192,614,165,590,138,560,119,526,109,491,105,454,106,384,121,324,142"/>
+<area shape="rect" id="Node000009" href="$classsolver_1_1_heat_solver.html#a2560e3a172bd5903c4fea665d12e7cd7" title="Sets the material of a specified element in the grid using a material name." alt="" coords="438,31,562,73"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="315,137,407,90,433,77,435,82,409,94,318,142"/>
+<area shape="rect" id="Node000010" href="$classmanager_1_1_material_manager.html#ab3c9e2923de682561b8d5b54f554e365" title="Retrieves a material by its name." alt="" coords="640,56,815,99"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="562,56,625,63,624,69,562,62"/>
+<area shape="rect" id="Node000011" href="$classmodels_1_1_grid.html#a7be57ebe0f405f803fb99723235ae78c" title="Set the material of an element in the grid." alt="" coords="644,5,811,32"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="562,40,628,30,629,36,562,46"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="340,338,422,310,423,315,342,343"/>
+<area shape="poly" id="edge15_Node000012_Node000005" title=" " alt="" coords="345,379,662,467,661,473,344,384"/>
+<area shape="rect" id="Node000013" href="$classsolver_1_1_heat_solver.html#af80579453798b76b7de4a9a68c2ea0c5" title="Sets the heat source intensity of a specified element in the grid." alt="" coords="432,332,568,375"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="344,357,416,354,416,359,344,362"/>
+<area shape="rect" id="Node000014" href="$classmodels_1_1_grid.html#afc9d8983d48707cd804158b6ac274d07" title="Set the heat source of an element in the grid." alt="" coords="643,332,812,375"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="568,351,627,351,627,356,568,356"/>
+<area shape="poly" id="edge20_Node000015_Node000003" title=" " alt="" coords="303,548,332,521,358,487,369,463,374,441,376,400,381,360,390,339,406,318,422,305,426,309,410,322,395,342,386,362,382,400,379,442,374,465,362,489,336,524,307,552"/>
+<area shape="poly" id="edge21_Node000015_Node000005" title=" " alt="" coords="344,564,460,552,591,529,675,504,676,510,592,535,461,557,344,570"/>
+<area shape="rect" id="Node000016" href="$classsolver_1_1_heat_solver.html#afaca5550b1cb38b94d8359a1e35e1333" title="Resets the grid to its initial state." alt="" coords="438,719,562,761"/>
+<area shape="poly" id="edge22_Node000015_Node000016" title=" " alt="" coords="346,592,362,603,380,630,386,656,393,680,410,705,425,716,422,720,406,709,388,683,381,657,375,632,358,607,343,596"/>
+<area shape="rect" id="Node000017" href="$classmodels_1_1_grid.html#acd1c9b9b38fa1ceff5a1875ce7f3251d" title="Get the height of the grid." alt="" coords="864,755,1022,781"/>
+<area shape="poly" id="edge23_Node000016_Node000017" title=" " alt="" coords="562,742,640,748,848,760,848,766,639,753,562,748"/>
+<area shape="rect" id="Node000018" href="$classmodels_1_1_grid.html#ab2edb50fb391a6ba988ca1add179aec6" title="Get the width of the grid." alt="" coords="865,675,1021,701"/>
+<area shape="poly" id="edge24_Node000016_Node000018" title=" " alt="" coords="562,732,815,704,849,699,850,705,816,709,562,737"/>
+<area shape="rect" id="Node000019" href="$classsolver_1_1_heat_solver.html#a1de0891a1442431c0f6a67852cf21e54" title="Resets the solver&#39;s matrices to prepare for a new simulation or after a significant change." alt="" coords="665,652,790,695"/>
+<area shape="poly" id="edge25_Node000016_Node000019" title=" " alt="" coords="561,719,649,693,651,698,563,725"/>
+<area shape="poly" id="edge26_Node000019_Node000017" title=" " alt="" coords="779,693,897,745,895,750,777,698"/>
+<area shape="poly" id="edge27_Node000019_Node000018" title=" " alt="" coords="790,675,850,679,849,684,790,680"/>
+<area shape="poly" id="edge29_Node000020_Node000005" title=" " alt="" coords="344,627,461,604,526,586,590,564,646,537,693,508,696,513,648,542,592,569,528,591,462,609,345,632"/>
+<area shape="rect" id="Node000021" href="$class_simulation_controller.html#a67d915c625d3c999decdb32cfe6028a2" title="Main function that runs the simulation." alt="" coords="431,803,568,845"/>
+<area shape="poly" id="edge30_Node000020_Node000021" title=" " alt="" coords="297,659,345,713,410,771,442,792,439,797,406,775,341,717,293,662"/>
+<area shape="poly" id="edge33_Node000021_Node000005" title=" " alt="" coords="555,800,574,787,589,772,604,748,613,726,617,684,620,640,626,615,637,588,666,545,698,510,702,514,670,548,642,591,631,617,625,641,623,685,618,728,609,750,593,775,577,791,558,804"/>
+<area shape="rect" id="Node000022" href="$classsolver_1_1_heat_solver.html#aaec888bf8db1a58f93171f5bafa41c2b" title="Returns a reference to the singleton instance of HeatSolver." alt="" coords="665,820,790,863"/>
+<area shape="poly" id="edge31_Node000021_Node000022" title=" " alt="" coords="569,827,650,833,649,838,568,832"/>
+<area shape="rect" id="Node000023" href="$classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="661,887,794,929"/>
+<area shape="poly" id="edge32_Node000021_Node000023" title=" " alt="" coords="561,843,654,878,653,883,559,848"/>
+<area shape="poly" id="edge35_Node000036_Node000003" title=" " alt="" coords="313,431,358,394,372,374,380,355,389,337,406,318,422,307,425,312,410,322,393,340,385,358,377,377,362,398,316,435"/>
+<area shape="poly" id="edge36_Node000036_Node000005" title=" " alt="" coords="345,457,635,479,635,484,344,462"/>
+<area shape="rect" id="Node000037" href="$classsolver_1_1_heat_solver.html#ab4b2c031b45752444539d89f746ecdbb" title="Updates the size of the simulation grid." alt="" coords="438,652,562,695"/>
+<area shape="poly" id="edge37_Node000036_Node000037" title=" " alt="" coords="301,475,467,639,464,643,297,478"/>
+<area shape="poly" id="edge38_Node000037_Node000019" title=" " alt="" coords="562,671,650,671,650,676,562,676"/>
+<area shape="rect" id="Node000038" href="$classmodels_1_1_grid.html#af2ba23b8dceffd91cff9f9d007ecc949" title="Resize the grid to specified dimensions." alt="" coords="646,601,809,628"/>
+<area shape="poly" id="edge39_Node000037_Node000038" title=" " alt="" coords="561,655,657,630,659,635,563,660"/>
+</map>

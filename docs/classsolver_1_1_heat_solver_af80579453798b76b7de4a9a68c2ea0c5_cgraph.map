@@ -1,0 +1,5 @@
+<map id="solver::HeatSolver::setElementSource" name="solver::HeatSolver::setElementSource">
+<area shape="rect" id="Node000001" title="Sets the heat source intensity of a specified element in the grid." alt="" coords="5,5,142,48"/>
+<area shape="rect" id="Node000002" href="$classmodels_1_1_grid.html#afc9d8983d48707cd804158b6ac274d07" title="Set the heat source of an element in the grid." alt="" coords="190,5,359,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,24,174,24,174,29,142,29"/>
+</map>

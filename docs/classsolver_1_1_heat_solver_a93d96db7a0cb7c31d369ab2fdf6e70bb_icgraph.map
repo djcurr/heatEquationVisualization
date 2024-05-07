@@ -1,0 +1,9 @@
+<map id="solver::HeatSolver::createMassMatrix" name="solver::HeatSolver::createMassMatrix">
+<area shape="rect" id="Node000001" title="Creates a mass matrix for a given element." alt="" coords="574,5,708,48"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a0e329203a4f26bcea915b05795336e6d" title="Assembles the global stiffness, mass, and load matrices." alt="" coords="359,5,526,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,29,527,29,527,24,559,24"/>
+<area shape="rect" id="Node000003" href="$classsolver_1_1_heat_solver.html#a5d48502c18426964857e6d757ae2f919" title="Initializes the solver&#39;s system matrices and temperature vector." alt="" coords="187,5,311,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,29,311,29,311,24,344,24"/>
+<area shape="rect" id="Node000004" href="$classsolver_1_1_heat_solver.html#a687dc4c0125d85e1518d7df5b02f402a" title="Performs the heat simulation over a specified number of timesteps." alt="" coords="5,5,139,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="171,29,139,29,139,24,171,24"/>
+</map>

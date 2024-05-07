@@ -1,0 +1,5 @@
+<map id="events::Broker::Broker" name="events::Broker::Broker">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_broker.html#a01ec47468c4a444d2d960e5a1bc00d21" title="Processes events queued in eventQueue. Runs in a separate thread to handle event distribution to subs..." alt="" coords="204,5,401,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>

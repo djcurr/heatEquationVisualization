@@ -1,0 +1,5 @@
+<map id="PlasmaColorMap" name="PlasmaColorMap">
+<area shape="rect" id="Node000001" title="A specific implementation of ColorMap that uses the Plasma color scheme." alt="" coords="5,144,141,256"/>
+<area shape="rect" id="Node000002" href="$class_color_map.html" title="Abstract base class for color maps that convert a scalar value to a color." alt="" coords="26,5,121,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,111,76,144,71,144,71,111"/>
+</map>

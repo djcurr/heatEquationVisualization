@@ -30,10 +30,15 @@ namespace ui {
         ImGui::Begin("Controls", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
 
         renderControlsButtons();
+        ImGui::Dummy(ImVec2(0.0f, 20.0f));
         renderViewSelector();
+        ImGui::Dummy(ImVec2(0.0f, 20.0f));
         renderTimeStepInput();
+        ImGui::Dummy(ImVec2(0.0f, 20.0f));
         renderGridSizeSelector();
+        ImGui::Dummy(ImVec2(0.0f, 20.0f));
         renderBrushSizeSlider();
+        ImGui::Dummy(ImVec2(0.0f, 20.0f));
         renderColorSettings();
 
         ImGui::End();
@@ -43,6 +48,7 @@ namespace ui {
     void ControlsRenderer::renderControlsButtons() {
         handleButton<events::StartSimulationEvent>("Process", ImVec2(-1, 0), ViewMode::VIEW_VISUALIZATION,
                                                    ViewMode::VIEW_INITIAL_TEMPERATURE, events::StartSimulationEvent());
+        ImGui::Spacing();
         handleButton<events::ResetSimulationEvent>("Reset Simulation", ImVec2(-1, 0), ViewMode::VIEW_VISUALIZATION,
                                                    ViewMode::VIEW_INITIAL_TEMPERATURE, events::ResetSimulationEvent());
     }
@@ -213,6 +219,7 @@ namespace ui {
             case EventType::SimulationCompleted:
                 simulationComplete = true;
                 simulationRunning = false;
+                changeView(ViewMode::VIEW_VISUALIZATION);
                 break;
             case EventType::SimulationRunning:
                 simulationComplete = false;

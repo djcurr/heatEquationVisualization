@@ -1,0 +1,9 @@
+<map id="models::Grid::setElementSource" name="models::Grid::setElementSource">
+<area shape="rect" id="Node000001" title="Set the heat source of an element in the grid." alt="" coords="560,5,730,48"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#af80579453798b76b7de4a9a68c2ea0c5" title="Sets the heat source intensity of a specified element in the grid." alt="" coords="376,5,512,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="545,29,513,29,513,24,545,24"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html#a3394d95474dadef4f2c7b6fe83782b57" title="Applies source intensities to specified points on the grid." alt="" coords="191,5,328,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,29,328,29,328,24,360,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

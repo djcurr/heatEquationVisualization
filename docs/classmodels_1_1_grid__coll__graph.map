@@ -1,0 +1,11 @@
+<map id="models::Grid" name="models::Grid">
+<area shape="rect" id="Node000001" title="Represents a computational grid in the heat equation visualization." alt="" coords="74,784,226,1045"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="87,635,213,720"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,720,153,767,147,767,147,720"/>
+<area shape="rect" id="Node000003" href="$classmodels_1_1_element.html" title="Represents an element in the heat equation visualization, typically a part of a finite element mesh." alt="" coords="80,288,220,571"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,571,153,618,147,618,147,571"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,72,127,157"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="80,156,111,271,105,273,74,157"/>
+<area shape="rect" id="Node000006" href="$classmodels_1_1_material.html" title="Represents a material with physical properties and an associated color." alt="" coords="151,5,317,224"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="208,225,195,272,190,271,202,223"/>
+</map>

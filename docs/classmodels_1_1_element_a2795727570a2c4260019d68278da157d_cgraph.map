@@ -1,0 +1,7 @@
+<map id="models::Element::Element" name="models::Element::Element">
+<area shape="rect" id="Node000001" title="Constructs an Element with specified nodes and boundary condition." alt="" coords="5,47,181,73"/>
+<area shape="rect" id="Node000002" href="$classmanager_1_1_material_manager.html#ac4009de39031631570ae134c6a2a1f39" title="Retrieves the default material." alt="" coords="229,5,404,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,44,213,39,214,45,181,50"/>
+<area shape="rect" id="Node000003" href="$classmanager_1_1_material_manager.html#a20ce21fd0e624bfe861682d011fb49d2" title="Singleton access to MaterialManager instance." alt="" coords="229,72,404,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,70,214,75,213,81,181,76"/>
+</map>

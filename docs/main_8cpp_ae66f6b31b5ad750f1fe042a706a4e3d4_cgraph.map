@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,55,83"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_u_i_manager.html#afc33f6552b6401afbff928603cc8fb29" title="Renders the UI components." alt="" coords="120,5,266,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,58,102,41,126,34,127,39,103,47,56,63"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_u_i_manager.html#a48252d2b159e6e013f04176ab84d3c0f" title="Checks if the window should be closed." alt="" coords="103,56,283,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,67,87,67,87,72,55,72"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_u_i_manager.html#ac385821f34f4aba09b713df1a9a10ba6" title="Performs necessary updates to the UI components." alt="" coords="119,107,267,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,76,103,92,127,99,126,104,102,97,54,81"/>
+</map>

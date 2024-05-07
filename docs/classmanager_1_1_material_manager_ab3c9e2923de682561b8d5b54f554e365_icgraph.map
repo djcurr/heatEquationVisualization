@@ -1,0 +1,9 @@
+<map id="manager::MaterialManager::getMaterial" name="manager::MaterialManager::getMaterial">
+<area shape="rect" id="Node000001" title="Retrieves a material by its name." alt="" coords="548,5,724,48"/>
+<area shape="rect" id="Node000002" href="$classsolver_1_1_heat_solver.html#a2560e3a172bd5903c4fea665d12e7cd7" title="Sets the material of a specified element in the grid using a material name." alt="" coords="376,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="533,29,501,29,501,24,533,24"/>
+<area shape="rect" id="Node000003" href="$class_simulation_controller.html#ae2e6048427a04523c0735e66ae475cd6" title="Applies material properties to specified points on the grid." alt="" coords="191,5,328,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,29,328,29,328,24,361,24"/>
+<area shape="rect" id="Node000004" href="$class_simulation_controller.html#a7a1013c1a505c143169d574178d75c39" title="Handles incoming events that affect the simulation." alt="" coords="5,5,143,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,29,143,29,143,24,175,24"/>
+</map>

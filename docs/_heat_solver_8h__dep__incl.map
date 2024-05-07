@@ -1,0 +1,16 @@
+<map id="src/solver/HeatSolver.h" name="src/solver/HeatSolver.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,287,32"/>
+<area shape="rect" id="Node000002" href="$_heat_solver_8cpp.html" title=" " alt="" coords="5,80,173,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,43,112,82,109,77,175,38"/>
+<area shape="rect" id="Node000003" href="$_simulation_controller_8cpp.html" title=" " alt="" coords="111,155,310,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,48,213,154,208,154,208,48"/>
+<area shape="rect" id="Node000004" href="$_simulation_controller_8h.html" title=" " alt="" coords="248,80,432,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,38,318,77,316,82,245,42"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="305,117,234,156,232,152,303,112"/>
+<area shape="rect" id="Node000005" href="$_renderer_8h.html" title=" " alt="" coords="334,155,455,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="361,118,387,153,383,156,356,121"/>
+<area shape="rect" id="Node000006" href="$_renderer_8cpp.html" title=" " alt="" coords="249,229,383,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="371,194,331,231,327,227,368,190"/>
+<area shape="rect" id="Node000007" href="$_u_i_manager_8h.html" title=" " alt="" coords="407,229,537,256"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="421,190,460,227,457,231,417,194"/>
+</map>

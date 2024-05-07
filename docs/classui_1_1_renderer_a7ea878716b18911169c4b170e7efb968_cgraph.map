@@ -1,0 +1,5 @@
+<map id="ui::Renderer::setupFont" name="ui::Renderer::setupFont">
+<area shape="rect" id="Node000001" title="Loads the default font and applies DPI and size scaling." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_renderer.html#afec5787fc25950073aadcf3c67ea6659" title="Determines the scale factor to use based on DPI scaling (Windows only)" alt="" coords="211,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,195,16,195,21,163,21"/>
+</map>

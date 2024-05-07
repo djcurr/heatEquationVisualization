@@ -1,0 +1,5 @@
+<map id="solver::HeatSolver::computeInitialTemperatures" name="solver::HeatSolver::computeInitialTemperatures">
+<area shape="rect" id="Node000001" title="Computes the initial temperature distribution based on element properties." alt="" coords="5,5,194,48"/>
+<area shape="rect" id="Node000002" href="$classmodels_1_1_grid.html#a4775621019aadbe85140a7726e4f1c50" title="Get the elements of the grid." alt="" coords="242,13,418,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,24,226,24,226,29,194,29"/>
+</map>

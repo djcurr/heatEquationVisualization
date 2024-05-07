@@ -1,0 +1,15 @@
+<map id="models::Element::getInitialHeatKelvin" name="models::Element::getInitialHeatKelvin">
+<area shape="rect" id="Node000001" title="Gets the initial heat of this element in Kelvin." alt="" coords="667,39,843,81"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#a4c2e7a058afd090b84afa168507b9844" title="Calculates the color of a cell based on the current color map and element properties." alt="" coords="444,8,619,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="652,49,619,44,620,39,652,43"/>
+<area shape="rect" id="Node000006" href="$classmodels_1_1_grid.html#af2ba23b8dceffd91cff9f9d007ecc949" title="Resize the grid to specified dimensions." alt="" coords="451,76,613,103"/>
+<area shape="poly" id="edge4_Node000001_Node000006" title=" " alt="" coords="652,76,614,81,613,76,652,71"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html#aab058bbbb9ede252a4be953c0ec56ac2" title="Renders a single grid cell at the specified row and column." alt="" coords="237,5,396,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,31,397,30,397,25,429,25"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html#af9b1eb2c40902163118bdc02efeba1ce" title="Renders the grid cells." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+<area shape="rect" id="Node000007" href="$classsolver_1_1_heat_solver.html#ab4b2c031b45752444539d89f746ecdbb" title="Updates the size of the simulation grid." alt="" coords="254,72,379,115"/>
+<area shape="poly" id="edge5_Node000006_Node000007" title=" " alt="" coords="435,94,379,95,379,90,435,88"/>
+<area shape="rect" id="Node000008" href="$class_simulation_controller.html#aede2a684a948a3350cefb97ee696761b" title="Updates the size of the grid being simulated." alt="" coords="28,72,166,115"/>
+<area shape="poly" id="edge6_Node000007_Node000008" title=" " alt="" coords="239,96,166,96,166,91,239,91"/>
+</map>

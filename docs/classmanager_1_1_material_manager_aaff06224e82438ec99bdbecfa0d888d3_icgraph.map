@@ -1,0 +1,9 @@
+<map id="manager::MaterialManager::getAllMaterialNames" name="manager::MaterialManager::getAllMaterialNames">
+<area shape="rect" id="Node000001" title="Gets all material names stored in the manager." alt="" coords="589,5,765,48"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aff4d30a5ba44e41ad323cd5ee594864d" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="382,5,541,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,29,542,29,542,24,574,24"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a5d6cdd36b677a922de135c4c7360535b" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="193,5,334,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,29,334,29,334,24,367,24"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="5,5,145,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,29,145,29,145,24,177,24"/>
+</map>

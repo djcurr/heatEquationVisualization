@@ -1,0 +1,5 @@
+<map id="ui::GridRenderer::applyStyles" name="ui::GridRenderer::applyStyles">
+<area shape="rect" id="Node000001" title="Applies styling to the ImGui elements being rendered." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_style_manager.html#ab97b24ad59b7b74dd79579fe93ee119d" title="Applies a collection of color and variable styles to ImGui." alt="" coords="245,5,433,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,16,229,16,229,21,197,21"/>
+</map>

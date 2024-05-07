@@ -1,0 +1,7 @@
+<map id="ui::GridRenderer::setCurrentColorMap" name="ui::GridRenderer::setCurrentColorMap">
+<area shape="rect" id="Node000001" title="Sets the current color map based on the specified color map type." alt="" coords="253,23,436,65"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_grid_renderer.html#aeaa00ce3d45f28cb280c517da2bc4870" title="Constructs a GridRenderer with a specified window." alt="" coords="5,5,205,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,35,205,32,205,27,238,30"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_grid_renderer.html#afbc51217df638b580b3e2136c850d00a" title="Responds to events published by the event system." alt="" coords="20,56,190,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,58,191,63,190,58,237,53"/>
+</map>

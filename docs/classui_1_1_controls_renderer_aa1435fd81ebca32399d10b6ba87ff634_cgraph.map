@@ -1,0 +1,12 @@
+<map id="ui::ControlsRenderer::renderBrushSizeSlider" name="ui::ControlsRenderer::renderBrushSizeSlider">
+<area shape="rect" id="Node000001" title="Renders a slider for selecting the brush size used in interactive elements." alt="" coords="5,29,164,72"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="212,29,351,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,48,196,48,196,53,164,53"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="245,29,244,19,250,10,262,5,281,3,302,5,314,11,311,16,300,10,281,8,264,10,253,15,249,21,251,28"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="399,29,538,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,57,384,57,383,62,351,62"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="586,67,740,93"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="348,70,399,81,487,88,571,86,571,91,487,93,399,87,347,75"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="398,45,366,44,366,39,399,39"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="539,59,571,63,570,69,538,64"/>
+</map>

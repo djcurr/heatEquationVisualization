@@ -1,0 +1,7 @@
+<map id="events::BrushSizeChangeEvent" name="events::BrushSizeChangeEvent">
+<area shape="rect" id="Node000001" title="Event triggered when the brush size used in the UI is changed." alt="" coords="5,336,199,427"/>
+<area shape="rect" id="Node000002" href="$classevents_1_1_event.html" title="Abstract base class for all events in the application." alt="" coords="57,176,147,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,303,105,336,99,336,99,303"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="9,5,195,112"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,112,105,159,99,159,99,112"/>
+</map>
