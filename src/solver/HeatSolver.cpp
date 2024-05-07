@@ -54,7 +54,6 @@ namespace solver {
 
 
     std::vector<Eigen::VectorXd> HeatSolver::performSimulation(const int numTimesteps, const int timeStep) {
-        auto start = std::chrono::high_resolution_clock::now();
         threads::ThreadPool pool(std::thread::hardware_concurrency() - 2);
         std::vector<std::future<Eigen::VectorXd> > futures;
         std::vector<Eigen::VectorXd> results;
@@ -76,12 +75,6 @@ namespace solver {
         for (auto &future: futures) {
             results.emplace_back(future.get());
         }
-        auto stop = std::chrono::high_resolution_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
-
-        // Print the execution time
-        std::cout << "Execution time of solveTimeStep: " << duration.count() << " milliseconds" << std::endl;
-
         return results;
     }
 
