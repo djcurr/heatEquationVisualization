@@ -141,9 +141,9 @@ This design is highly multithreaded.
 
 In this application, there are two major components: the user interface and the solver. We use the
 Model-View-Controller (**MVC**) pattern to organize these components. Within this architecture, the `HeatSolver` serves
-as the **Model**, handling the logic and data. The renderers (`ControlsRenderer` and `GridRenderer`) represent the *
-*View**, which are responsible for presenting the output. Finally, the `SimulationController` represents the *
-*Controller**, passing data between the `HeatSolver` and the renderers.
+as the **Model**, handling the logic and data. The renderers (`ControlsRenderer` and `GridRenderer`) represent the **View**,
+which are responsible for presenting the output. Finally, the `SimulationController` represents the **Controller**, 
+passing data between the `HeatSolver` and the renderers.
 
 #### Pub/Sub
 
