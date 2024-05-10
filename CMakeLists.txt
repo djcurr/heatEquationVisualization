@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Debug specific flags
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /DEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /O2")
+#set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 set(Boost_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include/boost")
 set(Boost_NO_SYSTEM_PATHS ON)
@@ -86,4 +87,6 @@ target_include_directories(heatEquationVisualization PRIVATE ${Boost_INCLUDE_DIR
 if(OpenMP_CXX_FOUND)
     target_link_libraries(heatEquationVisualization PUBLIC OpenMP::OpenMP_CXX)
 endif()
+target_link_options(heatEquationVisualization PRIVATE "/NODEFAULTLIB:library")
 
+target_link_libraries(heatEquationVisualization PRIVATE ucrt.lib vcruntime.lib)
