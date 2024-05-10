@@ -14,9 +14,11 @@
 - [Overview](#overview)
     - [Functionality](#functionality)
     - [Technologies](#technologies)
+    - [Math](#math)
     - [Design](#design)
         - [MVC](#mvc)
         - [Pub/Sub](#pubsub)
+        - [Thread Pool](#thread-pool)
         - [Architecture/OOP](#architectureoop)
 
 ## How to Run
@@ -131,6 +133,40 @@ Technologies used in this project (all cross-platform):
     - [Doxygen](https://www.doxygen.nl/)
         - UML and docs HTML generation
 
+### Math
+
+The backbone of this project centers around solving the heat equation, a partial differential equation (**PDE**) that
+describes the distribution of heat in a region over time. The heat **PDE** is:
+
+`∂u/∂t = α∇²u + f`, Where:
+
+- `u` is the temperature distribution function,
+- `t` is time,
+- `α` (alpha) is the thermal diffusivity of the material,
+- `∇²` is the Laplacian operator, representing the diffusion term,
+- `f` is a source term representing internal heat sources.
+
+The Backward Euler method generates a time-dependent solution. The Backward Euler solution for the heat
+**PDE** is:
+
+`(M + Δt * K) * uᵏ⁺¹ = M * uᵏ + Δt * fᵏ⁺¹`, Where:
+
+- `M` is the mass matrix,
+- `Δt` is the time step,
+- `K` is the stiffness matrix (arising from the discretization of the Laplacian operator),
+- `uᵏ` is the vector of nodal temperatures at the current time step,
+- `uᵏ⁺¹` is the vector of nodal temperatures at the next time step,
+- `fᵏ⁺¹` is the source term at the next time step.
+
+This equation is essentially a linear algebraic equation that can be solved for `uᵏ⁺¹`, giving the temperature
+distribution at the next time step based on the known values at the current time step. The mass matrix `M` and the
+stiffness matrix `K` define how the material's physical properties (like thermal conductivity and density) affect the
+temperature distribution.
+
+The simulation utilizes the finite element method (**FEM**), discretizing the heat equation into a mesh of nodes.
+The global stiffness matrix, mass matrix, and load vector are generated from matrices and vectors computed for individual elements. The algebraic multigrid (**AMG**) method significantly improves solving time. Smoothed aggregation
+coarsening and the sparse approximate inverse relaxation scheme performed best.
+
 ### Design
 
 ![Task Manager](https://github.com/djcurr/heatEquationVisualization/blob/main/docs/taskmanager.png)
@@ -164,6 +200,14 @@ between this application's **View** and **Model**. **Pub/Sub** gives three main 
 **Pub/Sub** is an essential part of this program, allowing all the components to operate independently and concurrently.
 Furthermore, allowing communication on a separate thread, preventing a single operation from blocking the UI. Here are
 the [EventTypes](https://github.com/djcurr/heatEquationVisualization/blob/main/src/events/EventTypes.h) in use.
+
+#### Thread Pool
+
+A **Thread Pool** allows the system to execute simulator threads concurrently. The `ThreadPool` class provides a way to
+create a `ThreadPool` instance and enqueue new tasks, which are then executed by the workers. Rather than iteratively
+generating the solution, we can assign each thread a time step offset from the initial conditions and provide all
+threads with the same initial conditions. A **Thread Pool** is another crucial program design pattern, significantly
+increasing the speed and multi-threading ability.
 
 #### Architecture/OOP
 
