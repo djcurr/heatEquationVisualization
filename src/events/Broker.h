@@ -12,6 +12,7 @@
 #include <queue>
 #include <thread>
 #include <unordered_set>
+#include <condition_variable>
 
 /** @namespace events
  *  @brief Encapsulates classes related to the event management system.

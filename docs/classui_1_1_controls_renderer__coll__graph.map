@@ -1,15 +1,15 @@
 <map id="ui::ControlsRenderer" name="ui::ControlsRenderer">
-<area shape="rect" id="Node000001" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="687,875,875,1435"/>
+<area shape="rect" id="Node000001" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="687,875,875,1520"/>
 <area shape="rect" id="Node000002" href="$class_i_render_component.html" title="Interface for components that provide rendering functionality." alt="" coords="5,635,155,725"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,737,133,795,153,823,175,849,235,900,301,947,370,988,440,1025,575,1084,688,1124,687,1129,573,1089,437,1030,367,993,298,951,232,905,171,853,148,827,129,798,99,740"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,738,134,795,153,823,175,849,235,904,301,955,370,1001,440,1042,575,1111,689,1159,687,1164,573,1116,438,1047,367,1005,298,959,232,908,171,853,149,826,130,798,100,740"/>
 <area shape="rect" id="Node000003" href="$classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="257,5,380,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,104,228,125,211,148,199,174,195,202,195,681,198,727,209,769,226,810,248,848,276,883,307,916,379,975,459,1026,541,1067,620,1099,689,1124,687,1129,618,1104,539,1072,457,1030,376,980,303,920,272,887,244,851,221,812,204,771,193,728,189,681,189,201,194,172,206,145,224,121,244,100"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,104,228,125,211,148,199,174,195,202,195,681,198,729,209,773,226,816,248,856,276,894,307,930,379,994,459,1050,542,1096,620,1133,689,1162,687,1166,618,1138,539,1101,457,1054,376,998,303,933,271,897,244,859,221,818,204,775,193,729,189,681,189,201,194,172,206,145,224,121,244,100"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="262,160,375,245"/>
 <area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="321,96,321,143,316,143,316,96"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="422,269,578,355"/>
 <area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="370,94,391,118,438,187,475,253,470,255,433,189,387,122,366,97"/>
 <area shape="rect" id="Node000004" href="$classevents_1_1_broker.html" title="Manages event distribution among subscribers." alt="" coords="723,549,839,811"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="784,810,784,858,779,858,779,810"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="784,811,784,858,779,858,779,811"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="374,381,514,483"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="452,482,459,504,471,524,496,550,524,573,586,611,650,639,708,659,707,664,648,644,583,616,520,577,492,554,467,527,454,506,447,483"/>
 <area shape="poly" id="edge14_Node000004_Node000006" title=" " alt="" coords="292,246,264,298,240,360,234,393,233,425,239,455,254,484,298,534,351,575,411,607,474,631,538,649,600,662,707,674,706,679,599,667,537,654,472,636,408,612,348,579,294,538,249,487,234,457,228,425,229,392,235,359,259,296,288,244"/>
@@ -26,11 +26,11 @@
 <area shape="rect" id="Node000014" title=" " alt="" coords="1079,397,1204,467"/>
 <area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="1096,469,1068,488,854,633,851,628,1065,483,1092,464"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="1038,637,1191,723"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="1088,724,887,1008,883,1005,1083,721"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="1090,724,887,1038,883,1035,1086,721"/>
 <area shape="rect" id="Node000016" title=" " alt="" coords="1229,379,1358,485"/>
 <area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1258,486,1157,625,1153,622,1254,483"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="1304,629,1477,731"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1329,733,890,1072,887,1068,1326,728"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1335,732,890,1108,886,1104,1331,728"/>
 <area shape="rect" id="Node000018" title=" " alt="" coords="1383,379,1575,485"/>
 <area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="1463,486,1417,614,1412,613,1458,484"/>
 </map>

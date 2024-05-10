@@ -245,22 +245,22 @@ namespace ui {
         }
     }
 
-    bool inputHelper(const std::string &label, float *value) {
+    bool ControlsRenderer::inputHelper(const std::string &label, float *value) {
         return ImGui::InputFloat(label.c_str(), value);
     }
 
-    bool inputHelper(const std::string &label, int *value) {
+    bool ControlsRenderer::inputHelper(const std::string &label, int *value) {
         int temp = *value;
         bool input = ImGui::InputInt(label.c_str(), &temp);
         if (input && temp != 0) *value = temp;
         return input;
     }
 
-    bool inputHelper(const std::string &label, int *value, int min, int max) {
+    bool ControlsRenderer::inputHelper(const std::string &label, int *value, int min, int max) {
         return ImGui::SliderInt(label.c_str(), value, min, max);
     }
 
-    bool inputHelper(const std::string &label, float *value, float min, float max) {
+    bool ControlsRenderer::inputHelper(const std::string &label, float *value, float min, float max) {
         return ImGui::SliderFloat(label.c_str(), value, min, max);
     }
 } // ui

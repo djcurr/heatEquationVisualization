@@ -6,9 +6,27 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 set(CMAKE_CXX_STANDARD 17)
 # Debug specific flags
-set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /DEBUG")
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /O2")
-#set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+if(MSVC)
+    # Flags for Microsoft Visual C++
+    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /DEBUG")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /O2")
+    #set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+else()
+    # Flags for GCC/Clang
+    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O2")
+endif()
+
+if(WIN32)
+    # Link against the Windows library
+    set(GLFW_LIB_NAME glfw3.lib)
+elseif(UNIX AND NOT APPLE)
+    # Link against the Unix library (usually Linux)
+    set(GLFW_LIB_NAME glfw)
+elseif(APPLE)
+    # Link against the macOS library
+    set(GLFW_LIB_NAME glfw)
+endif()
 
 set(Boost_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include/boost")
 set(Boost_NO_SYSTEM_PATHS ON)
@@ -41,7 +59,7 @@ add_executable(heatEquationVisualization
         src/ui/SimulationController.h
         src/ui/UIManager.cpp
         src/ui/UIManager.h
-        src/config/config.h
+        src/config/Config.h
         src/ui/IRenderComponent.h
         src/ui/GridRenderer.cpp
         src/ui/GridRenderer.h
@@ -79,7 +97,9 @@ target_sources(heatEquationVisualization PRIVATE lib/glad/glad.c)
 
 # Link GLFW
 target_link_directories(heatEquationVisualization PUBLIC bin/GLFW)
-target_link_libraries(heatEquationVisualization PUBLIC glfw3.lib OpenGL::GL)
+
+# Link against the selected library
+target_link_libraries(heatEquationVisualization PUBLIC ${GLFW_LIB_NAME} OpenGL::GL)
 
 target_include_directories(heatEquationVisualization PRIVATE include/amgcl)
 target_include_directories(heatEquationVisualization PRIVATE ${Boost_INCLUDE_DIR})
@@ -87,6 +107,3 @@ target_include_directories(heatEquationVisualization PRIVATE ${Boost_INCLUDE_DIR
 if(OpenMP_CXX_FOUND)
     target_link_libraries(heatEquationVisualization PUBLIC OpenMP::OpenMP_CXX)
 endif()
-target_link_options(heatEquationVisualization PRIVATE "/NODEFAULTLIB:library")
-
-target_link_libraries(heatEquationVisualization PRIVATE ucrt.lib vcruntime.lib)

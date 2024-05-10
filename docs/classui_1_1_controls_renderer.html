@@ -79,6 +79,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classui_1_1_controls_renderer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ui::ControlsRenderer Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -94,11 +95,11 @@ Inheritance diagram for ui::ControlsRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classui_1_1_controls_renderer__inherit__graph.png" border="0" usemap="#aui_1_1_controls_renderer_inherit__map" alt="Inheritance graph"/></div>
 <map name="aui_1_1_controls_renderer_inherit__map" id="aui_1_1_controls_renderer_inherit__map">
-<area shape="rect" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="66,144,254,704"/>
+<area shape="rect" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="66,144,254,789"/>
 <area shape="rect" href="class_i_render_component.html" title="Interface for components that provide rendering functionality." alt="" coords="5,5,155,96"/>
-<area shape="poly" title=" " alt="" coords="95,110,102,144,97,145,90,111"/>
+<area shape="poly" title=" " alt="" coords="94,110,100,144,95,145,89,111"/>
 <area shape="rect" href="classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="179,5,301,96"/>
-<area shape="poly" title=" " alt="" coords="230,111,223,145,218,144,225,110"/>
+<area shape="poly" title=" " alt="" coords="231,111,225,145,220,144,226,110"/>
 </map>
 </div>
 <div class="dynheader">
@@ -106,17 +107,17 @@ Collaboration diagram for ui::ControlsRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classui_1_1_controls_renderer__coll__graph.png" border="0" usemap="#aui_1_1_controls_renderer_coll__map" alt="Collaboration graph"/></div>
 <map name="aui_1_1_controls_renderer_coll__map" id="aui_1_1_controls_renderer_coll__map">
-<area shape="rect" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="687,875,875,1435"/>
+<area shape="rect" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="687,875,875,1520"/>
 <area shape="rect" href="class_i_render_component.html" title="Interface for components that provide rendering functionality." alt="" coords="5,635,155,725"/>
-<area shape="poly" title=" " alt="" coords="104,737,133,795,153,823,175,849,235,900,301,947,370,988,440,1025,575,1084,688,1124,687,1129,573,1089,437,1030,367,993,298,951,232,905,171,853,148,827,129,798,99,740"/>
+<area shape="poly" title=" " alt="" coords="105,738,134,795,153,823,175,849,235,904,301,955,370,1001,440,1042,575,1111,689,1159,687,1164,573,1116,438,1047,367,1005,298,959,232,908,171,853,149,826,130,798,100,740"/>
 <area shape="rect" href="classevents_1_1_i_subscriber.html" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="257,5,380,96"/>
-<area shape="poly" title=" " alt="" coords="248,104,228,125,211,148,199,174,195,202,195,681,198,727,209,769,226,810,248,848,276,883,307,916,379,975,459,1026,541,1067,620,1099,689,1124,687,1129,618,1104,539,1072,457,1030,376,980,303,920,272,887,244,851,221,812,204,771,193,728,189,681,189,201,194,172,206,145,224,121,244,100"/>
+<area shape="poly" title=" " alt="" coords="248,104,228,125,211,148,199,174,195,202,195,681,198,729,209,773,226,816,248,856,276,894,307,930,379,994,459,1050,542,1096,620,1133,689,1162,687,1166,618,1138,539,1101,457,1054,376,998,303,933,271,897,244,859,221,818,204,775,193,729,189,681,189,201,194,172,206,145,224,121,244,100"/>
 <area shape="rect" title=" " alt="" coords="262,160,375,245"/>
 <area shape="poly" title=" " alt="" coords="321,96,321,143,316,143,316,96"/>
 <area shape="rect" title=" " alt="" coords="422,269,578,355"/>
 <area shape="poly" title=" " alt="" coords="370,94,391,118,438,187,475,253,470,255,433,189,387,122,366,97"/>
 <area shape="rect" href="classevents_1_1_broker.html" title="Manages event distribution among subscribers." alt="" coords="723,549,839,811"/>
-<area shape="poly" title=" " alt="" coords="784,810,784,858,779,858,779,810"/>
+<area shape="poly" title=" " alt="" coords="784,811,784,858,779,858,779,811"/>
 <area shape="rect" title=" " alt="" coords="374,381,514,483"/>
 <area shape="poly" title=" " alt="" coords="452,482,459,504,471,524,496,550,524,573,586,611,650,639,708,659,707,664,648,644,583,616,520,577,492,554,467,527,454,506,447,483"/>
 <area shape="poly" title=" " alt="" coords="292,246,264,298,240,360,234,393,233,425,239,455,254,484,298,534,351,575,411,607,474,631,538,649,600,662,707,674,706,679,599,667,537,654,472,636,408,612,348,579,294,538,249,487,234,457,228,425,229,392,235,359,259,296,288,244"/>
@@ -133,11 +134,11 @@ Collaboration diagram for ui::ControlsRenderer:</div>
 <area shape="rect" title=" " alt="" coords="1079,397,1204,467"/>
 <area shape="poly" title=" " alt="" coords="1096,469,1068,488,854,633,851,628,1065,483,1092,464"/>
 <area shape="rect" title=" " alt="" coords="1038,637,1191,723"/>
-<area shape="poly" title=" " alt="" coords="1088,724,887,1008,883,1005,1083,721"/>
+<area shape="poly" title=" " alt="" coords="1090,724,887,1038,883,1035,1086,721"/>
 <area shape="rect" title=" " alt="" coords="1229,379,1358,485"/>
 <area shape="poly" title=" " alt="" coords="1258,486,1157,625,1153,622,1254,483"/>
 <area shape="rect" title=" " alt="" coords="1304,629,1477,731"/>
-<area shape="poly" title=" " alt="" coords="1329,733,890,1072,887,1068,1326,728"/>
+<area shape="poly" title=" " alt="" coords="1335,732,890,1108,886,1104,1331,728"/>
 <area shape="rect" title=" " alt="" coords="1383,379,1575,485"/>
 <area shape="poly" title=" " alt="" coords="1463,486,1417,614,1412,613,1458,484"/>
 </map>
@@ -228,6 +229,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af94109004702cb1ab3e49cda71dd938b" id="r_af94109004702cb1ab3e49cda71dd938b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af94109004702cb1ab3e49cda71dd938b">onEvent</a> (<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::shared_ptr&lt; <a class="el" href="classevents_1_1_event.html">events::Event</a> &gt; &amp;<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">event</a>) <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">override</a></td></tr>
 <tr class="memdesc:af94109004702cb1ab3e49cda71dd938b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responds to events published by other components of the application.  <br /></td></tr>
 <tr class="separator:af94109004702cb1ab3e49cda71dd938b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:af95803c7ad339e5d68541734d07c84d3" id="r_af95803c7ad339e5d68541734d07c84d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">static</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af95803c7ad339e5d68541734d07c84d3">inputHelper</a> (<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">label</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a> *<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">value</a>)</td></tr>
+<tr class="separator:af95803c7ad339e5d68541734d07c84d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb4bb21a6c4ef4a365ed446725dfbc8" id="r_a5cb4bb21a6c4ef4a365ed446725dfbc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">static</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cb4bb21a6c4ef4a365ed446725dfbc8">inputHelper</a> (<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">label</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a> *<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">value</a>)</td></tr>
+<tr class="separator:a5cb4bb21a6c4ef4a365ed446725dfbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c345ce8dbd9ee856ca228411a8fc8e" id="r_a29c345ce8dbd9ee856ca228411a8fc8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">static</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c345ce8dbd9ee856ca228411a8fc8e">inputHelper</a> (<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">label</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a> *<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">value</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">min</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">max</a>)</td></tr>
+<tr class="separator:a29c345ce8dbd9ee856ca228411a8fc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34cd062ce99a28182396fe3eb7dafda2" id="r_a34cd062ce99a28182396fe3eb7dafda2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">static</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34cd062ce99a28182396fe3eb7dafda2">inputHelper</a> (<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">label</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a> *<a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">value</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">min</a>, <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a> <a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">max</a>)</td></tr>
+<tr class="separator:a34cd062ce99a28182396fe3eb7dafda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -374,56 +386,66 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classui_1_1_controls_renderer_a2db317ce74c146a9e6d60fb8c48102f0_icgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_a2db317ce74c146a9e6d60fb8c48102f0_icgraph" alt=""/></div>
 <map name="aclassui_1_1_controls_renderer_a2db317ce74c146a9e6d60fb8c48102f0_icgraph" id="aclassui_1_1_controls_renderer_a2db317ce74c146a9e6d60fb8c48102f0_icgraph">
-<area shape="rect" title="Changes the current view mode based on user interaction." alt="" coords="825,448,964,491"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="637,448,777,491"/>
-<area shape="poly" title=" " alt="" coords="809,481,777,481,777,475,809,476"/>
+<area shape="rect" title="Changes the current view mode based on user interaction." alt="" coords="825,549,964,592"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="637,549,777,592"/>
+<area shape="poly" title=" " alt="" coords="809,582,777,582,777,577,809,577"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a8c604ac7aee9fb4afb2fe787476b3f9a" title="Handles the rendering of radio buttons and updates the view mode if changed." alt="" coords="427,5,566,48"/>
-<area shape="poly" title=" " alt="" coords="874,435,832,359,769,259,730,206,686,154,639,105,588,62,565,49,568,44,591,58,642,101,690,150,734,202,773,256,837,356,878,433"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#af94109004702cb1ab3e49cda71dd938b" title="Responds to events published by other components of the application." alt="" coords="427,859,566,901"/>
-<area shape="poly" title=" " alt="" coords="876,505,833,576,769,668,687,764,640,809,591,849,568,862,566,857,588,844,637,805,683,761,765,665,829,573,872,503"/>
-<area shape="poly" title=" " alt="" coords="792,458,824,458,824,463,792,463"/>
-<area shape="poly" title=" " alt="" coords="737,435,726,429,707,427,690,429,679,433,675,439,676,447,671,448,670,438,676,429,688,423,707,421,727,424,739,430"/>
-<area shape="poly" title=" " alt="" coords="693,434,587,62,565,46,568,41,592,58,698,432"/>
-<area shape="poly" title=" " alt="" coords="697,506,640,686,630,733,627,773,618,810,607,829,591,849,568,865,565,861,587,845,603,826,613,808,622,772,625,733,635,685,692,504"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aada38792efbc5bd1ed04dfb2844315df" title="Publishes an event if a value has changed." alt="" coords="427,659,566,701"/>
-<area shape="poly" title=" " alt="" coords="692,506,651,574,623,610,591,642,562,660,559,656,588,638,619,606,647,571,687,503"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aa1435fd81ebca32399d10b6ba87ff634" title="Renders a slider for selecting the brush size used in interactive elements." alt="" coords="195,357,354,400"/>
-<area shape="poly" title=" " alt="" coords="621,450,589,443,353,395,354,390,590,437,623,445"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a61fc6248cb483f489cb5d1587e95d459" title="Renders settings for selecting color maps used in visualization." alt="" coords="203,424,346,467"/>
-<area shape="poly" title=" " alt="" coords="622,467,346,452,347,447,622,462"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a8ecbdc5f437adf990efbe7f3cb473ce4" title="Renders buttons used for control actions like starting or stopping simulations." alt="" coords="195,491,354,533"/>
-<area shape="poly" title=" " alt="" coords="622,480,354,507,354,502,622,475"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a6bfc9c150f37f29e7284f3370cedb12f" title="Renders selectors for adjusting the grid dimensions." alt="" coords="193,557,356,600"/>
-<area shape="poly" title=" " alt="" coords="623,497,590,507,357,563,356,558,589,501,622,492"/>
+<area shape="poly" title=" " alt="" coords="879,535,842,441,782,314,743,246,697,180,645,117,588,62,565,48,568,44,591,58,649,114,701,176,747,244,787,312,847,439,884,533"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#af94109004702cb1ab3e49cda71dd938b" title="Responds to events published by other components of the application." alt="" coords="427,1093,566,1136"/>
+<area shape="poly" title=" " alt="" coords="884,608,847,702,787,830,747,898,701,965,649,1028,591,1083,568,1098,565,1093,588,1079,645,1024,697,962,743,895,782,827,842,700,879,606"/>
+<area shape="poly" title=" " alt="" coords="792,559,824,559,824,565,792,564"/>
+<area shape="poly" title=" " alt="" coords="737,536,726,530,707,528,690,530,679,535,675,541,676,548,671,549,670,539,676,530,688,525,707,523,727,525,739,531"/>
+<area shape="poly" title=" " alt="" coords="694,535,635,276,627,212,627,160,625,136,619,112,607,88,587,62,565,45,568,41,591,58,611,85,624,111,630,135,632,160,632,212,640,276,700,533"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#af95803c7ad339e5d68541734d07c84d3" title=" " alt="" coords="427,709,566,752"/>
+<area shape="poly" title=" " alt="" coords="682,606,641,650,591,693,559,711,556,706,588,688,638,646,678,602"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="205,689,344,732"/>
+<area shape="poly" title=" " alt="" coords="649,602,590,627,461,668,345,698,344,692,459,662,588,621,647,597"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="202,765,347,808"/>
+<area shape="poly" title=" " alt="" coords="698,607,683,646,661,690,630,732,591,766,562,781,531,792,467,804,403,806,347,802,348,797,403,801,466,799,530,787,560,776,588,762,626,729,656,687,678,644,693,605"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a34cd062ce99a28182396fe3eb7dafda2" title=" " alt="" coords="427,827,566,869"/>
+<area shape="poly" title=" " alt="" coords="699,608,684,653,662,707,631,761,591,810,565,828,562,824,588,806,627,758,657,704,679,651,694,606"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a5cb4bb21a6c4ef4a365ed446725dfbc8" title=" " alt="" coords="427,893,566,936"/>
+<area shape="poly" title=" " alt="" coords="704,608,694,667,674,741,641,817,618,852,591,883,568,899,565,895,588,879,614,849,636,814,669,739,689,666,699,607"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a29c345ce8dbd9ee856ca228411a8fc8e" title=" " alt="" coords="427,960,566,1003"/>
+<area shape="poly" title=" " alt="" coords="701,608,684,690,658,791,627,886,609,924,591,950,568,967,565,962,587,946,605,921,622,885,653,790,679,689,696,607"/>
+<area shape="poly" title=" " alt="" coords="699,608,640,854,634,889,632,921,633,976,631,1002,625,1028,612,1055,591,1083,568,1101,565,1096,587,1079,608,1052,620,1026,626,1001,628,976,627,921,629,889,635,853,694,607"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aada38792efbc5bd1ed04dfb2844315df" title="Publishes an event if a value has changed." alt="" coords="427,1027,566,1069"/>
+<area shape="poly" title=" " alt="" coords="700,607,642,844,611,960,591,1016,569,1033,565,1029,587,1013,606,958,637,843,695,606"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa1435fd81ebca32399d10b6ba87ff634" title="Renders a slider for selecting the brush size used in interactive elements." alt="" coords="195,352,354,395"/>
+<area shape="poly" title=" " alt="" coords="670,540,632,510,588,481,529,453,467,429,353,394,355,389,469,424,531,448,591,476,635,505,673,536"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a61fc6248cb483f489cb5d1587e95d459" title="Renders settings for selecting color maps used in visualization." alt="" coords="203,419,346,461"/>
+<area shape="poly" title=" " alt="" coords="642,545,588,525,460,487,346,458,347,453,462,482,590,520,644,540"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a8ecbdc5f437adf990efbe7f3cb473ce4" title="Renders buttons used for control actions like starting or stopping simulations." alt="" coords="195,485,354,528"/>
+<area shape="poly" title=" " alt="" coords="622,561,589,556,353,521,354,516,590,551,622,556"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a6bfc9c150f37f29e7284f3370cedb12f" title="Renders selectors for adjusting the grid dimensions." alt="" coords="193,552,356,595"/>
+<area shape="poly" title=" " alt="" coords="622,574,357,575,356,570,622,569"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#aff4d30a5ba44e41ad323cd5ee594864d" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="417,72,576,115"/>
-<area shape="poly" title=" " alt="" coords="693,434,639,258,609,173,587,128,573,117,577,113,591,125,614,171,644,256,698,432"/>
+<area shape="poly" title=" " alt="" coords="695,535,637,298,606,183,587,128,574,117,578,113,592,125,611,182,642,297,700,534"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a574a4ff66998622579b0fbe96349d05d" title="Renders a progress bar showing the completion status of the simulation." alt="" coords="427,139,566,181"/>
-<area shape="poly" title=" " alt="" coords="697,433,685,380,664,317,632,252,611,222,588,195,565,180,568,176,591,191,616,219,637,249,669,315,690,379,702,432"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="427,725,566,768"/>
-<area shape="poly" title=" " alt="" coords="700,507,686,554,664,609,633,666,613,692,591,715,568,731,565,726,588,711,609,689,628,663,659,607,681,552,695,505"/>
+<area shape="poly" title=" " alt="" coords="696,535,679,453,653,352,622,257,605,220,587,195,565,179,568,175,591,191,609,218,627,255,658,350,684,452,701,534"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a307d37a6999d04dde57aa57a7bc2fc56" title="Renders a source selector for setting heat sources in the simulation." alt="" coords="420,205,574,248"/>
-<area shape="poly" title=" " alt="" coords="692,434,677,394,654,348,625,302,588,262,571,251,574,246,591,258,629,299,659,346,681,392,697,432"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="424,792,569,835"/>
-<area shape="poly" title=" " alt="" coords="696,507,642,665,613,741,591,782,572,796,568,792,587,778,608,738,637,664,691,505"/>
+<area shape="poly" title=" " alt="" coords="699,534,689,475,669,402,636,327,614,293,587,262,573,251,576,246,591,258,618,290,641,325,674,401,694,474,704,533"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a83b89acf3bcb8c0954727b712eb19349" title="Renders a temperature selector for setting initial conditions." alt="" coords="404,272,589,315"/>
-<area shape="poly" title=" " alt="" coords="683,436,643,381,617,353,588,329,568,317,571,313,591,324,620,349,647,378,687,433"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#ae9858343a4515474c96b50bb719e4e79" title="Renders an input field for setting the time step size." alt="" coords="200,624,349,667"/>
-<area shape="poly" title=" " alt="" coords="672,503,634,531,591,557,529,583,465,605,349,634,348,629,463,600,527,578,588,552,631,527,668,498"/>
+<area shape="poly" title=" " alt="" coords="695,535,681,488,659,433,628,377,609,351,588,329,572,317,575,313,591,325,613,348,633,374,664,431,686,486,700,533"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#ae9858343a4515474c96b50bb719e4e79" title="Renders an input field for setting the time step size." alt="" coords="200,619,349,661"/>
+<area shape="poly" title=" " alt="" coords="623,587,349,631,349,626,622,581"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a5d1d8009380e802a80a741f78c995bf7" title="Renders a slider for selecting and displaying the current time step." alt="" coords="420,339,573,381"/>
-<area shape="poly" title=" " alt="" coords="657,442,588,402,550,384,552,380,591,398,660,437"/>
+<area shape="poly" title=" " alt="" coords="687,537,647,469,619,434,588,402,559,384,562,380,591,398,623,430,651,466,692,534"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a5d6cdd36b677a922de135c4c7360535b" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="204,205,345,248"/>
 <area shape="poly" title=" " alt="" coords="415,56,406,62,367,97,334,136,289,207,285,204,330,133,363,93,402,58,412,51"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="5,457,145,500"/>
-<area shape="poly" title=" " alt="" coords="249,262,95,459,91,455,245,259"/>
-<area shape="poly" title=" " alt="" coords="205,409,194,414,113,459,111,454,191,410,203,404"/>
-<area shape="poly" title=" " alt="" coords="188,462,145,470,145,464,187,457"/>
-<area shape="poly" title=" " alt="" coords="179,499,144,493,145,488,180,494"/>
-<area shape="poly" title=" " alt="" coords="203,553,191,548,111,503,113,498,194,543,205,548"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="5,452,145,495"/>
+<area shape="poly" title=" " alt="" coords="249,262,96,453,92,450,244,258"/>
+<area shape="poly" title=" " alt="" coords="411,726,344,720,345,714,412,720"/>
+<area shape="poly" title=" " alt="" coords="413,755,348,771,347,766,411,749"/>
+<area shape="poly" title=" " alt="" coords="205,404,194,409,113,454,111,449,191,404,203,399"/>
+<area shape="poly" title=" " alt="" coords="188,457,145,464,145,459,187,452"/>
+<area shape="poly" title=" " alt="" coords="179,494,144,488,145,482,180,488"/>
+<area shape="poly" title=" " alt="" coords="203,548,191,542,111,498,113,493,194,538,205,543"/>
 <area shape="poly" title=" " alt="" coords="415,124,405,129,347,168,301,207,297,203,344,164,403,124,413,119"/>
 <area shape="poly" title=" " alt="" coords="413,188,346,208,345,203,411,183"/>
 <area shape="poly" title=" " alt="" coords="404,229,345,229,345,224,404,224"/>
 <area shape="poly" title=" " alt="" coords="408,270,345,250,346,245,410,265"/>
-<area shape="poly" title=" " alt="" coords="197,618,191,614,159,587,130,557,88,502,93,499,135,553,163,583,194,610,200,614"/>
+<area shape="poly" title=" " alt="" coords="197,613,191,609,159,582,130,552,88,497,93,493,135,548,163,578,194,605,200,609"/>
 <area shape="poly" title=" " alt="" coords="413,334,403,329,344,290,297,251,301,247,347,286,405,324,415,330"/>
 </map>
 </div>
@@ -511,57 +533,67 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classui_1_1_controls_renderer_aa63539b27dd1aa31b1be96e8a72e2a80_icgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_aa63539b27dd1aa31b1be96e8a72e2a80_icgraph" alt=""/></div>
 <map name="aclassui_1_1_controls_renderer_aa63539b27dd1aa31b1be96e8a72e2a80_icgraph" id="aclassui_1_1_controls_renderer_aa63539b27dd1aa31b1be96e8a72e2a80_icgraph">
-<area shape="rect" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="845,403,984,445"/>
-<area shape="poly" title=" " alt="" coords="948,389,936,384,914,381,895,383,883,388,878,394,879,402,874,403,873,393,879,384,893,378,914,376,937,378,951,385"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="634,160,774,203"/>
-<area shape="poly" title=" " alt="" coords="895,390,856,313,828,272,795,235,770,218,743,206,746,201,773,214,798,231,833,269,861,310,900,388"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a8c604ac7aee9fb4afb2fe787476b3f9a" title="Handles the rendering of radio buttons and updates the view mode if changed." alt="" coords="414,152,553,195"/>
-<area shape="poly" title=" " alt="" coords="907,388,898,332,879,265,864,232,845,201,823,173,795,150,765,135,731,126,697,122,662,123,594,136,536,154,535,149,593,130,661,118,697,117,732,120,766,130,798,146,826,169,850,198,869,230,884,264,903,331,913,387"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#af94109004702cb1ab3e49cda71dd938b" title="Responds to events published by other components of the application." alt="" coords="414,219,553,261"/>
-<area shape="poly" title=" " alt="" coords="896,390,879,359,857,325,829,293,795,268,766,254,736,244,672,232,609,230,554,233,553,227,609,224,672,227,737,239,768,249,798,263,833,289,861,322,884,356,900,387"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aada38792efbc5bd1ed04dfb2844315df" title="Publishes an event if a value has changed." alt="" coords="634,727,774,769"/>
-<area shape="poly" title=" " alt="" coords="910,461,897,515,876,581,844,649,823,681,798,710,774,728,771,724,795,706,819,678,839,647,871,579,892,514,904,460"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aa1435fd81ebca32399d10b6ba87ff634" title="Renders a slider for selecting the brush size used in interactive elements." alt="" coords="195,437,354,480"/>
-<area shape="poly" title=" " alt="" coords="829,433,563,451,354,459,354,454,563,445,829,428"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a61fc6248cb483f489cb5d1587e95d459" title="Renders settings for selecting color maps used in visualization." alt="" coords="203,504,346,547"/>
-<area shape="poly" title=" " alt="" coords="830,447,797,453,550,493,347,520,346,514,549,488,796,448,829,441"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a8ecbdc5f437adf990efbe7f3cb473ce4" title="Renders buttons used for control actions like starting or stopping simulations." alt="" coords="405,563,563,605"/>
-<area shape="poly" title=" " alt="" coords="892,460,852,506,826,528,798,546,739,569,678,582,617,589,564,591,563,585,617,584,677,577,738,564,795,542,823,524,848,502,888,456"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a6bfc9c150f37f29e7284f3370cedb12f" title="Renders selectors for adjusting the grid dimensions." alt="" coords="193,621,356,664"/>
-<area shape="poly" title=" " alt="" coords="902,461,885,494,863,531,834,566,798,594,744,621,686,641,626,654,566,661,451,664,356,658,356,652,451,659,565,656,625,648,684,635,742,616,795,590,830,562,858,528,881,491,897,458"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aff4d30a5ba44e41ad323cd5ee594864d" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="404,5,563,48"/>
-<area shape="poly" title=" " alt="" coords="910,388,903,320,886,236,871,193,852,151,826,112,795,79,770,61,742,47,682,29,620,21,564,21,564,16,620,16,683,24,744,42,772,57,798,75,831,109,856,148,876,191,891,235,909,319,915,387"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a574a4ff66998622579b0fbe96349d05d" title="Renders a progress bar showing the completion status of the simulation." alt="" coords="414,76,553,119"/>
-<area shape="poly" title=" " alt="" coords="909,388,901,326,883,252,868,214,849,178,825,145,795,118,768,102,738,90,674,78,611,78,554,84,553,79,610,72,675,73,739,85,770,97,798,114,829,142,853,175,873,212,888,250,906,325,914,387"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="634,793,774,836"/>
-<area shape="poly" title=" " alt="" coords="914,461,906,529,888,614,873,660,853,704,829,746,798,783,775,800,772,795,795,779,824,743,849,702,868,658,882,613,901,528,909,461"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a307d37a6999d04dde57aa57a7bc2fc56" title="Renders a source selector for setting heat sources in the simulation." alt="" coords="627,277,781,320"/>
-<area shape="poly" title=" " alt="" coords="877,394,839,363,795,334,772,323,774,318,798,330,842,359,880,390"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="631,860,777,903"/>
-<area shape="poly" title=" " alt="" coords="916,461,912,540,896,643,881,698,861,753,833,804,799,850,779,865,775,861,795,846,829,801,856,751,876,697,891,642,907,539,911,461"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a83b89acf3bcb8c0954727b712eb19349" title="Renders a temperature selector for setting initial conditions." alt="" coords="611,344,797,387"/>
-<area shape="poly" title=" " alt="" coords="829,403,782,390,784,385,831,398"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#ae9858343a4515474c96b50bb719e4e79" title="Renders an input field for setting the time step size." alt="" coords="410,680,558,723"/>
-<area shape="poly" title=" " alt="" coords="908,461,895,508,874,562,842,615,822,639,798,659,771,676,741,690,677,706,615,712,558,712,558,707,614,707,676,701,739,684,768,672,795,655,818,635,838,612,869,560,890,506,903,460"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a5d1d8009380e802a80a741f78c995bf7" title="Renders a slider for selecting and displaying the current time step." alt="" coords="407,393,560,436"/>
-<area shape="poly" title=" " alt="" coords="829,425,561,419,561,414,829,420"/>
-<area shape="poly" title=" " alt="" coords="789,200,799,207,840,255,873,309,896,361,911,402,905,403,891,363,868,312,836,258,795,211,785,204"/>
-<area shape="poly" title=" " alt="" coords="618,181,554,179,554,173,619,176"/>
-<area shape="poly" title=" " alt="" coords="620,206,554,224,553,219,618,201"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a5d6cdd36b677a922de135c4c7360535b" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="204,277,345,320"/>
-<area shape="poly" title=" " alt="" coords="414,204,405,209,350,244,304,279,301,275,347,240,403,204,412,199"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="5,533,145,576"/>
-<area shape="poly" title=" " alt="" coords="249,334,95,535,91,531,245,331"/>
-<area shape="poly" title=" " alt="" coords="206,489,194,494,116,535,113,530,191,490,203,484"/>
-<area shape="poly" title=" " alt="" coords="188,541,145,547,145,542,187,535"/>
-<area shape="poly" title=" " alt="" coords="389,580,145,562,145,557,389,575"/>
-<area shape="poly" title=" " alt="" coords="209,617,124,579,126,574,211,612"/>
-<area shape="poly" title=" " alt="" coords="414,59,406,66,361,119,326,178,301,234,285,278,280,276,296,232,322,176,357,116,402,62,411,55"/>
-<area shape="poly" title=" " alt="" coords="423,129,406,142,370,176,338,213,291,278,287,275,334,210,366,172,402,138,420,125"/>
-<area shape="poly" title=" " alt="" coords="611,301,345,301,345,296,611,296"/>
-<area shape="poly" title=" " alt="" coords="596,351,345,312,346,307,597,346"/>
-<area shape="poly" title=" " alt="" coords="394,712,346,712,294,707,241,697,191,678,158,657,129,630,88,578,92,575,133,627,161,653,194,674,243,692,295,702,346,706,394,707"/>
-<area shape="poly" title=" " alt="" coords="427,388,403,374,312,323,314,318,405,370,429,383"/>
+<area shape="rect" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="844,501,983,544"/>
+<area shape="poly" title=" " alt="" coords="947,488,935,482,913,480,894,482,882,487,877,493,878,500,873,501,872,491,878,482,892,477,913,475,936,477,950,483"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="633,291,773,333"/>
+<area shape="poly" title=" " alt="" coords="888,489,849,427,823,395,794,366,768,349,741,336,743,332,771,345,797,362,827,391,854,424,893,486"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a8c604ac7aee9fb4afb2fe787476b3f9a" title="Handles the rendering of radio buttons and updates the view mode if changed." alt="" coords="411,259,550,301"/>
+<area shape="poly" title=" " alt="" coords="904,486,893,437,872,379,840,324,819,300,794,281,766,266,735,257,671,249,608,252,551,262,550,257,607,247,671,243,737,251,768,261,797,276,823,296,844,321,877,377,898,435,909,485"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#af94109004702cb1ab3e49cda71dd938b" title="Responds to events published by other components of the application." alt="" coords="411,325,550,368"/>
+<area shape="poly" title=" " alt="" coords="883,492,843,454,794,420,733,394,668,375,606,362,551,355,551,349,606,357,669,370,735,389,797,415,847,449,886,488"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#af95803c7ad339e5d68541734d07c84d3" title=" " alt="" coords="633,763,773,805"/>
+<area shape="poly" title=" " alt="" coords="904,560,889,602,866,651,836,701,797,746,771,764,768,760,794,742,831,698,861,649,884,600,899,558"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="411,735,550,777"/>
+<area shape="poly" title=" " alt="" coords="900,560,883,593,861,630,832,666,797,696,753,714,689,730,551,751,550,746,688,724,751,709,794,691,828,662,856,627,879,590,895,557"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="408,815,553,857"/>
+<area shape="poly" title=" " alt="" coords="912,560,904,619,884,691,870,727,850,762,826,793,797,819,769,836,739,848,674,861,610,861,553,855,554,849,611,856,674,855,737,843,767,831,794,815,823,790,846,759,865,725,879,689,898,618,907,559"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a34cd062ce99a28182396fe3eb7dafda2" title=" " alt="" coords="633,880,773,923"/>
+<area shape="poly" title=" " alt="" coords="912,560,902,623,882,704,867,746,849,788,826,827,798,863,774,882,770,877,794,859,821,824,844,786,863,744,877,702,897,622,906,559"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a5cb4bb21a6c4ef4a365ed446725dfbc8" title=" " alt="" coords="633,947,773,989"/>
+<area shape="poly" title=" " alt="" coords="915,560,910,637,894,737,879,790,858,843,832,892,798,937,775,953,772,949,794,933,827,889,854,840,874,788,888,736,905,636,910,559"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a29c345ce8dbd9ee856ca228411a8fc8e" title=" " alt="" coords="633,1013,773,1056"/>
+<area shape="poly" title=" " alt="" coords="910,560,896,662,872,794,839,919,819,969,798,1003,775,1020,771,1016,794,1000,815,966,834,917,867,792,890,661,905,559"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aada38792efbc5bd1ed04dfb2844315df" title="Publishes an event if a value has changed." alt="" coords="633,1080,773,1123"/>
+<area shape="poly" title=" " alt="" coords="911,559,899,674,876,826,861,902,843,972,822,1030,798,1070,775,1087,771,1083,794,1066,817,1027,838,970,856,901,871,825,894,674,906,559"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa1435fd81ebca32399d10b6ba87ff634" title="Renders a slider for selecting the brush size used in interactive elements." alt="" coords="193,419,351,461"/>
+<area shape="poly" title=" " alt="" coords="828,508,795,503,553,471,351,450,352,444,553,465,796,497,829,503"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a61fc6248cb483f489cb5d1587e95d459" title="Renders settings for selecting color maps used in visualization." alt="" coords="200,485,344,528"/>
+<area shape="poly" title=" " alt="" coords="828,523,344,511,344,506,828,518"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a8ecbdc5f437adf990efbe7f3cb473ce4" title="Renders buttons used for control actions like starting or stopping simulations." alt="" coords="193,552,351,595"/>
+<area shape="poly" title=" " alt="" coords="828,532,351,570,351,564,828,527"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a6bfc9c150f37f29e7284f3370cedb12f" title="Renders selectors for adjusting the grid dimensions." alt="" coords="399,611,562,653"/>
+<area shape="poly" title=" " alt="" coords="872,555,836,577,797,595,737,611,675,623,563,633,562,628,674,617,736,606,795,589,834,572,869,551"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aff4d30a5ba44e41ad323cd5ee594864d" title="Renders a material selector for choosing materials used in the simulation." alt="" coords="401,125,560,168"/>
+<area shape="poly" title=" " alt="" coords="907,486,899,424,881,347,866,308,847,270,823,235,794,205,768,186,740,172,679,153,618,144,561,143,561,137,618,139,681,148,742,167,771,182,797,201,827,231,852,267,871,306,886,346,905,423,913,486"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a574a4ff66998622579b0fbe96349d05d" title="Renders a progress bar showing the completion status of the simulation." alt="" coords="411,192,550,235"/>
+<area shape="poly" title=" " alt="" coords="906,486,896,431,876,365,862,331,843,299,821,270,794,246,766,229,736,217,672,203,608,200,551,204,551,199,608,194,673,197,738,212,769,224,797,242,825,267,848,296,866,329,881,363,901,430,911,485"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a307d37a6999d04dde57aa57a7bc2fc56" title="Renders a source selector for setting heat sources in the simulation." alt="" coords="404,392,558,435"/>
+<area shape="poly" title=" " alt="" coords="869,495,834,473,795,456,734,439,672,427,558,417,558,412,672,422,735,434,797,451,836,469,872,490"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a83b89acf3bcb8c0954727b712eb19349" title="Renders a temperature selector for setting initial conditions." alt="" coords="610,5,796,48"/>
+<area shape="poly" title=" " alt="" coords="905,486,890,388,865,261,833,141,814,94,794,62,780,51,784,46,798,58,819,91,838,139,871,260,895,387,910,486"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#ae9858343a4515474c96b50bb719e4e79" title="Renders an input field for setting the time step size." alt="" coords="198,669,346,712"/>
+<area shape="poly" title=" " alt="" coords="889,558,849,600,824,620,797,636,739,659,679,677,617,689,556,697,440,703,347,700,347,695,440,697,555,692,616,684,678,672,738,654,794,631,821,615,845,596,885,554"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a5d1d8009380e802a80a741f78c995bf7" title="Renders a slider for selecting and displaying the current time step." alt="" coords="626,72,780,115"/>
+<area shape="poly" title=" " alt="" coords="908,486,901,414,884,321,869,271,849,223,825,177,794,135,771,117,774,113,798,131,829,174,854,220,874,270,889,319,907,413,914,485"/>
+<area shape="poly" title=" " alt="" coords="788,331,797,338,836,377,867,422,892,465,908,500,903,502,887,467,863,425,832,381,794,342,785,335"/>
+<area shape="poly" title=" " alt="" coords="617,302,550,293,551,287,618,297"/>
+<area shape="poly" title=" " alt="" coords="618,328,551,338,550,333,617,323"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a5d6cdd36b677a922de135c4c7360535b" title="Renders a view selector for switching between different simulation visualizations." alt="" coords="201,192,343,235"/>
+<area shape="poly" title=" " alt="" coords="397,256,340,238,342,233,399,251"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a5875120ec670565e813e88a97456f5ab" title="Renders all control elements associated with simulation settings." alt="" coords="5,519,145,561"/>
+<area shape="poly" title=" " alt="" coords="252,250,92,520,87,517,247,247"/>
+<area shape="poly" title=" " alt="" coords="617,776,550,767,551,762,618,771"/>
+<area shape="poly" title=" " alt="" coords="619,806,554,822,553,816,618,801"/>
+<area shape="poly" title=" " alt="" coords="204,471,194,476,113,521,111,516,191,471,202,466"/>
+<area shape="poly" title=" " alt="" coords="185,524,146,531,145,526,185,519"/>
+<area shape="poly" title=" " alt="" coords="177,560,145,554,145,549,177,555"/>
+<area shape="poly" title=" " alt="" coords="383,636,290,630,240,621,192,609,145,589,105,564,108,560,147,584,194,604,241,616,290,624,383,631"/>
+<area shape="poly" title=" " alt="" coords="399,176,342,194,340,189,397,171"/>
+<area shape="poly" title=" " alt="" coords="396,216,343,216,343,211,396,211"/>
+<area shape="poly" title=" " alt="" coords="403,386,397,382,360,347,327,307,282,237,287,234,331,304,363,343,401,378,406,382"/>
+<area shape="poly" title=" " alt="" coords="595,32,547,38,497,48,447,63,400,84,365,108,334,137,289,193,285,190,330,133,362,104,398,79,445,58,496,43,547,33,594,27"/>
+<area shape="poly" title=" " alt="" coords="208,664,191,653,137,607,94,564,98,560,140,603,194,649,211,659"/>
+<area shape="poly" title=" " alt="" coords="611,88,561,88,508,91,453,100,400,116,369,132,340,152,294,194,291,190,336,148,366,127,398,111,451,95,507,86,561,83,611,83"/>
 </map>
 </div>
 
@@ -639,6 +671,222 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="365,29,332,29,332,24,365,24"/>
 <area shape="rect" href="classui_1_1_controls_renderer.html#a3cad210f4749b5e8e902a82250948740" title="Render the controls to the associated GLFW window." alt="" coords="5,5,145,48"/>
 <area shape="poly" title=" " alt="" coords="177,29,145,29,145,24,177,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af95803c7ad339e5d68541734d07c84d3" name="af95803c7ad339e5d68541734d07c84d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95803c7ad339e5d68541734d07c84d3">&#9670;&#160;</a></span>inputHelper() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a> ui::ControlsRenderer::inputHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a> *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_cgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_cgraph" alt=""/></div>
+<map name="aclassui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_cgraph" id="aclassui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,145,72"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,29,332,72"/>
+<area shape="poly" title=" " alt="" coords="145,48,177,48,177,53,145,53"/>
+<area shape="poly" title=" " alt="" coords="226,29,225,19,231,10,243,5,262,3,283,5,295,11,292,16,281,10,262,8,245,10,234,15,230,21,232,28"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,29,519,72"/>
+<area shape="poly" title=" " alt="" coords="332,57,365,57,364,62,332,62"/>
+<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,67,721,93"/>
+<area shape="poly" title=" " alt="" coords="329,70,380,81,468,88,552,86,552,91,468,93,380,87,328,75"/>
+<area shape="poly" title=" " alt="" coords="379,45,347,44,347,39,380,39"/>
+<area shape="poly" title=" " alt="" coords="520,59,552,63,551,69,519,64"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_icgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_icgraph" alt=""/></div>
+<map name="aclassui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_icgraph" id="aclassui_1_1_controls_renderer_af95803c7ad339e5d68541734d07c84d3_icgraph">
+<area shape="rect" title=" " alt="" coords="199,39,338,81"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="8,5,148,48"/>
+<area shape="poly" title=" " alt="" coords="183,48,148,42,149,36,184,43"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="5,72,151,115"/>
+<area shape="poly" title=" " alt="" coords="184,77,152,83,151,78,183,72"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a34cd062ce99a28182396fe3eb7dafda2" name="a34cd062ce99a28182396fe3eb7dafda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34cd062ce99a28182396fe3eb7dafda2">&#9670;&#160;</a></span>inputHelper() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a> ui::ControlsRenderer::inputHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a> *</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a></td>          <td class="paramname"><span class="paramname"><em>min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">float</a></td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classui_1_1_controls_renderer_a34cd062ce99a28182396fe3eb7dafda2_cgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_a34cd062ce99a28182396fe3eb7dafda2_cgraph" alt=""/></div>
+<map name="aclassui_1_1_controls_renderer_a34cd062ce99a28182396fe3eb7dafda2_cgraph" id="aclassui_1_1_controls_renderer_a34cd062ce99a28182396fe3eb7dafda2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,145,72"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,29,332,72"/>
+<area shape="poly" title=" " alt="" coords="145,48,177,48,177,53,145,53"/>
+<area shape="poly" title=" " alt="" coords="226,29,225,19,231,10,243,5,262,3,283,5,295,11,292,16,281,10,262,8,245,10,234,15,230,21,232,28"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,29,519,72"/>
+<area shape="poly" title=" " alt="" coords="332,57,365,57,364,62,332,62"/>
+<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,67,721,93"/>
+<area shape="poly" title=" " alt="" coords="329,70,380,81,468,88,552,86,552,91,468,93,380,87,328,75"/>
+<area shape="poly" title=" " alt="" coords="379,45,347,44,347,39,380,39"/>
+<area shape="poly" title=" " alt="" coords="520,59,552,63,551,69,519,64"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5cb4bb21a6c4ef4a365ed446725dfbc8" name="a5cb4bb21a6c4ef4a365ed446725dfbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb4bb21a6c4ef4a365ed446725dfbc8">&#9670;&#160;</a></span>inputHelper() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a> ui::ControlsRenderer::inputHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a> *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classui_1_1_controls_renderer_a5cb4bb21a6c4ef4a365ed446725dfbc8_cgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_a5cb4bb21a6c4ef4a365ed446725dfbc8_cgraph" alt=""/></div>
+<map name="aclassui_1_1_controls_renderer_a5cb4bb21a6c4ef4a365ed446725dfbc8_cgraph" id="aclassui_1_1_controls_renderer_a5cb4bb21a6c4ef4a365ed446725dfbc8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,145,72"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,29,332,72"/>
+<area shape="poly" title=" " alt="" coords="145,48,177,48,177,53,145,53"/>
+<area shape="poly" title=" " alt="" coords="226,29,225,19,231,10,243,5,262,3,283,5,295,11,292,16,281,10,262,8,245,10,234,15,230,21,232,28"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,29,519,72"/>
+<area shape="poly" title=" " alt="" coords="332,57,365,57,364,62,332,62"/>
+<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,67,721,93"/>
+<area shape="poly" title=" " alt="" coords="329,70,380,81,468,88,552,86,552,91,468,93,380,87,328,75"/>
+<area shape="poly" title=" " alt="" coords="379,45,347,44,347,39,380,39"/>
+<area shape="poly" title=" " alt="" coords="520,59,552,63,551,69,519,64"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29c345ce8dbd9ee856ca228411a8fc8e" name="a29c345ce8dbd9ee856ca228411a8fc8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c345ce8dbd9ee856ca228411a8fc8e">&#9670;&#160;</a></span>inputHelper() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">bool</a> ui::ControlsRenderer::inputHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a> *</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a></td>          <td class="paramname"><span class="paramname"><em>min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa63539b27dd1aa31b1be96e8a72e2a80">int</a></td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classui_1_1_controls_renderer_a29c345ce8dbd9ee856ca228411a8fc8e_cgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_a29c345ce8dbd9ee856ca228411a8fc8e_cgraph" alt=""/></div>
+<map name="aclassui_1_1_controls_renderer_a29c345ce8dbd9ee856ca228411a8fc8e_cgraph" id="aclassui_1_1_controls_renderer_a29c345ce8dbd9ee856ca228411a8fc8e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,145,72"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,29,332,72"/>
+<area shape="poly" title=" " alt="" coords="145,48,177,48,177,53,145,53"/>
+<area shape="poly" title=" " alt="" coords="226,29,225,19,231,10,243,5,262,3,283,5,295,11,292,16,281,10,262,8,245,10,234,15,230,21,232,28"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,29,519,72"/>
+<area shape="poly" title=" " alt="" coords="332,57,365,57,364,62,332,62"/>
+<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,67,721,93"/>
+<area shape="poly" title=" " alt="" coords="329,70,380,81,468,88,552,86,552,91,468,93,380,87,328,75"/>
+<area shape="poly" title=" " alt="" coords="379,45,347,44,347,39,380,39"/>
+<area shape="poly" title=" " alt="" coords="520,59,552,63,551,69,519,64"/>
 </map>
 </div>
 
@@ -1377,18 +1625,19 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classui_1_1_controls_renderer_a19ae8220e270ef6c60d5cdf38e6d280f_cgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_a19ae8220e270ef6c60d5cdf38e6d280f_cgraph" alt=""/></div>
 <map name="aclassui_1_1_controls_renderer_a19ae8220e270ef6c60d5cdf38e6d280f_cgraph" id="aclassui_1_1_controls_renderer_a19ae8220e270ef6c60d5cdf38e6d280f_cgraph">
-<area shape="rect" title="Renders a slider input widget for numerical data." alt="" coords="5,59,145,101"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="193,29,332,72"/>
-<area shape="poly" title=" " alt="" coords="145,66,177,61,178,67,146,72"/>
-<area shape="rect" href="namespaceui.html#a221d2a43f0b843c57b4d8fc45fee1e52" title=" " alt="" coords="210,96,315,123"/>
-<area shape="poly" title=" " alt="" coords="146,88,195,96,195,101,145,94"/>
-<area shape="poly" title=" " alt="" coords="226,29,225,19,231,10,243,5,262,3,283,5,295,11,292,16,281,10,262,8,245,10,234,15,230,21,232,28"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="380,29,519,72"/>
-<area shape="poly" title=" " alt="" coords="332,57,365,57,364,62,332,62"/>
-<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="567,67,721,93"/>
-<area shape="poly" title=" " alt="" coords="329,70,380,81,468,88,552,86,552,91,468,93,380,87,328,75"/>
-<area shape="poly" title=" " alt="" coords="379,45,347,44,347,39,380,39"/>
-<area shape="poly" title=" " alt="" coords="520,59,552,63,551,69,519,64"/>
+<area shape="rect" title="Renders a slider input widget for numerical data." alt="" coords="5,29,145,72"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="380,29,519,72"/>
+<area shape="poly" title=" " alt="" coords="145,45,193,44,332,44,364,45,364,50,332,49,193,49,145,51"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#af95803c7ad339e5d68541734d07c84d3" title=" " alt="" coords="193,59,332,101"/>
+<area shape="poly" title=" " alt="" coords="146,59,178,64,177,69,145,64"/>
+<area shape="poly" title=" " alt="" coords="414,29,412,19,418,10,431,5,450,3,470,5,482,11,480,16,468,10,450,8,432,10,422,15,417,21,419,28"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="567,29,707,72"/>
+<area shape="poly" title=" " alt="" coords="520,57,552,57,552,62,520,62"/>
+<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="755,67,908,93"/>
+<area shape="poly" title=" " alt="" coords="516,70,568,81,655,88,739,86,739,91,655,93,567,87,515,75"/>
+<area shape="poly" title=" " alt="" coords="567,45,535,44,535,39,567,39"/>
+<area shape="poly" title=" " alt="" coords="707,59,739,63,739,69,707,64"/>
+<area shape="poly" title=" " alt="" coords="332,66,364,61,365,67,333,72"/>
 </map>
 </div>
 
@@ -1508,18 +1757,19 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classui_1_1_controls_renderer_a2aafcbca57513b6e888f940b2cc0856b_cgraph.png" border="0" usemap="#aclassui_1_1_controls_renderer_a2aafcbca57513b6e888f940b2cc0856b_cgraph" alt=""/></div>
 <map name="aclassui_1_1_controls_renderer_a2aafcbca57513b6e888f940b2cc0856b_cgraph" id="aclassui_1_1_controls_renderer_a2aafcbca57513b6e888f940b2cc0856b_cgraph">
-<area shape="rect" title="Renders a standard input widget for various types of data." alt="" coords="5,59,151,101"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="199,29,338,72"/>
-<area shape="poly" title=" " alt="" coords="150,66,183,61,184,66,151,71"/>
-<area shape="rect" href="namespaceui.html#a221d2a43f0b843c57b4d8fc45fee1e52" title=" " alt="" coords="216,96,321,123"/>
-<area shape="poly" title=" " alt="" coords="151,89,201,96,200,102,150,94"/>
-<area shape="poly" title=" " alt="" coords="232,29,231,19,237,10,249,5,268,3,289,5,301,11,298,16,287,10,268,8,251,10,240,15,236,21,238,28"/>
-<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="386,29,525,72"/>
-<area shape="poly" title=" " alt="" coords="338,57,371,57,370,62,338,62"/>
-<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="573,67,727,93"/>
-<area shape="poly" title=" " alt="" coords="335,70,386,81,474,88,558,86,558,91,474,93,386,87,334,75"/>
-<area shape="poly" title=" " alt="" coords="385,45,353,44,353,39,386,39"/>
-<area shape="poly" title=" " alt="" coords="526,59,558,63,557,69,525,64"/>
+<area shape="rect" title="Renders a standard input widget for various types of data." alt="" coords="5,29,151,72"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="386,29,525,72"/>
+<area shape="poly" title=" " alt="" coords="151,45,199,44,338,44,370,45,370,50,338,49,199,49,151,51"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#af95803c7ad339e5d68541734d07c84d3" title=" " alt="" coords="199,59,338,101"/>
+<area shape="poly" title=" " alt="" coords="151,59,184,64,183,70,150,64"/>
+<area shape="poly" title=" " alt="" coords="420,29,418,19,424,10,437,5,456,3,476,5,488,11,486,16,474,10,456,8,438,10,428,15,423,21,425,28"/>
+<area shape="rect" href="classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="573,29,713,72"/>
+<area shape="poly" title=" " alt="" coords="526,57,558,57,558,62,526,62"/>
+<area shape="rect" href="classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="761,67,914,93"/>
+<area shape="poly" title=" " alt="" coords="522,70,574,81,661,88,745,86,745,91,661,93,573,87,521,75"/>
+<area shape="poly" title=" " alt="" coords="573,45,541,44,541,39,573,39"/>
+<area shape="poly" title=" " alt="" coords="713,59,745,63,745,69,713,64"/>
+<area shape="poly" title=" " alt="" coords="338,66,370,61,371,67,339,72"/>
 </map>
 </div>
 

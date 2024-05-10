@@ -207,6 +207,14 @@ namespace ui {
          * @param event The event object shared from the publisher.
          */
         void onEvent(const std::shared_ptr<events::Event> &event) override;
+
+        static bool inputHelper(const std::string &label, float *value);
+
+        static bool inputHelper(const std::string &label, int *value);
+
+        static bool inputHelper(const std::string &label, int *value, int min, int max);
+
+        static bool inputHelper(const std::string &label, float *value, float min, float max);
     };
 } // namespace ui
 

@@ -1,14 +1,15 @@
 <map id="ui::ControlsRenderer::renderStandardInput" name="ui::ControlsRenderer::renderStandardInput">
-<area shape="rect" id="Node000001" title="Renders a standard input widget for various types of data." alt="" coords="5,59,151,101"/>
-<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="199,29,338,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,66,183,61,184,66,151,71"/>
-<area shape="rect" id="Node000005" href="$namespaceui.html#a221d2a43f0b843c57b4d8fc45fee1e52" title=" " alt="" coords="216,96,321,123"/>
-<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="151,89,201,96,200,102,150,94"/>
-<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="232,29,231,19,237,10,249,5,268,3,289,5,301,11,298,16,287,10,268,8,251,10,240,15,236,21,238,28"/>
-<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="386,29,525,72"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,57,371,57,370,62,338,62"/>
-<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="573,67,727,93"/>
-<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="335,70,386,81,474,88,558,86,558,91,474,93,386,87,334,75"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="385,45,353,44,353,39,386,39"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="526,59,558,63,557,69,525,64"/>
+<area shape="rect" id="Node000001" title="Renders a standard input widget for various types of data." alt="" coords="5,29,151,72"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#aa63539b27dd1aa31b1be96e8a72e2a80" title="Handles button press events and can change views or publish events based on conditions." alt="" coords="386,29,525,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,45,199,44,338,44,370,45,370,50,338,49,199,49,151,51"/>
+<area shape="rect" id="Node000005" href="$classui_1_1_controls_renderer.html#af95803c7ad339e5d68541734d07c84d3" title=" " alt="" coords="199,59,338,101"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="151,59,184,64,183,70,150,64"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="420,29,418,19,424,10,437,5,456,3,476,5,488,11,486,16,474,10,456,8,438,10,428,15,423,21,425,28"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2db317ce74c146a9e6d60fb8c48102f0" title="Changes the current view mode based on user interaction." alt="" coords="573,29,713,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,57,558,57,558,62,526,62"/>
+<area shape="rect" id="Node000004" href="$classevents_1_1_broker.html#a8056e4326db31af47fcad739579bbaca" title="Publish an event to all subscribed listeners." alt="" coords="761,67,914,93"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="522,70,574,81,661,88,745,86,745,91,661,93,573,87,521,75"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="573,45,541,44,541,39,573,39"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="713,59,745,63,745,69,713,64"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="338,66,370,61,371,67,339,72"/>
 </map>

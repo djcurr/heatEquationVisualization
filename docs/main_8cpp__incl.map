@@ -14,11 +14,11 @@
 <area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="283,180,357,219,354,224,280,184"/>
 <area shape="rect" id="Node000008" href="$_simulation_controller_8h.html" title=" " alt="" coords="47,229,195,256"/>
 <area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="236,184,160,224,157,219,233,180"/>
-<area shape="rect" id="Node000032" href="$_broker_8h.html" title=" " alt="" coords="211,304,335,331"/>
-<area shape="poly" id="edge12_Node000004_Node000032" title=" " alt="" coords="262,182,273,288,268,289,257,182"/>
-<area shape="rect" id="Node000044" href="$_window_manager_8h.html" title=" " alt="" coords="488,229,616,256"/>
-<area shape="poly" id="edge11_Node000004_Node000044" title=" " alt="" coords="302,177,486,223,485,228,300,182"/>
+<area shape="rect" id="Node000033" href="$_broker_8h.html" title=" " alt="" coords="211,304,335,331"/>
+<area shape="poly" id="edge12_Node000004_Node000033" title=" " alt="" coords="262,182,273,288,268,289,257,182"/>
+<area shape="rect" id="Node000046" href="$_window_manager_8h.html" title=" " alt="" coords="488,229,616,256"/>
+<area shape="poly" id="edge11_Node000004_Node000046" title=" " alt="" coords="302,177,486,223,485,228,300,182"/>
 <area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="107,259,62,296,58,292,104,254"/>
 <area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="125,256,130,288,125,289,120,257"/>
-<area shape="poly" id="edge10_Node000008_Node000032" title=" " alt="" coords="149,254,234,294,231,299,146,259"/>
+<area shape="poly" id="edge10_Node000008_Node000033" title=" " alt="" coords="149,254,234,294,231,299,146,259"/>
 </map>

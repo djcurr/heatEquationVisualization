@@ -25,7 +25,7 @@ namespace ui {
         ImFont *font = io.Fonts->AddFontFromMemoryTTF(assets_Roboto_Regular_ttf, sizeof(assets_Roboto_Regular_ttf),
                                                       fontSize * scaleFactor);
         if (font == nullptr) {
-            throw std::exception("Font not available");
+            throw std::runtime_error("Font not available");
         }
 
         io.Fonts->Build();

@@ -1,9 +1,9 @@
 <map id="events::ISubscriber" name="events::ISubscriber">
 <area shape="rect" id="Node000001" title="Interface for objects that wish to subscribe to and handle events within the event management system." alt="" coords="250,5,373,96"/>
-<area shape="rect" id="Node000002" href="$class_simulation_controller.html" title="Manages the execution and state of simulations, coordinating events and updates." alt="" coords="5,176,193,715"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,107,207,146,187,178,183,175,203,142,237,104"/>
-<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="217,165,405,725"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,111,314,166,309,166,309,111"/>
-<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html" title="Renders the simulation grid and handles interactive elements within the grid." alt="" coords="429,144,609,747"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,103,420,142,432,161,427,164,416,146,382,107"/>
+<area shape="rect" id="Node000002" href="$class_simulation_controller.html" title="Manages the execution and state of simulations, coordinating events and updates." alt="" coords="5,197,193,736"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,107,207,146,177,199,172,196,202,142,237,103"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html" title="Renders UI controls and handles user interactions for simulation settings." alt="" coords="217,144,405,789"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,111,314,144,309,144,309,111"/>
+<area shape="rect" id="Node000004" href="$classui_1_1_grid_renderer.html" title="Renders the simulation grid and handles interactive elements within the grid." alt="" coords="429,165,609,768"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,103,420,142,433,164,429,167,416,146,382,106"/>
 </map>

@@ -7,6 +7,7 @@
 #include <imgui.h>
 #include <string>
 #include <cmath>
+#include <tuple>
 
 /**
  * @class ColorMap

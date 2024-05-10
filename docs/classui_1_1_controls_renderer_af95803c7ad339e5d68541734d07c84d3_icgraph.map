@@ -1,0 +1,7 @@
+<map id="ui::ControlsRenderer::inputHelper" name="ui::ControlsRenderer::inputHelper">
+<area shape="rect" id="Node000001" title=" " alt="" coords="199,39,338,81"/>
+<area shape="rect" id="Node000002" href="$classui_1_1_controls_renderer.html#a19ae8220e270ef6c60d5cdf38e6d280f" title="Renders a slider input widget for numerical data." alt="" coords="8,5,148,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,48,148,42,149,36,184,43"/>
+<area shape="rect" id="Node000003" href="$classui_1_1_controls_renderer.html#a2aafcbca57513b6e888f940b2cc0856b" title="Renders a standard input widget for various types of data." alt="" coords="5,72,151,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,77,152,83,151,78,183,72"/>
+</map>

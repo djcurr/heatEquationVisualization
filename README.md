@@ -3,7 +3,9 @@
 ![Program Animation](https://github.com/djcurr/heatEquationVisualization/blob/main/docs/animation.gif)
 
 ## Table of Contents
+
 - [How to Run](#how-to-run)
+    - [Prerequisites](#prerequisites)
     - [Clone the Repository](#clone-the-repository)
     - [Build Instructions](#build-instructions)
     - [Running the Application](#running-the-application)
@@ -19,9 +21,17 @@
 
 ## How to Run
 
+### Prerequisites
+
+Start by installing the prerequisites.
+
+```bash
+sudo apt-get install build-essential libglfw3-dev
+```
+
 ### Clone the Repository
 
-Start by cloning the repository to your local machine. If you're using Git, you can clone it using the following
+Start by cloning the repository to your local machine. You can clone it using the following
 command:
 
 ```bash
@@ -75,7 +85,7 @@ containing the executable or adjust the command to match the generated executabl
 
 ## Documentation
 
-For detailed documentation on the architecture and code of `heatEquationVisualization`, check out our Doxygen
+For detailed documentation on the architecture and code of `heatEquationVisualization`, check out the Doxygen
 documentation. It provides a complete overview of all classes and methods, along with their interactions and
 dependencies. You can access this documentation by navigating to the `/docs` directory after cloning the repository or
 view it online at [GitHub Pages](https://djcurr.github.io/heatEquationVisualization/inherits.html).
@@ -86,7 +96,7 @@ view it online at [GitHub Pages](https://djcurr.github.io/heatEquationVisualizat
 
 For my Differential Equations II class, I decided to create a simulator based
 on the heat differential equation. The goals of this project were to learn C++,
-learn how to implement computation math in C++, implement parallel computing
+learn how to implement computational math in C++, implement parallel computing
 concepts, practice software design concepts, and create a cool visualization.
 This project allows the user to draw initial conditions on three grids,
 initial temperature, sources, and material. The initial temperature is given
@@ -94,7 +104,9 @@ in Celsius, the sources in Watts, and the materials from a pre-defined list.
 The user can modify the brush size and drag to draw on the grid. The grid
 size, time step size, and time duration can be modified to determine the
 temporal and spatial resolution. The simulation can then be started, and
-afterward the color map can be changed.
+afterward the color map can be changed. 
+
+[![Simulator Video](http://img.youtube.com/vi/51_h_49tlVk/0.jpg)](http://www.youtube.com/watch?v=51_h_49tlVk "Heat Equation Visualization")
 
 ### Technologies
 
@@ -122,15 +134,16 @@ Technologies used in this project (all cross-platform):
 
 ### Design
 
+![Task Manager](https://github.com/djcurr/heatEquationVisualization/blob/main/docs/taskmanager.png)
+This design is highly multithreaded.
+
 #### MVC
 
-In this application, there are two major components: the user interface and the solver.
-We use the Model-View-Controller (**MVC**) pattern to organize these components. Within this
-architecture, the `HeatSolver` serves as the **Model**, handling the logic and data.
-The renderers (`ControlsRenderer` and `GridRenderer`) represent the **View**, which are responsible for presenting the
-output.
-Finally, the `SimulationController` represents the **Controller**, passing data between the
-HeatSolver and the renderers.
+In this application, there are two major components: the user interface and the solver. We use the
+Model-View-Controller (**MVC**) pattern to organize these components. Within this architecture, the `HeatSolver` serves
+as the **Model**, handling the logic and data. The renderers (`ControlsRenderer` and `GridRenderer`) represent the *
+*View**, which are responsible for presenting the output. Finally, the `SimulationController` represents the *
+*Controller**, passing data between the `HeatSolver` and the renderers.
 
 #### Pub/Sub
 
@@ -175,7 +188,7 @@ contains a list of subscribers that implement the `ISubscriber` interface which 
 function. `EventType`s are mapped to subscribers, but subscribers to all events are permitted. `Event`s are processed
 concurrently. The `Event` interface must be implemented by all `Event`s. The required functions are `getType`
 and `getData`. `Event` data is stored in a map of permitted data types. Each `Event` data element is indexed by
-an `EventDataKey` which corresponds for a specific data element for an event.
+an `EventDataKey` which corresponds to a specific data element for an event.
 
 ![Broker UML](https://djcurr.github.io/heatEquationVisualization/classevents_1_1_broker__coll__graph.png)
 
@@ -191,8 +204,8 @@ changes. All communication is completed through events.
 
 ![Controls Renderer UML](https://djcurr.github.io/heatEquationVisualization/classui_1_1_controls_renderer__coll__graph.png)
 
-The `SimulationController` is the final component, the `Controller` in the MVC model. The `SimulationController`
-contains an instance of the `HeatSolver` and mainly receives events to modify the `Model`, also emitting events such as
+The `SimulationController` is the final component, the **Controller** in the MVC model. The `SimulationController`
+contains an instance of the `HeatSolver` and mainly receives events to modify the **Model**, also emitting events such as
 when the simulation is complete. A `ThreadWrapper` wraps `std::thread` to ensure the simulation thread is joined on
 destruction.
 
@@ -213,5 +226,7 @@ matrix.
 retrieving `Material`s. The `MaterialManager` uses the singleton design pattern. A `Material` stores and allows
 retrieval of the density, thermal conductivity, specific heat, and `Color`. A `Color` stored a value for red, green, and
 blue.
+
+![Materials](https://github.com/djcurr/heatEquationVisualization/blob/main/docs/material.png)
 
 ![Material manager UML](https://djcurr.github.io/heatEquationVisualization/classmanager_1_1_material_manager__coll__graph.png)
